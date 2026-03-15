@@ -1,0 +1,8 @@
+scrapy
+selenium
+beautifulsoup4
+rapidfuzz
+requests
+lxml
+python-dotenv
+tldextract
