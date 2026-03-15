@@ -1,0 +1,451 @@
+2025-11-09 17:42:28 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-09 17:42:28 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-09 17:42:28 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-09 17:42:28 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-09 17:42:28 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-09 17:42:28 [scrapy.extensions.telnet] INFO: Telnet Password: ea1b71e68d409149
+2025-11-09 17:42:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-09 17:42:28 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251109_174226.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-09 17:42:28 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 17:42:30 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 17:42:31 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 17:42:32 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 17:42:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-09 17:42:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-09 17:42:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-09 17:42:34 [scrapy.core.engine] INFO: Spider opened
+2025-11-09 17:42:34 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-09 17:42:34 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-09 17:42:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 17:42:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-09 17:42:34 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-09 17:42:34 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-09 17:42:34 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-09 17:42:34 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-09 17:42:34 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-09 17:42:34 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-09 17:43:32 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: saipem.com (pages=0, time=29378173.5m) → Skipping further URLs.
+2025-11-09 17:43:32 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain saipem.com
+2025-11-09 17:43:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.saipem.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:44:13 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: offshore-europe.co.uk (pages=0, time=29378174.2m) → Skipping further URLs.
+2025-11-09 17:44:13 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain offshore-europe.co.uk
+2025-11-09 17:44:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-europe.co.uk> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:44:13 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 17:44:18 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: aramco.com (pages=0, time=29378174.3m) → Skipping further URLs.
+2025-11-09 17:44:18 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain aramco.com
+2025-11-09 17:44:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.aramco.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:44:46 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: api.org (pages=0, time=29378174.8m) → Skipping further URLs.
+2025-11-09 17:44:46 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain api.org
+2025-11-09 17:44:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.api.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:44:46 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 17:45:13 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: ft.com (pages=0, time=29378175.2m) → Skipping further URLs.
+2025-11-09 17:45:13 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain ft.com
+2025-11-09 17:45:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ft.com/oil-gas> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:45:23 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: globalenergymonitor.org (pages=0, time=29378175.4m) → Skipping further URLs.
+2025-11-09 17:45:23 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain globalenergymonitor.org
+2025-11-09 17:45:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:45:28 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: dghindia.gov.in (pages=0, time=29378175.5m) → Skipping further URLs.
+2025-11-09 17:45:28 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain dghindia.gov.in
+2025-11-09 17:45:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dghindia.gov.in> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:45:28 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: worldoil.com (pages=0, time=29378175.5m) → Skipping further URLs.
+2025-11-09 17:45:28 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain worldoil.com
+2025-11-09 17:45:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.worldoil.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:45:41 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: iea.org (pages=0, time=29378175.7m) → Skipping further URLs.
+2025-11-09 17:45:41 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain iea.org
+2025-11-09 17:45:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.iea.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:45:41 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 17:45:58 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: chevron.com (pages=0, time=29378176.0m) → Skipping further URLs.
+2025-11-09 17:45:58 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain chevron.com
+2025-11-09 17:45:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.chevron.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined

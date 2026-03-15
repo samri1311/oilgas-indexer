@@ -1,0 +1,550 @@
+2025-11-06 18:50:37 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-06 18:50:37 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-06 18:50:37 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-06 18:50:37 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-06 18:50:37 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-06 18:50:37 [scrapy.extensions.telnet] INFO: Telnet Password: b74f0e0d13bbac5c
+2025-11-06 18:50:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-06 18:50:37 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251106_185036.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-06 18:50:38 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 18:50:39 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 18:50:40 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 18:50:40 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 18:50:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-06 18:50:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-06 18:50:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-06 18:50:42 [scrapy.core.engine] INFO: Spider opened
+2025-11-06 18:50:42 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-06 18:50:42 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-06 18:50:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:50:42 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-06 18:50:42 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-06 18:50:42 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-06 18:50:42 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-06 18:50:42 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-06 18:50:42 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-06 18:50:42 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-06 18:50:56 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://superefficient.org/about-us/what-is-the-sead-initiative
+2025-11-06 18:51:16 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.energyvoice.com
+2025-11-06 18:51:27 [oilgas_indexer] INFO: ✅ Sitemap found for corporate.exxonmobil.com: https://corporate.exxonmobil.com/sitemap.xml
+2025-11-06 18:51:28 [oilgas_indexer] INFO: 🗺️ Extracted 1 sitemap URLs from corporate.exxonmobil.com
+2025-11-06 18:51:33 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:51:51 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:51:51 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:52:43 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 17 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:52:44 [oilgas_indexer] INFO: ✅ Sitemap found for corporate.exxonmobil.com: https://corporate.exxonmobil.com/sitemap.xml
+2025-11-06 18:52:45 [oilgas_indexer] INFO: 🗺️ Extracted 1 sitemap URLs from corporate.exxonmobil.com
+2025-11-06 18:52:52 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:53:48 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:48 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:49 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:49 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:50 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:50 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:50 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:51 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:51 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:51 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:52 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:52 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:53 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:53 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:53 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:54 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:54 [oilgas_indexer] INFO: ✅ Sitemap found for globalenergymonitor.org: https://globalenergymonitor.org/sitemap.xml
+2025-11-06 18:53:54 [scrapy.extensions.logstats] INFO: Crawled 36 pages (at 13 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:53:54 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:54:26 [oilgas_indexer] INFO: 🗺️ Extracted 17 sitemap URLs from globalenergymonitor.org
+2025-11-06 18:54:29 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://en.wikipedia.org/wiki/Petroleum_industry
+2025-11-06 18:54:49 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:54:58 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:54:59 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:00 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:01 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:01 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:02 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:03 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:04 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:05 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:05 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:06 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:08 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:10 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:11 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:13 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:15 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:16 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:17 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:55:43 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:55:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:59 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:59 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:59 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:59 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:55:59 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:56:13 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:56:13 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:56:13 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:56:32 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:56:46 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:56:59 [scrapy.extensions.logstats] INFO: Crawled 55 pages (at 13 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:57:33 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:34 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:35 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:35 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:36 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:37 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:37 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:38 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:39 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:40 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:41 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:41 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:42 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:43 [scrapy.extensions.logstats] INFO: Crawled 60 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:57:43 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:44 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:45 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:46 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:47 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:57:54 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:03 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:58:24 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:24 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:25 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:25 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:25 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:25 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:30 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:30 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:43 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:43 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:47 [scrapy.extensions.logstats] INFO: Crawled 66 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:58:47 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:47 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:47 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:47 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:58:52 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:59:01 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:59:18 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 18:59:27 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:34 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:35 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:36 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:41 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:47 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:47 [scrapy.extensions.logstats] INFO: Crawled 78 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 18:59:48 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:48 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:49 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:50 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:51 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:52 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:52 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:53 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:54 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:55 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 18:59:56 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 19:00:02 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:00:09 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:00:10 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 19:00:16 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 19:00:20 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 19:00:22 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 19:00:22 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 19:00:22 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 19:00:24 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 19:00:26 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 1 new discoveries to disk.
+2025-11-06 19:00:28 [oilgas_indexer] INFO: 🧹 Cleaned & saved data:, (2.07 KB) → data/corpus/.txt
+2025-11-06 19:00:44 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://x.com/APIenergy/status/1986138003522404661
+2025-11-06 19:00:45 [scrapy.extensions.logstats] INFO: Crawled 81 pages (at 3 pages/min), scraped 1 items (at 1 items/min)
+2025-11-06 19:00:55 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://x.com/APIenergy/status/1986157403247702167
+2025-11-06 19:01:04 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://x.com/RealClearEnergy
+2025-11-06 19:01:14 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://x.com/APIenergy/status/1979237809786388730
+2025-11-06 19:01:25 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://x.com/APIenergy
+2025-11-06 19:01:26 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:26 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:32 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:32 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:32 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:32 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:33 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:41 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:43 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.youtube.com/channel/UCitegkCxi2r-GGJRabGpRKg
+2025-11-06 19:01:43 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:43 [scrapy.extensions.logstats] INFO: Crawled 88 pages (at 7 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 19:01:53 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:53 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:53 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:53 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:01:55 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.linkedin.com/company/api-global-official-
+2025-11-06 19:01:58 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://x.com/apiglobal
+2025-11-06 19:01:58 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:02:01 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.facebook.com/OfficialAPIGlobal
+2025-11-06 19:02:01 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:02:03 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.youtube.com/energy
+2025-11-06 19:02:11 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:02:32 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.events.api.org/: Message: unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x42fe43+66515]
+	GetHandleVerifier [0x0x42fe84+66580]
+	(No symbol) [0x0x21dc48]
+	(No symbol) [0x0x21b147]
+	(No symbol) [0x0x20e422]
+	(No symbol) [0x0x20fe1e]
+	(No symbol) [0x0x20e930]
+	(No symbol) [0x0x20e1e4]
+	(No symbol) [0x0x20deef]
+	(No symbol) [0x0x20be60]
+	(No symbol) [0x0x20c7fb]
+	(No symbol) [0x0x2217ce]
+	(No symbol) [0x0x2ad7f7]
+	(No symbol) [0x0x28b1cc]
+	(No symbol) [0x0x2acba7]
+	(No symbol) [0x0x28afc6]
+	(No symbol) [0x0x25c2ca]
+	(No symbol) [0x0x25d154]
+	GetHandleVerifier [0x0x687353+2521315]
+	GetHandleVerifier [0x0x6822d3+2500707]
+	GetHandleVerifier [0x0x457c94+229924]
+	GetHandleVerifier [0x0x4481f8+165768]
+	GetHandleVerifier [0x0x44ecad+193085]
+	GetHandleVerifier [0x0x438158+100072]
+	GetHandleVerifier [0x0x4382f0+100480]
+	GetHandleVerifier [0x0x4225aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 19:02:36 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 19:02:37 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 19:02:38 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 19:02:38 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 19:02:39 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 19:02:39 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-06 19:02:51 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 9 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 19:02:54 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHcmLdniXyBjQAAAZpZXgAgsAFeP13dQOGj2mUz_DV5Qx4XvyQ0tfn3qJ1XEN9dGWzNmgNb_q2Enal9nl1Od3LsR6slSoEqwPGqbz_X1uv5bYBzWGfj7QZkjiPlkdz1_ybqxSc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Famericanpetroleuminstitute%2F
+2025-11-06 19:03:14 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:03:16 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.facebook.com/TheAmericanPetroleumInstitute
+2025-11-06 19:03:18 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.instagram.com/americanpetroleum — retrying once
+2025-11-06 19:03:21 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:03:22 [oilgas_indexer] INFO: ✅ Sitemap found for gasworld.com: https://www.gasworld.com/sitemap.xml
+2025-11-06 19:03:22 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from gasworld.com
+2025-11-06 19:03:23 [oilgas_indexer] INFO: ✅ Sitemap found for clickcease.com: https://www.clickcease.com/sitemap.xml
+2025-11-06 19:03:41 [oilgas_indexer] INFO: 🗺️ Extracted 3 sitemap URLs from clickcease.com
+2025-11-06 19:04:26 [scrapy.extensions.logstats] INFO: Crawled 108 pages (at 11 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 19:04:27 [oilgas_indexer] INFO: ✅ Sitemap found for api.org: https://www.api.org/sitemap.xml
+2025-11-06 19:04:29 [oilgas_indexer] INFO: ✅ Sitemap found for cheq.ai: https://cheq.ai/sitemap.xml
+2025-11-06 19:04:30 [oilgas_indexer] INFO: ✅ Sitemap found for clickcease.com: https://www.clickcease.com/sitemap.xml
+2025-11-06 19:04:32 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:04:34 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:04:37 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:04:39 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:04:41 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:04:43 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:04:46 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:04:48 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:04:48 [oilgas_indexer] INFO: 🗺️ Extracted 5 sitemap URLs from cheq.ai
+2025-11-06 19:04:48 [scrapy.extensions.logstats] INFO: Crawled 108 pages (at 0 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 19:04:48 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:04:48 [oilgas_indexer] INFO: 🗺️ Extracted 3 sitemap URLs from clickcease.com
+2025-11-06 19:04:49 [oilgas_indexer] INFO: 🗺️ Extracted 2004 sitemap URLs from api.org
+2025-11-06 19:05:42 [scrapy.extensions.logstats] INFO: Crawled 123 pages (at 15 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 19:05:43 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:05:43 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:05:43 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:05:43 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:05:43 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:05:52 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:05:52 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:05:52 [oilgas_indexer] INFO: 🗺️ Extracted 314 sitemap URLs from curator.io
+2025-11-06 19:06:55 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:06:57 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:06:59 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:01 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:04 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:06 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:09 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:11 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:14 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:16 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:19 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:21 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:23 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:26 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:07:28 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 19:08:12 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://curator.io/blog/how-schools-can-use-social-media-for-good: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x42fe43+66515]
+	GetHandleVerifier [0x0x42fe84+66580]
+	(No symbol) [0x0x21dc48]
+	(No symbol) [0x0x20ce80]
+	(No symbol) [0x0x22b81b]
+	(No symbol) [0x0x291c25]
+	(No symbol) [0x0x2ac4d9]
+	(No symbol) [0x0x28afc6]
+	(No symbol) [0x0x25c2ca]
+	(No symbol) [0x0x25d154]
+	GetHandleVerifier [0x0x687353+2521315]
+	GetHandleVerifier [0x0x6822d3+2500707]
+	GetHandleVerifier [0x0x457c94+229924]
+	GetHandleVerifier [0x0x4481f8+165768]
+	GetHandleVerifier [0x0x44ecad+193085]
+	GetHandleVerifier [0x0x438158+100072]
+	GetHandleVerifier [0x0x4382f0+100480]
+	GetHandleVerifier [0x0x4225aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 19:08:16 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 19:08:18 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 19:08:18 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 19:08:19 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 19:08:21 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 19:08:21 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-06 19:08:38 [scrapy.extensions.logstats] INFO: Crawled 156 pages (at 33 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 19:09:04 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 19:09:08 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 19:09:10 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 19:09:10 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 19:09:10 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 19:09:12 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 21:47:05 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://curator.io/blog/how-to-customize-your-social-media-feed: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x42fe43+66515]
+	GetHandleVerifier [0x0x42fe84+66580]
+	(No symbol) [0x0x21dc48]
+	(No symbol) [0x0x20ce80]
+	(No symbol) [0x0x22b81b]
+	(No symbol) [0x0x291c25]
+	(No symbol) [0x0x2ac4d9]
+	(No symbol) [0x0x28afc6]
+	(No symbol) [0x0x25c2ca]
+	(No symbol) [0x0x25d154]
+	GetHandleVerifier [0x0x687353+2521315]
+	GetHandleVerifier [0x0x6822d3+2500707]
+	GetHandleVerifier [0x0x457c94+229924]
+	GetHandleVerifier [0x0x4481f8+165768]
+	GetHandleVerifier [0x0x44ecad+193085]
+	GetHandleVerifier [0x0x438158+100072]
+	GetHandleVerifier [0x0x4382f0+100480]
+	GetHandleVerifier [0x0x4225aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 21:47:11 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 21:47:20 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 21:47:21 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 21:47:22 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 21:47:24 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 21:47:24 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-06 21:48:02 [scrapy.extensions.logstats] INFO: Crawled 168 pages (at 12 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 21:48:06 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:09 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:12 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:16 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:20 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:23 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:27 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:30 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:34 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:37 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:37 [oilgas_indexer] WARNING: ⏩ Stalled on cheq.ai for 9849.7s with only 2 pages — skipping domain.
+2025-11-06 21:48:37 [oilgas_indexer] WARNING: ⏩ Stalled on cheq.ai for 9849.7s with only 3 pages — skipping domain.
+2025-11-06 21:48:37 [oilgas_indexer] WARNING: ⏩ Stalled on cheq.ai for 9849.7s with only 4 pages — skipping domain.
+2025-11-06 21:48:37 [oilgas_indexer] WARNING: ⏩ Stalled on cheq.ai for 9849.7s with only 5 pages — skipping domain.
+2025-11-06 21:48:47 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:51 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:54 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:57 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml
+2025-11-06 21:48:57 [scrapy.extensions.logstats] INFO: Crawled 168 pages (at 0 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 21:49:01 [oilgas_indexer] INFO: ✅ Sitemap found for curator.io: https://curator.io/sitemap.xml

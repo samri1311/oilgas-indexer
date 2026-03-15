@@ -1,0 +1,1243 @@
+2025-11-12 17:54:22 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-12 17:54:22 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-12 17:54:22 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-12 17:54:22 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-12 17:54:22 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-12 17:54:22 [scrapy.extensions.telnet] INFO: Telnet Password: 6247cc99e1cae694
+2025-11-12 17:54:23 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-12 17:54:23 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251112_175412.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-12 17:54:23 [WDM] INFO: ====== WebDriver manager ======
+2025-11-12 17:54:26 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-12 17:54:28 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-12 17:54:29 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\142.0.7444.162\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-12 17:54:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-12 17:54:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-12 17:54:32 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-12 17:54:32 [scrapy.core.engine] INFO: Spider opened
+2025-11-12 17:54:33 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-12 17:54:33 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-12 17:54:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 17:54:33 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-12 17:54:33 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-12 17:54:33 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-12 17:54:33 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-12 17:54:33 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-12 17:54:33 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-12 17:54:33 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-12 17:55:35 [oilgas_indexer] INFO: 🧾 Saved snapshot for iea.org (24.8 KB)
+2025-11-12 17:55:35 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: iea.org
+2025-11-12 17:55:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.iea.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:55:35 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 17:55:47 [oilgas_indexer] INFO: 🧾 Saved snapshot for opec.org (0.7 KB)
+2025-11-12 17:55:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.opec.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:56:02 [oilgas_indexer] INFO: 🧾 Saved snapshot for hartenergy.com (1.9 KB)
+2025-11-12 17:56:02 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: hartenergy.com
+2025-11-12 17:56:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.hartenergy.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:56:22 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.ongcindia.com — retrying once
+2025-11-12 17:56:37 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 17:56:37 [oilgas_indexer] INFO: 🧾 Saved snapshot for corporate.exxonmobil.com (5.3 KB)
+2025-11-12 17:56:37 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: corporate.exxonmobil.com
+2025-11-12 17:56:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://corporate.exxonmobil.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:56:48 [oilgas_indexer] INFO: 🧾 Saved snapshot for ipieca.org (5.0 KB)
+2025-11-12 17:56:48 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: ipieca.org
+2025-11-12 17:56:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ipieca.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:56:57 [oilgas_indexer] INFO: 🧾 Saved snapshot for api.org (1.7 KB)
+2025-11-12 17:56:57 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: api.org
+2025-11-12 17:56:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.api.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:57:11 [oilgas_indexer] INFO: 🧾 Saved snapshot for foundation.wikimedia.org (6.4 KB)
+2025-11-12 17:57:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://en.wikipedia.org/wiki/Petroleum_industry> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:57:17 [oilgas_indexer] INFO: 🧾 Saved snapshot for totalenergies.com (20.2 KB)
+2025-11-12 17:57:17 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: totalenergies.com
+2025-11-12 17:57:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.totalenergies.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:57:38 [oilgas_indexer] INFO: 🧾 Saved snapshot for eia.gov (5.2 KB)
+2025-11-12 17:57:38 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: eia.gov
+2025-11-12 17:57:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.eia.gov/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:57:38 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 17:57:47 [oilgas_indexer] INFO: 🧾 Saved snapshot for energyvoice.com (0.3 KB)
+2025-11-12 17:57:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.energyvoice.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:58:06 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-europe.co.uk (9.8 KB)
+2025-11-12 17:58:06 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: offshore-europe.co.uk
+2025-11-12 17:58:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-europe.co.uk> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:58:31 [oilgas_indexer] INFO: 🧾 Saved snapshot for equinor.com (11.5 KB)
+2025-11-12 17:58:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.equinor.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:58:35 [oilgas_indexer] INFO: 🧾 Saved snapshot for dnv.com (5.2 KB)
+2025-11-12 17:58:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dnv.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:58:35 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 17:59:03 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.data.gov.in — retrying once
+2025-11-12 17:59:12 [oilgas_indexer] INFO: 🧾 Saved snapshot for facebook.com (0.8 KB)
+2025-11-12 17:59:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.upstreamonline.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 17:59:37 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-12 18:00:02 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-12 18:00:23 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:00:23 [oilgas_indexer] INFO: 🧾 Saved snapshot for bp.com (0.5 KB)
+2025-11-12 18:00:23 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: bp.com
+2025-11-12 18:00:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.bp.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:00:29 [oilgas_indexer] INFO: 🧾 Saved snapshot for worldoil.com (4.4 KB)
+2025-11-12 18:00:29 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: worldoil.com
+2025-11-12 18:00:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.worldoil.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:00:33 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:00:33 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.ogj.com — retrying once
+2025-11-12 18:00:43 [oilgas_indexer] INFO: 🧾 Saved snapshot for saipem.com (3.3 KB)
+2025-11-12 18:00:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.saipem.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:00:48 [oilgas_indexer] INFO: 🧾 Saved snapshot for globalenergymonitor.org (0.3 KB)
+2025-11-12 18:00:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:01:13 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-12 18:01:38 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-12 18:02:03 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-12 18:02:28 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.subsea7.com> (failed 3 times): 408 Request Time-out
+2025-11-12 18:02:28 [scrapy.extensions.logstats] INFO: Crawled 30 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:02:28 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.aramco.com — retrying once
+2025-11-12 18:03:48 [scrapy.extensions.logstats] INFO: Crawled 31 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:03:53 [oilgas_indexer] WARNING: ⚠️ Request failed or timed out: https://www.subsea7.com
+2025-11-12 18:03:53 [oilgas_indexer] INFO: Removed https://www.subsea7.com from pending queue after failure.
+2025-11-12 18:03:53 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x4f4093
+	0x4f40d4
+	0x2fe71d
+	0x2fbc77
+	0x2eeec8
+	0x2f0884
+	0x2ef396
+	0x2eec82
+	0x2ee98d
+	0x2ec7fe
+	0x2ed28b
+	0x3024ce
+	0x38fb37
+	0x36c90c
+	0x38ee17
+	0x36c706
+	0x33da30
+	0x33ed54
+	0x765744
+	0x76091a
+	0x51c322
+	0x50c458
+	0x5131dd
+	0x4fc408
+	0x4fc5cc
+	0x4e675a
+	0x759d5d49
+	0x76f5d6db
+	0x76f5d661
+
+2025-11-12 18:04:02 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-12 18:04:03 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x4f4093
+	0x4f40d4
+	0x2fe71d
+	0x2fbc77
+	0x2eeec8
+	0x2f0884
+	0x2ef396
+	0x2eec82
+	0x2ee98d
+	0x2ec7fe
+	0x2ed28b
+	0x3024ce
+	0x38fb37
+	0x36c90c
+	0x38ee17
+	0x36c706
+	0x33da30
+	0x33ed54
+	0x765744
+	0x76091a
+	0x51c322
+	0x50c458
+	0x5131dd
+	0x4fc408
+	0x4fc5cc
+	0x4e675a
+	0x759d5d49
+	0x76f5d6db
+	0x76f5d661
+
+2025-11-12 18:04:08 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-12 18:04:09 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x4f4093
+	0x4f40d4
+	0x2fe71d
+	0x2fbc77
+	0x2eeec8
+	0x2f0884
+	0x2ef396
+	0x2eec82
+	0x2ee98d
+	0x2ec7fe
+	0x2ed28b
+	0x3024ce
+	0x38fb37
+	0x36c90c
+	0x38ee17
+	0x36c706
+	0x33da30
+	0x33ed54
+	0x765744
+	0x76091a
+	0x51c322
+	0x50c458
+	0x5131dd
+	0x4fc408
+	0x4fc5cc
+	0x4e675a
+	0x759d5d49
+	0x76f5d6db
+	0x76f5d661
+
+2025-11-12 18:04:14 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-12 18:04:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.hpcl.in> (failed 3 times): 500 Internal Server Error
+2025-11-12 18:04:14 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.saudiaramco.com — retrying once
+2025-11-12 18:04:48 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:04:48 [oilgas_indexer] WARNING: ⚠️ Request failed or timed out: https://www.hpcl.in
+2025-11-12 18:04:48 [oilgas_indexer] INFO: Removed https://www.hpcl.in from pending queue after failure.
+2025-11-12 18:05:13 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.gailonline.com
+2025-11-12 18:05:21 [oilgas_indexer] WARNING: ⚠️ slb.com generated 1142 links → blacklisted
+2025-11-12 18:05:56 [scrapy.extensions.logstats] INFO: Crawled 37 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:06:02 [oilgas_indexer] INFO: 🧾 Saved snapshot for oil-india.com (0.7 KB)
+2025-11-12 18:06:02 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: oil-india.com
+2025-11-12 18:06:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.oil-india.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:06:35 [scrapy.extensions.logstats] INFO: Crawled 39 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:06:35 [oilgas_indexer] INFO: 🧾 Saved snapshot for gailonline.com (3.9 KB)
+2025-11-12 18:06:35 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: gailonline.com
+2025-11-12 18:06:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.gailonline.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:06:42 [oilgas_indexer] INFO: 🧾 Saved snapshot for facebook.com (0.9 KB)
+2025-11-12 18:06:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.relianceindustries.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:07:00 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.spe.org — retrying once
+2025-11-12 18:07:24 [oilgas_indexer] INFO: 🧾 Saved snapshot for dmgevents.com (0.3 KB)
+2025-11-12 18:07:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.energyconnects.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:07:33 [oilgas_indexer] INFO: 🧾 Saved snapshot for oilandgastechnology.net (0.5 KB)
+2025-11-12 18:07:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.oilandgastechnology.net> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:07:33 [scrapy.extensions.logstats] INFO: Crawled 44 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:07:37 [oilgas_indexer] INFO: 🧾 Saved snapshot for ten.com (4.1 KB)
+2025-11-12 18:07:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.technipenergies.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:07:47 [oilgas_indexer] INFO: 🧾 Saved snapshot for dghindia.gov.in (4.0 KB)
+2025-11-12 18:07:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dghindia.gov.in> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:07:52 [oilgas_indexer] INFO: 🧾 Saved snapshot for gem.wiki (6.2 KB)
+2025-11-12 18:07:52 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: gem.wiki
+2025-11-12 18:07:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://gem.wiki/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:08:22 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.chevron.com — retrying once
+2025-11-12 18:08:36 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:08:36 [oilgas_indexer] INFO: 🧾 Saved snapshot for rigzone.com (4.4 KB)
+2025-11-12 18:08:36 [oilgas_indexer] INFO: 🌍 Marked domain as oil & gas relevant: rigzone.com
+2025-11-12 18:08:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.rigzone.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:09:01 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.bakerhughes.com — retrying once
+2025-11-12 18:09:39 [oilgas_indexer] INFO: 🧾 Saved snapshot for ft.com (2.1 KB)
+2025-11-12 18:09:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ft.com/oil-gas> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 741, in parse
+    self.brain.update_domain_reputation(current_domain, is_rel)
+                                                        ^^^^^^
+NameError: name 'is_rel' is not defined
+2025-11-12 18:09:39 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:10:15 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://rss.feedspot.com/oil_and_gas_rss_feeds/
+2025-11-12 18:11:06 [scrapy.extensions.logstats] INFO: Crawled 54 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-12 18:11:07 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.shell.com/cookie-policy.html — retrying once

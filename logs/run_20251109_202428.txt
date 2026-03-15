@@ -1,0 +1,1940 @@
+2025-11-09 20:24:31 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-09 20:24:31 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-09 20:24:31 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-09 20:24:31 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-09 20:24:31 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-09 20:24:32 [scrapy.extensions.telnet] INFO: Telnet Password: 82c846f1810c71a7
+2025-11-09 20:24:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-09 20:24:32 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251109_202428.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-09 20:24:32 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 20:24:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:24:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:24:35 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 20:24:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-09 20:24:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-09 20:24:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-09 20:24:37 [scrapy.core.engine] INFO: Spider opened
+2025-11-09 20:24:38 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-09 20:24:38 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-09 20:24:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:24:38 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-09 20:24:38 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-09 20:24:38 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-09 20:24:38 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-09 20:24:38 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-09 20:24:38 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-09 20:24:38 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-09 20:26:09 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:26:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.relianceindustries.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:27:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.exxonmobil.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:27:46 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:27:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:28:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.energyconnects.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:28:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.slb.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:28:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.rigzone.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:28:43 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:28:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.hartenergy.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:29:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.opec.org/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:29:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.opec.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:29:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.shell.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:29:53 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:30:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ft.com/oil-gas> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:30:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:30:43 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:30:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.iocl.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:30:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rss.feedspot.com/oil_and_gas_rss_feeds/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:31:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.eia.gov/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:31:02 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x12dfe43+66515]
+	GetHandleVerifier [0x0x12dfe84+66580]
+	(No symbol) [0x0x10cdc48]
+	(No symbol) [0x0x10cb147]
+	(No symbol) [0x0x10be422]
+	(No symbol) [0x0x10bfe1e]
+	(No symbol) [0x0x10be930]
+	(No symbol) [0x0x10be1e4]
+	(No symbol) [0x0x10bdeef]
+	(No symbol) [0x0x10bbe60]
+	(No symbol) [0x0x10bc7fb]
+	(No symbol) [0x0x10d17ce]
+	(No symbol) [0x0x115d7f7]
+	(No symbol) [0x0x113b1cc]
+	(No symbol) [0x0x115cba7]
+	(No symbol) [0x0x113afc6]
+	(No symbol) [0x0x110c2ca]
+	(No symbol) [0x0x110d154]
+	GetHandleVerifier [0x0x1537353+2521315]
+	GetHandleVerifier [0x0x15322d3+2500707]
+	GetHandleVerifier [0x0x1307c94+229924]
+	GetHandleVerifier [0x0x12f81f8+165768]
+	GetHandleVerifier [0x0x12fecad+193085]
+	GetHandleVerifier [0x0x12e8158+100072]
+	GetHandleVerifier [0x0x12e82f0+100480]
+	GetHandleVerifier [0x0x12d25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 20:31:07 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 20:31:09 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:31:09 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:31:10 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 20:31:11 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 20:31:12 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x12dfe43+66515]
+	GetHandleVerifier [0x0x12dfe84+66580]
+	(No symbol) [0x0x10cdc48]
+	(No symbol) [0x0x10cb147]
+	(No symbol) [0x0x10be422]
+	(No symbol) [0x0x10bfe1e]
+	(No symbol) [0x0x10be930]
+	(No symbol) [0x0x10be1e4]
+	(No symbol) [0x0x10bdeef]
+	(No symbol) [0x0x10bbe60]
+	(No symbol) [0x0x10bc7fb]
+	(No symbol) [0x0x10d17ce]
+	(No symbol) [0x0x115d7f7]
+	(No symbol) [0x0x113b1cc]
+	(No symbol) [0x0x115cba7]
+	(No symbol) [0x0x113afc6]
+	(No symbol) [0x0x110c2ca]
+	(No symbol) [0x0x110d154]
+	GetHandleVerifier [0x0x1537353+2521315]
+	GetHandleVerifier [0x0x15322d3+2500707]
+	GetHandleVerifier [0x0x1307c94+229924]
+	GetHandleVerifier [0x0x12f81f8+165768]
+	GetHandleVerifier [0x0x12fecad+193085]
+	GetHandleVerifier [0x0x12e8158+100072]
+	GetHandleVerifier [0x0x12e82f0+100480]
+	GetHandleVerifier [0x0x12d25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 20:31:16 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 20:31:17 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:31:17 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:31:18 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 20:31:19 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 20:31:19 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x12dfe43+66515]
+	GetHandleVerifier [0x0x12dfe84+66580]
+	(No symbol) [0x0x10cdc48]
+	(No symbol) [0x0x10cb147]
+	(No symbol) [0x0x10be422]
+	(No symbol) [0x0x10bfe1e]
+	(No symbol) [0x0x10be930]
+	(No symbol) [0x0x10be1e4]
+	(No symbol) [0x0x10bdeef]
+	(No symbol) [0x0x10bbe60]
+	(No symbol) [0x0x10bc7fb]
+	(No symbol) [0x0x10d17ce]
+	(No symbol) [0x0x115d7f7]
+	(No symbol) [0x0x113b1cc]
+	(No symbol) [0x0x115cba7]
+	(No symbol) [0x0x113afc6]
+	(No symbol) [0x0x110c2ca]
+	(No symbol) [0x0x110d154]
+	GetHandleVerifier [0x0x1537353+2521315]
+	GetHandleVerifier [0x0x15322d3+2500707]
+	GetHandleVerifier [0x0x1307c94+229924]
+	GetHandleVerifier [0x0x12f81f8+165768]
+	GetHandleVerifier [0x0x12fecad+193085]
+	GetHandleVerifier [0x0x12e8158+100072]
+	GetHandleVerifier [0x0x12e82f0+100480]
+	GetHandleVerifier [0x0x12d25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 20:31:23 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 20:31:24 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:31:25 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:31:25 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 20:31:26 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 20:31:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.hpcl.in> (failed 3 times): 500 Internal Server Error
+2025-11-09 20:31:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ogj.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:31:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.equinor.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:31:48 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:31:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.hpcl.in>: HTTP status code is not handled or not allowed
+2025-11-09 20:31:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.bakerhughes.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:32:49 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-09 20:33:14 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-09 20:33:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://worldoil.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:33:31 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:33:56 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 20:34:21 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 20:34:46 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 20:34:46 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.subsea7.com> (failed 3 times): 408 Request Time-out
+2025-11-09 20:34:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://data.gov.in> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:34:46 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:34:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dnv.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:34:51 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <408 https://www.subsea7.com>: HTTP status code is not handled or not allowed
+2025-11-09 20:34:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.saipem.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:35:11 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x12dfe43+66515]
+	GetHandleVerifier [0x0x12dfe84+66580]
+	(No symbol) [0x0x10cdc48]
+	(No symbol) [0x0x10cb147]
+	(No symbol) [0x0x10be422]
+	(No symbol) [0x0x10bfe1e]
+	(No symbol) [0x0x10be930]
+	(No symbol) [0x0x10be1e4]
+	(No symbol) [0x0x10bdeef]
+	(No symbol) [0x0x10bbe60]
+	(No symbol) [0x0x10bc7fb]
+	(No symbol) [0x0x10d17ce]
+	(No symbol) [0x0x115d7f7]
+	(No symbol) [0x0x113b1cc]
+	(No symbol) [0x0x115cba7]
+	(No symbol) [0x0x113afc6]
+	(No symbol) [0x0x110c2ca]
+	(No symbol) [0x0x110d154]
+	GetHandleVerifier [0x0x1537353+2521315]
+	GetHandleVerifier [0x0x15322d3+2500707]
+	GetHandleVerifier [0x0x1307c94+229924]
+	GetHandleVerifier [0x0x12f81f8+165768]
+	GetHandleVerifier [0x0x12fecad+193085]
+	GetHandleVerifier [0x0x12e8158+100072]
+	GetHandleVerifier [0x0x12e82f0+100480]
+	GetHandleVerifier [0x0x12d25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 20:35:15 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 20:35:17 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:35:17 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:35:18 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 20:35:19 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 20:35:20 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x12dfe43+66515]
+	GetHandleVerifier [0x0x12dfe84+66580]
+	(No symbol) [0x0x10cdc48]
+	(No symbol) [0x0x10cb147]
+	(No symbol) [0x0x10be422]
+	(No symbol) [0x0x10bfe1e]
+	(No symbol) [0x0x10be930]
+	(No symbol) [0x0x10be1e4]
+	(No symbol) [0x0x10bdeef]
+	(No symbol) [0x0x10bbe60]
+	(No symbol) [0x0x10bc7fb]
+	(No symbol) [0x0x10d17ce]
+	(No symbol) [0x0x115d7f7]
+	(No symbol) [0x0x113b1cc]
+	(No symbol) [0x0x115cba7]
+	(No symbol) [0x0x113afc6]
+	(No symbol) [0x0x110c2ca]
+	(No symbol) [0x0x110d154]
+	GetHandleVerifier [0x0x1537353+2521315]
+	GetHandleVerifier [0x0x15322d3+2500707]
+	GetHandleVerifier [0x0x1307c94+229924]
+	GetHandleVerifier [0x0x12f81f8+165768]
+	GetHandleVerifier [0x0x12fecad+193085]
+	GetHandleVerifier [0x0x12e8158+100072]
+	GetHandleVerifier [0x0x12e82f0+100480]
+	GetHandleVerifier [0x0x12d25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 20:35:24 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 20:35:25 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:35:26 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:35:26 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 20:35:28 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 20:35:29 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x12dfe43+66515]
+	GetHandleVerifier [0x0x12dfe84+66580]
+	(No symbol) [0x0x10cdc48]
+	(No symbol) [0x0x10cb147]
+	(No symbol) [0x0x10be422]
+	(No symbol) [0x0x10bfe1e]
+	(No symbol) [0x0x10be930]
+	(No symbol) [0x0x10be1e4]
+	(No symbol) [0x0x10bdeef]
+	(No symbol) [0x0x10bbe60]
+	(No symbol) [0x0x10bc7fb]
+	(No symbol) [0x0x10d17ce]
+	(No symbol) [0x0x115d7f7]
+	(No symbol) [0x0x113b1cc]
+	(No symbol) [0x0x115cba7]
+	(No symbol) [0x0x113afc6]
+	(No symbol) [0x0x110c2ca]
+	(No symbol) [0x0x110d154]
+	GetHandleVerifier [0x0x1537353+2521315]
+	GetHandleVerifier [0x0x15322d3+2500707]
+	GetHandleVerifier [0x0x1307c94+229924]
+	GetHandleVerifier [0x0x12f81f8+165768]
+	GetHandleVerifier [0x0x12fecad+193085]
+	GetHandleVerifier [0x0x12e8158+100072]
+	GetHandleVerifier [0x0x12e82f0+100480]
+	GetHandleVerifier [0x0x12d25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 20:35:33 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 20:35:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:35:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 20:35:35 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 20:35:36 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 20:35:36 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.bpcl.in> (failed 3 times): 500 Internal Server Error
+2025-11-09 20:35:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ongcindia.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:35:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.saudiaramco.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:35:42 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:35:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.bpcl.in>: HTTP status code is not handled or not allowed
+2025-11-09 20:36:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.totalenergies.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:36:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.chevron.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:36:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-europe.co.uk> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:36:51 [scrapy.extensions.logstats] INFO: Crawled 33 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:37:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.api.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:37:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.aramco.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:37:21 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.technipenergies.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:37:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://gem.wiki/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:37:44 [scrapy.extensions.logstats] INFO: Crawled 37 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:38:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://en.wikipedia.org/wiki/Petroleum_industry> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:38:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.bp.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:38:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dghindia.gov.in> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:38:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.oil-india.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:38:40 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:38:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.iea.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:38:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.worldoil.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:38:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.energyvoice.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:39:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.spe.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:39:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.oilandgastechnology.net> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:39:44 [scrapy.extensions.logstats] INFO: Crawled 46 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 20:39:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.bp.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:40:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ipieca.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:40:10 [oilgas_indexer] INFO: ✅ All SeleniumRequests yielded to Scrapy — waiting for scheduler...
+2025-11-09 20:40:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.gailonline.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:40:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://corporate.exxonmobil.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:40:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.upstreamonline.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 624, in parse
+    if domain in self.blacklist:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'domain' where it is not associated with a value
+2025-11-09 20:40:10 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-11-09 20:40:10 [oilgas_indexer] INFO: No new domains discovered.
+2025-11-09 20:40:10 [oilgas_indexer] INFO: 💾 Saved 0 pending URLs before shutdown.
+2025-11-09 20:40:10 [oilgas_indexer] INFO: 💾 Saved 0 blacklisted domains to disk.
+2025-11-09 20:40:10 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 8964502,
+ 'downloader/response_count': 56,
+ 'downloader/response_status_count/200': 45,
+ 'downloader/response_status_count/408': 5,
+ 'downloader/response_status_count/500': 6,
+ 'elapsed_time_seconds': 932.837314,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 11, 9, 15, 10, 10, 877480, tzinfo=datetime.timezone.utc),
+ 'httperror/response_ignored_count': 3,
+ 'httperror/response_ignored_status_count/408': 1,
+ 'httperror/response_ignored_status_count/500': 2,
+ 'items_per_minute': 0.0,
+ 'log_count/ERROR': 48,
+ 'log_count/INFO': 77,
+ 'log_count/WARNING': 6,
+ 'response_received_count': 48,
+ 'responses_per_minute': 3.0901287553648067,
+ 'retry/count': 8,
+ 'retry/max_reached': 3,
+ 'retry/reason_count/408 Request Time-out': 4,
+ 'retry/reason_count/500 Internal Server Error': 4,
+ 'scheduler/dequeued': 56,
+ 'scheduler/dequeued/disk': 56,
+ 'scheduler/enqueued': 56,
+ 'scheduler/enqueued/disk': 56,
+ 'spider_exceptions/UnboundLocalError': 45,
+ 'spider_exceptions/count': 45,
+ 'start_time': datetime.datetime(2025, 11, 9, 14, 54, 38, 40166, tzinfo=datetime.timezone.utc)}
+2025-11-09 20:40:10 [scrapy.core.engine] INFO: Spider closed (finished)

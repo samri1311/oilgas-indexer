@@ -1,0 +1,282 @@
+2025-11-09 18:28:38 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-09 18:28:38 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-09 18:28:38 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-09 18:28:38 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-09 18:28:38 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-09 18:28:38 [scrapy.extensions.telnet] INFO: Telnet Password: 4905e999cd29319e
+2025-11-09 18:28:38 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-09 18:28:38 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251109_182835.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-09 18:28:38 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 18:28:40 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:28:41 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:28:41 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 18:28:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-09 18:28:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-09 18:28:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-09 18:28:43 [scrapy.core.engine] INFO: Spider opened
+2025-11-09 18:28:43 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-09 18:28:43 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-09 18:28:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:28:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-09 18:28:43 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-09 18:28:43 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-09 18:28:43 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-09 18:28:43 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-09 18:28:43 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-09 18:28:43 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-09 18:29:36 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: oilandgastechnology.net (page_count=0, time=29378219.6m) → Skipping further URLs.
+2025-11-09 18:29:36 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain oilandgastechnology.net
+2025-11-09 18:29:36 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: oilandgastechnology.net
+2025-11-09 18:30:04 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: bp.com (page_count=0, time=29378220.1m) → Skipping further URLs.
+2025-11-09 18:30:04 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain bp.com
+2025-11-09 18:30:04 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bp.com
+2025-11-09 18:30:04 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:30:14 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: iocl.com (page_count=0, time=29378220.2m) → Skipping further URLs.
+2025-11-09 18:30:14 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain iocl.com
+2025-11-09 18:30:14 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: iocl.com
+2025-11-09 18:30:48 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: foundation.wikimedia.org (page_count=0, time=29378220.8m) → Skipping further URLs.
+2025-11-09 18:30:48 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain foundation.wikimedia.org
+2025-11-09 18:30:48 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: foundation.wikimedia.org
+2025-11-09 18:30:48 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:30:53 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: gailonline.com (page_count=0, time=29378220.9m) → Skipping further URLs.
+2025-11-09 18:30:53 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain gailonline.com
+2025-11-09 18:30:53 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: gailonline.com
+2025-11-09 18:31:15 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: iea.org (page_count=0, time=29378221.3m) → Skipping further URLs.
+2025-11-09 18:31:15 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain iea.org
+2025-11-09 18:31:15 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: iea.org
+2025-11-09 18:31:19 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: creators.feedspot.com (page_count=0, time=29378221.3m) → Skipping further URLs.
+2025-11-09 18:31:19 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain creators.feedspot.com
+2025-11-09 18:31:19 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: creators.feedspot.com
+2025-11-09 18:31:38 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: globalenergymonitor.org (page_count=0, time=29378221.6m) → Skipping further URLs.
+2025-11-09 18:31:38 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain globalenergymonitor.org
+2025-11-09 18:31:38 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: globalenergymonitor.org
+2025-11-09 18:31:47 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: api.org (page_count=0, time=29378221.8m) → Skipping further URLs.
+2025-11-09 18:31:47 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain api.org
+2025-11-09 18:31:47 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: api.org
+2025-11-09 18:31:47 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:32:12 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: data.gov.in (page_count=0, time=29378222.2m) → Skipping further URLs.
+2025-11-09 18:32:12 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain data.gov.in
+2025-11-09 18:32:12 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: data.gov.in
+2025-11-09 18:32:21 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: ipieca.org (page_count=0, time=29378222.4m) → Skipping further URLs.
+2025-11-09 18:32:21 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain ipieca.org
+2025-11-09 18:32:21 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: ipieca.org
+2025-11-09 18:32:25 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: equinor.com (page_count=0, time=29378222.4m) → Skipping further URLs.
+2025-11-09 18:32:25 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain equinor.com
+2025-11-09 18:32:25 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: equinor.com
+2025-11-09 18:32:40 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: oil-india.com (page_count=0, time=29378222.7m) → Skipping further URLs.
+2025-11-09 18:32:40 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain oil-india.com
+2025-11-09 18:32:40 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: oil-india.com
+2025-11-09 18:33:05 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 18:33:30 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 18:33:55 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 18:33:55 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.subsea7.com> (failed 3 times): 408 Request Time-out
+2025-11-09 18:33:55 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: offshore-europe.co.uk (page_count=0, time=29378223.9m) → Skipping further URLs.
+2025-11-09 18:33:55 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain offshore-europe.co.uk
+2025-11-09 18:33:55 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: offshore-europe.co.uk
+2025-11-09 18:33:55 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:34:20 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bp.com
+2025-11-09 18:34:20 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <408 https://www.subsea7.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:34:45 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-09 18:35:10 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-09 18:35:31 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: eia.gov (page_count=0, time=29378225.5m) → Skipping further URLs.
+2025-11-09 18:35:31 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain eia.gov
+2025-11-09 18:35:31 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: eia.gov
+2025-11-09 18:35:31 [scrapy.extensions.logstats] INFO: Crawled 19 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:35:45 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: dmgevents.com (page_count=0, time=29378225.8m) → Skipping further URLs.
+2025-11-09 18:35:45 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain dmgevents.com
+2025-11-09 18:35:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: dmgevents.com
+2025-11-09 18:35:45 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:35:45 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: saipem.com (page_count=0, time=29378225.8m) → Skipping further URLs.
+2025-11-09 18:35:45 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain saipem.com
+2025-11-09 18:35:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: saipem.com
+2025-11-09 18:35:54 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: rigzone.com (page_count=0, time=29378225.9m) → Skipping further URLs.
+2025-11-09 18:35:54 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain rigzone.com
+2025-11-09 18:35:54 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: rigzone.com
+2025-11-09 18:35:59 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: aramco.com (page_count=0, time=29378226.0m) → Skipping further URLs.
+2025-11-09 18:35:59 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain aramco.com
+2025-11-09 18:35:59 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: aramco.com
+2025-11-09 18:36:05 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: bakerhughes.com (page_count=0, time=29378226.1m) → Skipping further URLs.
+2025-11-09 18:36:05 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain bakerhughes.com
+2025-11-09 18:36:05 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bakerhughes.com
+2025-11-09 18:36:14 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: energyvoice.com (page_count=0, time=29378226.2m) → Skipping further URLs.
+2025-11-09 18:36:14 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain energyvoice.com
+2025-11-09 18:36:14 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: energyvoice.com
+2025-11-09 18:36:14 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0xc1fe43+66515]
+	GetHandleVerifier [0x0xc1fe84+66580]
+	(No symbol) [0x0xa0dc48]
+	(No symbol) [0x0xa0b147]
+	(No symbol) [0x0x9fe422]
+	(No symbol) [0x0x9ffe1e]
+	(No symbol) [0x0x9fe930]
+	(No symbol) [0x0x9fe1e4]
+	(No symbol) [0x0x9fdeef]
+	(No symbol) [0x0x9fbe60]
+	(No symbol) [0x0x9fc7fb]
+	(No symbol) [0x0xa117ce]
+	(No symbol) [0x0xa9d7f7]
+	(No symbol) [0x0xa7b1cc]
+	(No symbol) [0x0xa9cba7]
+	(No symbol) [0x0xa7afc6]
+	(No symbol) [0x0xa4c2ca]
+	(No symbol) [0x0xa4d154]
+	GetHandleVerifier [0x0xe77353+2521315]
+	GetHandleVerifier [0x0xe722d3+2500707]
+	GetHandleVerifier [0x0xc47c94+229924]
+	GetHandleVerifier [0x0xc381f8+165768]
+	GetHandleVerifier [0x0xc3ecad+193085]
+	GetHandleVerifier [0x0xc28158+100072]
+	GetHandleVerifier [0x0xc282f0+100480]
+	GetHandleVerifier [0x0xc125aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 18:36:20 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 18:36:22 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:36:24 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:36:25 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 18:36:27 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 18:36:27 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0xc1fe43+66515]
+	GetHandleVerifier [0x0xc1fe84+66580]
+	(No symbol) [0x0xa0dc48]
+	(No symbol) [0x0xa0b147]
+	(No symbol) [0x0x9fe422]
+	(No symbol) [0x0x9ffe1e]
+	(No symbol) [0x0x9fe930]
+	(No symbol) [0x0x9fe1e4]
+	(No symbol) [0x0x9fdeef]
+	(No symbol) [0x0x9fbe60]
+	(No symbol) [0x0x9fc7fb]
+	(No symbol) [0x0xa117ce]
+	(No symbol) [0x0xa9d7f7]
+	(No symbol) [0x0xa7b1cc]
+	(No symbol) [0x0xa9cba7]
+	(No symbol) [0x0xa7afc6]
+	(No symbol) [0x0xa4c2ca]
+	(No symbol) [0x0xa4d154]
+	GetHandleVerifier [0x0xe77353+2521315]
+	GetHandleVerifier [0x0xe722d3+2500707]
+	GetHandleVerifier [0x0xc47c94+229924]
+	GetHandleVerifier [0x0xc381f8+165768]
+	GetHandleVerifier [0x0xc3ecad+193085]
+	GetHandleVerifier [0x0xc28158+100072]
+	GetHandleVerifier [0x0xc282f0+100480]
+	GetHandleVerifier [0x0xc125aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 18:36:31 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 18:36:32 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:36:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:36:35 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 18:36:36 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 18:36:37 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0xc1fe43+66515]
+	GetHandleVerifier [0x0xc1fe84+66580]
+	(No symbol) [0x0xa0dc48]
+	(No symbol) [0x0xa0b147]
+	(No symbol) [0x0x9fe422]
+	(No symbol) [0x0x9ffe1e]
+	(No symbol) [0x0x9fe930]
+	(No symbol) [0x0x9fe1e4]
+	(No symbol) [0x0x9fdeef]
+	(No symbol) [0x0x9fbe60]
+	(No symbol) [0x0x9fc7fb]
+	(No symbol) [0x0xa117ce]
+	(No symbol) [0x0xa9d7f7]
+	(No symbol) [0x0xa7b1cc]
+	(No symbol) [0x0xa9cba7]
+	(No symbol) [0x0xa7afc6]
+	(No symbol) [0x0xa4c2ca]
+	(No symbol) [0x0xa4d154]
+	GetHandleVerifier [0x0xe77353+2521315]
+	GetHandleVerifier [0x0xe722d3+2500707]
+	GetHandleVerifier [0x0xc47c94+229924]
+	GetHandleVerifier [0x0xc381f8+165768]
+	GetHandleVerifier [0x0xc3ecad+193085]
+	GetHandleVerifier [0x0xc28158+100072]
+	GetHandleVerifier [0x0xc282f0+100480]
+	GetHandleVerifier [0x0xc125aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 18:36:41 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 18:36:42 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:36:43 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:36:44 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 18:36:45 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 18:36:45 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.hpcl.in> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:36:45 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: ogj.com (page_count=0, time=29378226.8m) → Skipping further URLs.
+2025-11-09 18:36:45 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain ogj.com
+2025-11-09 18:36:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: ogj.com
+2025-11-09 18:36:45 [scrapy.extensions.logstats] INFO: Crawled 27 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:37:04 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: shell.com (page_count=0, time=29378227.1m) → Skipping further URLs.
+2025-11-09 18:37:04 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain shell.com
+2025-11-09 18:37:04 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: shell.com
+2025-11-09 18:37:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.hpcl.in>: HTTP status code is not handled or not allowed
+2025-11-09 18:37:29 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.dnv.com
+2025-11-09 18:37:43 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: corporate.exxonmobil.com (page_count=0, time=29378227.7m) → Skipping further URLs.
+2025-11-09 18:37:43 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain corporate.exxonmobil.com
+2025-11-09 18:37:43 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: corporate.exxonmobil.com

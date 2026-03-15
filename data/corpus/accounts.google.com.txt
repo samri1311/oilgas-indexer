@@ -1,0 +1,4 @@
+
+
+# --- https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Faction%3DTEMPLATE%26dates%3D20251112T100000%2F20251112T104000%26ctz%3DUTC%26text%3DWorld%2BEnergy%2BOutlook%2B2025&dsh=S738285949%3A1762923230271407&emr=1&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender%3Faction%3DTEMPLATE%26dates%3D20251112T100000%2F20251112T104000%26ctz%3DUTC%26text%3DWorld%2BEnergy%2BOutlook%2B2025&ifkv=ARESoU3EoZqi7j-NJX1xGIXCxOpNmnYaoGUMl5tjSlYyVZdOxYlDIOsleLqR8wVXqE2jMYPqZbci4Q&osid=1&passive=1209600&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin ---
+Google Calendar - Sign in to Access & Edit Your Schedule Sign in with your Google Account. This account will be available to other Google apps in the browser. Email or phone Forgot email? Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account

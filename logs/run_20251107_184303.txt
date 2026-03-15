@@ -1,0 +1,2061 @@
+2025-11-07 18:43:05 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-07 18:43:05 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-07 18:43:05 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-07 18:43:05 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-07 18:43:05 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-07 18:43:05 [scrapy.extensions.telnet] INFO: Telnet Password: 8d65e9043f8393b4
+2025-11-07 18:43:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-07 18:43:05 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251107_184303.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-07 18:43:05 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 18:43:07 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 18:43:07 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 18:43:11 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 18:43:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-07 18:43:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-07 18:43:13 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-07 18:43:13 [scrapy.core.engine] INFO: Spider opened
+2025-11-07 18:43:13 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-07 18:43:13 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-07 18:43:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-07 18:43:13 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-07 18:43:13 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-07 18:43:13 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-07 18:43:13 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-07 18:43:13 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-07 18:43:13 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-07 18:43:13 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-07 18:44:11 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.opec.org (4.62 KB) → data/corpus/opec.org.txt
+2025-11-07 18:44:14 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://www.iocl.com/sitemap.xml
+2025-11-07 18:44:20 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 1 items (at 1 items/min)
+2025-11-07 18:46:24 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 2 new discoveries to disk.
+2025-11-07 18:46:52 [scrapy.extensions.logstats] INFO: Crawled 22 pages (at 17 pages/min), scraped 1 items (at 0 items/min)
+2025-11-07 18:47:02 [oilgas_indexer] INFO: ✅ Sitemap found for offshore-europe.co.uk: https://www.offshore-europe.co.uk/sitemap.xml
+2025-11-07 18:47:02 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from offshore-europe.co.uk
+2025-11-07 18:47:43 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 1 pages/min), scraped 1 items (at 0 items/min)
+2025-11-07 18:47:43 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.ft.com/oil-gas (5.72 KB) → data/corpus/ft.com.txt
+2025-11-07 18:48:15 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.saudiaramco.com — retrying once
+2025-11-07 18:48:15 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 0 pages/min), scraped 2 items (at 1 items/min)
+2025-11-07 18:48:17 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:19 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:20 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:21 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:22 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:23 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:24 [oilgas_indexer] INFO: ✅ Sitemap found for corporate.exxonmobil.com: https://corporate.exxonmobil.com/sitemap.xml
+2025-11-07 18:48:25 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:27 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:27 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:28 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:30 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:31 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:32 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:34 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:35 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:48:35 [oilgas_indexer] INFO: 🗺️ Extracted 1 sitemap URLs from corporate.exxonmobil.com
+2025-11-07 18:48:59 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:48:59 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://energypolitics.live.ft.com/?segmentId=670a71df-8084-ecde-e790-63bb7341b637 (3.00 KB) → data/corpus/energypolitics.live.ft.com.txt
+2025-11-07 18:49:00 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:00 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://corporate.exxonmobil.com (3.09 KB) → data/corpus/corporate.exxonmobil.com.txt
+2025-11-07 18:49:00 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:00 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:01 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:01 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:01 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:01 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:01 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:01 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:01 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:01 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:03 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:49:03 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:49:03 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:04 [oilgas_indexer] INFO: [ADAPT] depth=5 delay=1.5s good_ratio=1.00 latency=32.88
+2025-11-07 18:49:04 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:05 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:49:05 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:05 [oilgas_indexer] INFO: 🗺️ Extracted 100 sitemap URLs from iocl.com
+2025-11-07 18:49:35 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-europe.co.uk (4.50 KB) → data/corpus/offshore-europe.co.uk.txt
+2025-11-07 18:49:35 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 61 new discoveries to disk.
+2025-11-07 18:49:35 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=2.0s good_ratio=1.00 latency=36.23
+2025-11-07 18:49:35 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 6 pages/min), scraped 5 items (at 3 items/min)
+2025-11-07 18:49:35 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=2.5s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:02 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/CommonCarrierProductPipelines (11.91 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:02 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.iocl.com (13.05 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:02 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=3.0s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:02 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=3.5s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:02 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=4.0s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:03 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=4.5s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:03 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:03 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:03 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:03 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:03 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=36.23
+2025-11-07 18:50:03 [oilgas_indexer] INFO: 🗺️ Extracted 35 sitemap URLs from iocl.com
+2025-11-07 18:50:03 [oilgas_indexer] INFO: 🗺️ Extracted 27 sitemap URLs from iocl.com
+2025-11-07 18:50:03 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=40.66
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/digboi-refinery (12.98 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/bongaigaon-refinery (13.01 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/Pages/pipelines-overview (12.33 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=40.66
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🗺️ Extracted 31 sitemap URLs from iocl.com
+2025-11-07 18:50:15 [scrapy.extensions.logstats] INFO: Crawled 33 pages (at 4 pages/min), scraped 10 items (at 5 items/min)
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/gujarat-refinery (16.68 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/refining-overview (13.57 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/panipat-refinery (15.98 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/guwahati-refinery (13.64 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/barauni-refinery (14.49 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/mathura-refinery (14.20 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/petroleum-product-pipelines (19.71 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:15 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=43.94
+2025-11-07 18:50:15 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=43.94
+2025-11-07 18:50:19 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://cx.indianoil.in/EPICIOCL/faces/GrievanceMainPage.jspx — retrying once
+2025-11-07 18:50:19 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/paradip-refinery (14.49 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:19 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=39.77
+2025-11-07 18:50:28 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/haldia-refinery (16.63 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:28 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/crude-oil-pipelines (13.63 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:50:28 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://swagat.iocxtrapower.com (0.68 KB) → data/corpus/swagat.iocxtrapower.com.txt
+2025-11-07 18:50:49 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://iochospitalempanelment.in/: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0xccfe43+66515]
+	GetHandleVerifier [0x0xccfe84+66580]
+	(No symbol) [0x0xabdc48]
+	(No symbol) [0x0xabb147]
+	(No symbol) [0x0xaae422]
+	(No symbol) [0x0xaafe1e]
+	(No symbol) [0x0xaae930]
+	(No symbol) [0x0xaae1e4]
+	(No symbol) [0x0xaadeef]
+	(No symbol) [0x0xaabe60]
+	(No symbol) [0x0xaac7fb]
+	(No symbol) [0x0xac17ce]
+	(No symbol) [0x0xb4d7f7]
+	(No symbol) [0x0xb2b1cc]
+	(No symbol) [0x0xb4cba7]
+	(No symbol) [0x0xb2afc6]
+	(No symbol) [0x0xafc2ca]
+	(No symbol) [0x0xafd154]
+	GetHandleVerifier [0x0xf27353+2521315]
+	GetHandleVerifier [0x0xf222d3+2500707]
+	GetHandleVerifier [0x0xcf7c94+229924]
+	GetHandleVerifier [0x0xce81f8+165768]
+	GetHandleVerifier [0x0xceecad+193085]
+	GetHandleVerifier [0x0xcd8158+100072]
+	GetHandleVerifier [0x0xcd82f0+100480]
+	GetHandleVerifier [0x0xcc25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 18:50:54 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 18:50:56 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 18:50:56 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 18:50:57 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 18:50:58 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 18:50:58 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 18:51:29 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:51:32 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=32.70
+2025-11-07 18:51:32 [scrapy.extensions.logstats] INFO: Crawled 37 pages (at 4 pages/min), scraped 21 items (at 11 items/min)
+2025-11-07 18:51:32 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=32.70
+2025-11-07 18:51:32 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://spandan.indianoil.co.in/BPSP/RoKskLinkPage_COIS.jsp?LOCATION_TYPE=LPG&DOC=50 (2.43 KB) → data/corpus/spandan.indianoil.co.in.txt
+2025-11-07 18:52:21 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iocl.com/pages/Petrochemicals-Overview
+2025-11-07 18:52:21 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 18:52:43 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=32.70
+2025-11-07 18:52:43 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/about-indianoil (18.71 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:52:43 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocletenders.nic.in/nicgep/app (5.49 KB) → data/corpus/iocletenders.nic.in.txt
+2025-11-07 18:52:43 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 8 new discoveries to disk.
+2025-11-07 18:53:52 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 13 pages/min), scraped 24 items (at 3 items/min)
+2025-11-07 18:54:01 [oilgas_indexer] INFO: ✅ Sitemap found for india.gov.in: https://india.gov.in/sitemap.xml
+2025-11-07 18:54:01 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=32.70
+2025-11-07 18:54:01 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=32.70
+2025-11-07 18:54:13 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=32.70
+2025-11-07 18:54:13 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 18:54:13 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/petroleum-product-pipelines (19.71 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:54:13 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/gas-pipelines (12.40 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:54:13 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/cng (18.83 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:54:15 [oilgas_indexer] INFO: 🗺️ Extracted 56 sitemap URLs from india.gov.in
+2025-11-07 18:54:15 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://india.gov.in
+2025-11-07 18:54:15 [scrapy.extensions.logstats] INFO: Crawled 52 pages (at 2 pages/min), scraped 27 items (at 3 items/min)
+2025-11-07 18:54:15 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=41.53
+2025-11-07 18:54:17 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:54:18 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:54:20 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:54:22 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://cx.indianoil.in/webcenter/portal/Customer/pages_landingpage?IOCL_Redirect=YES — retrying once
+2025-11-07 18:54:26 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:54:26 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://sdms.indianoil.in/PumpLocator (0.76 KB) → data/corpus/sdms.indianoil.in.txt
+2025-11-07 18:54:26 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 18:54:26 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in
+2025-11-07 18:54:26 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=37.67
+2025-11-07 18:54:26 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 18:54:26 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in
+2025-11-07 18:55:30 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.cpcl.co.in
+2025-11-07 18:55:30 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 18:55:55 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://hrvista.in/: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0xccfe43+66515]
+	GetHandleVerifier [0x0xccfe84+66580]
+	(No symbol) [0x0xabdc48]
+	(No symbol) [0x0xaace80]
+	(No symbol) [0x0xacb81b]
+	(No symbol) [0x0xb31c25]
+	(No symbol) [0x0xb4c4d9]
+	(No symbol) [0x0xb2afc6]
+	(No symbol) [0x0xafc2ca]
+	(No symbol) [0x0xafd154]
+	GetHandleVerifier [0x0xf27353+2521315]
+	GetHandleVerifier [0x0xf222d3+2500707]
+	GetHandleVerifier [0x0xcf7c94+229924]
+	GetHandleVerifier [0x0xce81f8+165768]
+	GetHandleVerifier [0x0xceecad+193085]
+	GetHandleVerifier [0x0xcd8158+100072]
+	GetHandleVerifier [0x0xcd82f0+100480]
+	GetHandleVerifier [0x0xcc25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 18:56:01 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 18:56:03 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 18:56:04 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 18:56:05 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 18:56:07 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 18:56:07 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 18:56:32 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://oilgasbidding.eproc.in (3.55 KB) → data/corpus/oilgasbidding.eproc.in.txt
+2025-11-07 18:57:30 [scrapy.extensions.logstats] INFO: Crawled 74 pages (at 22 pages/min), scraped 29 items (at 2 items/min)
+2025-11-07 18:57:31 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 18:57:32 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=37.67
+2025-11-07 18:57:32 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/chennai-petroleum-corporation-limited (14.01 KB) → data/corpus/iocl.com.txt
+2025-11-07 18:58:29 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-07 18:58:34 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 18:58:35 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 18:58:36 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 18:58:36 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 18:58:38 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 18:58:38 [scrapy.extensions.logstats] INFO: Crawled 80 pages (at 6 pages/min), scraped 30 items (at 1 items/min)
+2025-11-07 18:58:38 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 18:58:38 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 18:58:38 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 18:58:39 [oilgas_indexer] INFO: ✅ Sitemap found for google.com: https://www.google.com/sitemap.xml
+2025-11-07 18:58:39 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from google.com
+2025-11-07 18:58:39 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.google.com/maps/@26.8790863,81.0010218,12z/data=!10m2!1e3!2e10!12b1?rapsrc=apiv3&entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D
+2025-11-07 18:58:40 [oilgas_indexer] INFO: ✅ Sitemap found for planetecomsolutions.com: https://www.planetecomsolutions.com/sitemap.xml
+2025-11-07 18:58:40 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from planetecomsolutions.com
+2025-11-07 18:58:40 [oilgas_indexer] INFO: ✅ Sitemap found for google.com: https://www.google.com/sitemap.xml
+2025-11-07 18:58:41 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from google.com
+2025-11-07 18:58:41 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.google.com/maps/@26.879086,81.001022,12z?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D
+2025-11-07 18:58:41 [oilgas_indexer] INFO: ✅ Sitemap found for google.com: https://www.google.com/sitemap.xml
+2025-11-07 18:58:41 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from google.com
+2025-11-07 18:58:41 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.google.com/intl/en-US_US/help/terms_maps
+2025-11-07 18:58:42 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:58:45 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://spandan.indianoil.co.in/SBA — retrying once
+2025-11-07 18:58:46 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:59:04 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=71.15
+2025-11-07 18:59:04 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=71.15
+2025-11-07 18:59:04 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 18:59:04 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in/post-sitemap.xml
+2025-11-07 18:59:04 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 18:59:05 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in/post-sitemap.xml
+2025-11-07 18:59:05 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:59:06 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:59:07 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:59:08 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:59:08 [oilgas_indexer] INFO: ✅ Sitemap found for hrvista.in: https://hrvista.in/sitemap.xml
+2025-11-07 18:59:08 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.planetecomsolutions.com (3.80 KB) → data/corpus/planetecomsolutions.com.txt
+2025-11-07 18:59:09 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 18:59:09 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in/page-sitemap.xml
+2025-11-07 18:59:09 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 18:59:09 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in/sliders-sitemap.xml
+2025-11-07 18:59:09 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 18:59:09 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in/category-sitemap.xml
+2025-11-07 18:59:09 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 18:59:09 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in/author-sitemap.xml
+2025-11-07 19:00:46 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:00:46 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:00:52 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from hrvista.in
+2025-11-07 19:00:52 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://hrvista.in/editorial_team-sitemap.xml
+2025-11-07 19:00:52 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/light-diesel-oil (14.92 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:00:52 [scrapy.extensions.logstats] INFO: Crawled 99 pages (at 19 pages/min), scraped 32 items (at 2 items/min)
+2025-11-07 19:04:10 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:04:10 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=71.15
+2025-11-07 19:04:10 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=71.15
+2025-11-07 19:04:10 [scrapy.extensions.logstats] INFO: Crawled 135 pages (at 36 pages/min), scraped 32 items (at 0 items/min)
+2025-11-07 19:05:11 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/petrol-gasoline (14.31 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:05:11 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/raw-petroleum-coke (13.02 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:05:11 [scrapy.extensions.logstats] INFO: Crawled 141 pages (at 6 pages/min), scraped 34 items (at 2 items/min)
+2025-11-07 19:05:13 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://swagat.iocxtrapower.com/: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe2e1bc]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2d03a]
+	(No symbol) [0x0xe4aa0c]
+	(No symbol) [0x0xeccedf]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:05:32 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:05:33 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:05:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:05:35 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:05:36 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:05:36 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:05:56 [scrapy.extensions.logstats] INFO: Crawled 142 pages (at 1 pages/min), scraped 34 items (at 0 items/min)
+2025-11-07 19:06:12 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:06:14 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://crossing.indianoilpipelines.in/Crossing/Account/Login?returnUrl=%2FCrossing
+2025-11-07 19:06:14 [scrapy.extensions.logstats] INFO: Crawled 143 pages (at 1 pages/min), scraped 34 items (at 0 items/min)
+2025-11-07 19:06:14 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 10 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 11 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 12 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 13 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on sdms.indianoil.in for 720.8s with only 2 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 14 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 15 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 16 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 17 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 18 pages — skipping domain.
+2025-11-07 19:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on hrvista.in for 717.0s with only 19 pages — skipping domain.
+2025-11-07 19:06:16 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://associates.indianoil.co.in/Vendor
+2025-11-07 19:06:16 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 735.0s with only 3 pages — skipping domain.
+2025-11-07 19:06:17 [oilgas_indexer] INFO: ✅ Sitemap found for ncwwomenhelpline.ncw.gov.in: https://ncwwomenhelpline.ncw.gov.in/sitemap.xml
+2025-11-07 19:06:17 [oilgas_indexer] WARNING: ⏩ Stalled on oilgasbidding.eproc.in for 714.6s with only 3 pages — skipping domain.
+2025-11-07 19:06:17 [oilgas_indexer] WARNING: ⏩ Stalled on spandan.indianoil.co.in for 890.5s with only 4 pages — skipping domain.
+2025-11-07 19:06:17 [oilgas_indexer] WARNING: ⏩ Stalled on spandan.indianoil.co.in for 890.5s with only 5 pages — skipping domain.
+2025-11-07 19:06:17 [oilgas_indexer] WARNING: ⏩ Stalled on spandan.indianoil.co.in for 890.5s with only 6 pages — skipping domain.
+2025-11-07 19:06:17 [oilgas_indexer] WARNING: ⏩ Stalled on sdms.indianoil.in for 723.4s with only 3 pages — skipping domain.
+2025-11-07 19:06:25 [oilgas_indexer] INFO: 🗺️ Extracted 2 sitemap URLs from ncwwomenhelpline.ncw.gov.in
+2025-11-07 19:06:25 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://ncwwomenhelpline.ncw.gov.in
+2025-11-07 19:06:25 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 6 new discoveries to disk.
+2025-11-07 19:06:26 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:08:04 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:08:04 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:08:34 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:08:34 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:08:43 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://iocl.com/petrol-gasoline: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe2e1bc]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2d03a]
+	(No symbol) [0x0xe4aa0c]
+	(No symbol) [0x0xeccab6]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:09:48 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:09:50 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:09:51 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:09:52 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:09:53 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:09:53 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:10:45 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-07 19:10:49 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:10:51 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:10:51 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:10:52 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:10:53 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:10:53 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 1 new discoveries to disk.
+2025-11-07 19:10:53 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:10:53 [scrapy.extensions.logstats] INFO: Crawled 160 pages (at 17 pages/min), scraped 34 items (at 0 items/min)
+2025-11-07 19:11:33 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iocl.com/pages/Petrochemicals-Overview
+2025-11-07 19:11:33 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:12:14 [scrapy.extensions.logstats] INFO: Crawled 166 pages (at 6 pages/min), scraped 34 items (at 0 items/min)
+2025-11-07 19:12:15 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:12:15 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:12:15 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=91.34
+2025-11-07 19:12:15 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=91.34
+2025-11-07 19:12:15 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/petrochemicals-overview (19.40 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:12:15 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=91.34
+2025-11-07 19:12:16 [oilgas_indexer] INFO: 🧹 Cleaned & saved data:, (14.92 KB) → data/corpus/.txt
+2025-11-07 19:12:16 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/protecting-pipelines-and-right-of-way (12.83 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:12:16 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:12:21 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:12:22 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:12:24 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:12:24 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:12:26 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:12:26 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:12:27 [oilgas_indexer] WARNING: ⏩ Stalled on sdms.indianoil.in for 1093.4s with only 4 pages — skipping domain.
+2025-11-07 19:12:27 [oilgas_indexer] INFO: ✅ Sitemap found for ncwwomenhelpline.ncw.gov.in: https://ncwwomenhelpline.ncw.gov.in/sitemap.xml
+2025-11-07 19:12:33 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:12:33 [oilgas_indexer] INFO: 🗺️ Extracted 2 sitemap URLs from ncwwomenhelpline.ncw.gov.in
+2025-11-07 19:12:33 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://ncwwomenhelpline.ncw.gov.in/login — retrying once
+2025-11-07 19:13:15 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:13:21 [scrapy.extensions.logstats] INFO: Crawled 175 pages (at 9 pages/min), scraped 37 items (at 3 items/min)
+2025-11-07 19:14:05 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=102.80
+2025-11-07 19:14:05 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:14:06 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:14:06 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:14:06 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:14:06 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://iocl.com/uploads/holiday2023.pdf — retrying once
+2025-11-07 19:14:11 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:14:11 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:14:11 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/Petrochemicals-Overview (19.40 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:14:12 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=104.38
+2025-11-07 19:14:12 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=104.38
+2025-11-07 19:14:25 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/PNGDomestic (17.85 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:14:25 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=104.38
+2025-11-07 19:14:25 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=104.38
+2025-11-07 19:14:25 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=104.38
+2025-11-07 19:14:25 [scrapy.extensions.logstats] INFO: Crawled 185 pages (at 10 pages/min), scraped 39 items (at 2 items/min)
+2025-11-07 19:14:25 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/cgd (12.62 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:14:25 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=104.38
+2025-11-07 19:15:03 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/Pipeline (13.68 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:15:03 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/ButylAcrylate (12.17 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:15:03 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/AVGAS (12.57 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:15:03 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=104.38
+2025-11-07 19:15:10 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/Application-for-New-CGD-Customer-connectivity (12.95 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:15:10 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:15:22 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/prices-of-petroleum-products (12.92 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:15:22 [scrapy.extensions.logstats] INFO: Crawled 193 pages (at 8 pages/min), scraped 45 items (at 6 items/min)
+2025-11-07 19:15:22 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 1002.9s with only 3 pages — skipping domain.
+2025-11-07 19:15:34 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 1014.6s with only 4 pages — skipping domain.
+2025-11-07 19:15:34 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 1293.1s with only 4 pages — skipping domain.
+2025-11-07 19:15:34 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 1014.6s with only 5 pages — skipping domain.
+2025-11-07 19:15:34 [oilgas_indexer] WARNING: ⏩ Stalled on cx.indianoil.in for 1516.7s with only 9 pages — skipping domain.
+2025-11-07 19:16:06 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 1325.8s with only 5 pages — skipping domain.
+2025-11-07 19:16:06 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 1325.8s with only 6 pages — skipping domain.
+2025-11-07 19:16:06 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 1325.8s with only 7 pages — skipping domain.
+2025-11-07 19:17:11 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.planetecomsolutions.com/: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe2ce80]
+	(No symbol) [0x0xe4b81b]
+	(No symbol) [0x0xeb1c25]
+	(No symbol) [0x0xecc4d9]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:17:16 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:17:18 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:17:18 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:17:19 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:17:21 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:17:21 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:18:33 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:18:33 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:18:50 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://iochospitalempanelment.in/: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe3b147]
+	(No symbol) [0x0xe2e422]
+	(No symbol) [0x0xe2fe1e]
+	(No symbol) [0x0xe2e930]
+	(No symbol) [0x0xe2e1e4]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2be60]
+	(No symbol) [0x0xe2c7fb]
+	(No symbol) [0x0xe417ce]
+	(No symbol) [0x0xecd7f7]
+	(No symbol) [0x0xeab1cc]
+	(No symbol) [0x0xeccba7]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:18:55 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:18:56 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:18:57 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:18:58 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:18:59 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:18:59 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:19:26 [scrapy.extensions.logstats] INFO: Crawled 209 pages (at 16 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:20:01 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:20:01 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:20:18 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://iochospitalempanelment.in/: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe3b147]
+	(No symbol) [0x0xe2e422]
+	(No symbol) [0x0xe2fe1e]
+	(No symbol) [0x0xe2e930]
+	(No symbol) [0x0xe2e1e4]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2be60]
+	(No symbol) [0x0xe2c7fb]
+	(No symbol) [0x0xe417ce]
+	(No symbol) [0x0xecd7f7]
+	(No symbol) [0x0xeab1cc]
+	(No symbol) [0x0xeccba7]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:20:22 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:20:24 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:20:24 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:20:25 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:20:26 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:20:26 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:21:45 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:21:45 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:21:53 [scrapy.extensions.logstats] INFO: Crawled 217 pages (at 8 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on ncwwomenhelpline.ncw.gov.in for 937.7s with only 10 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 1394.2s with only 6 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 1672.8s with only 8 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on cx.indianoil.in for 1896.3s with only 10 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 939.5s with only 4 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on ncwwomenhelpline.ncw.gov.in for 937.7s with only 11 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on ncwwomenhelpline.ncw.gov.in for 937.8s with only 12 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 1672.8s with only 9 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 1672.8s with only 10 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 939.5s with only 5 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 939.5s with only 6 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 1394.3s with only 7 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 939.5s with only 7 pages — skipping domain.
+2025-11-07 19:21:53 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 939.5s with only 8 pages — skipping domain.
+2025-11-07 19:23:35 [scrapy.extensions.logstats] INFO: Crawled 235 pages (at 18 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:23:35 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 1999.7s with only 2 pages — skipping domain.
+2025-11-07 19:23:35 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/FootPrintPrelogin.aspx
+2025-11-07 19:23:35 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:24:05 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-07 19:24:09 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:24:10 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:24:11 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:24:11 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:24:13 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:25:39 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 2124.2s with only 3 pages — skipping domain.
+2025-11-07 19:25:39 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:25:39 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 1619.9s with only 8 pages — skipping domain.
+2025-11-07 19:25:39 [scrapy.extensions.logstats] INFO: Crawled 251 pages (at 16 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/default.aspx
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/Pay_bill.aspx
+2025-11-07 19:26:00 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 2145.3s with only 4 pages — skipping domain.
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/ContactUs.aspx
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/service_request_new.aspx
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:26:00 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 2145.3s with only 5 pages — skipping domain.
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:26:00 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 2145.3s with only 6 pages — skipping domain.
+2025-11-07 19:26:00 [oilgas_indexer] WARNING: ⏩ Stalled on ncwwomenhelpline.ncw.gov.in for 1184.5s with only 13 pages — skipping domain.
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:26:00 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 1186.3s with only 9 pages — skipping domain.
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://px.indianoil.in
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/ContactUs.aspx
+2025-11-07 19:26:00 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 1641.0s with only 9 pages — skipping domain.
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/FootPrintPrelogin.aspx
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/Pay_bill.aspx
+2025-11-07 19:26:00 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:26:00 [oilgas_indexer] WARNING: ⏩ Stalled on  for 1249.3s with only 3 pages — skipping domain.
+2025-11-07 19:26:00 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 1919.6s with only 11 pages — skipping domain.
+2025-11-07 19:27:18 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:27:18 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:27:23 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://propel.indianoil.in/: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe3b147]
+	(No symbol) [0x0xe2e422]
+	(No symbol) [0x0xe2fe1e]
+	(No symbol) [0x0xe2e930]
+	(No symbol) [0x0xe2e1e4]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2be60]
+	(No symbol) [0x0xe2c7fb]
+	(No symbol) [0x0xe417ce]
+	(No symbol) [0x0xecd7f7]
+	(No symbol) [0x0xeab1cc]
+	(No symbol) [0x0xeccba7]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:27:27 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:27:28 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:27:29 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:27:30 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:27:31 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:27:31 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:27:47 [scrapy.extensions.logstats] INFO: Crawled 264 pages (at 13 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:29:05 [scrapy.extensions.logstats] INFO: Crawled 276 pages (at 12 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:29:18 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://propel.indianoil.in/: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe3b147]
+	(No symbol) [0x0xe2e422]
+	(No symbol) [0x0xe2fe1e]
+	(No symbol) [0x0xe2e930]
+	(No symbol) [0x0xe2e1e4]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2be60]
+	(No symbol) [0x0xe2c7fb]
+	(No symbol) [0x0xe417ce]
+	(No symbol) [0x0xecd7f7]
+	(No symbol) [0x0xeab1cc]
+	(No symbol) [0x0xeccba7]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:29:22 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:29:23 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:29:24 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:29:25 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:29:26 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:29:26 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:30:22 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://cx.indianoilcgd.com/portal/Pay_bill.aspx
+2025-11-07 19:30:22 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://sdms.ex.indianoil.in
+2025-11-07 19:30:22 [scrapy.extensions.logstats] INFO: Crawled 281 pages (at 5 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:31:13 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 1499.4s with only 10 pages — skipping domain.
+2025-11-07 19:31:13 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 2458.4s with only 7 pages — skipping domain.
+2025-11-07 19:32:14 [scrapy.extensions.logstats] INFO: Crawled 297 pages (at 16 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:33:22 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:33:22 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:33:49 [scrapy.extensions.logstats] INFO: Crawled 310 pages (at 13 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:34:43 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-07 19:34:48 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:34:49 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:34:50 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:34:50 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:34:51 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:35:14 [scrapy.extensions.logstats] INFO: Crawled 323 pages (at 13 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:35:14 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 1739.8s with only 11 pages — skipping domain.
+2025-11-07 19:35:14 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:36:27 [scrapy.extensions.logstats] INFO: Crawled 336 pages (at 13 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:36:28 [oilgas_indexer] WARNING: ⏩ Stalled on  for 1876.6s with only 4 pages — skipping domain.
+2025-11-07 19:37:42 [scrapy.extensions.logstats] INFO: Crawled 349 pages (at 13 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:38:15 [scrapy.extensions.logstats] INFO: Crawled 355 pages (at 6 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:40:06 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iochospitalempanelment.in/
+2025-11-07 19:40:06 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:40:55 [scrapy.extensions.logstats] INFO: Crawled 378 pages (at 23 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:41:50 [scrapy.extensions.logstats] INFO: Crawled 384 pages (at 6 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:42:51 [scrapy.extensions.logstats] INFO: Crawled 392 pages (at 8 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:42:51 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:42:51 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:42:51 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 3156.3s with only 8 pages — skipping domain.
+2025-11-07 19:42:51 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:42:51 [oilgas_indexer] WARNING: ⏩ Stalled on ncwwomenhelpline.ncw.gov.in for 2195.5s with only 14 pages — skipping domain.
+2025-11-07 19:42:51 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 3156.3s with only 9 pages — skipping domain.
+2025-11-07 19:43:39 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-07 19:43:43 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:43:45 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:43:46 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:43:47 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:43:49 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:44:26 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iocl.com/pages/Petrochemicals-Overview
+2025-11-07 19:44:27 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:44:39 [scrapy.extensions.logstats] INFO: Crawled 403 pages (at 11 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:44:59 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/uploads/RefineryNetwork.pdf
+2025-11-07 19:45:35 [scrapy.extensions.logstats] INFO: Crawled 411 pages (at 8 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:45:35 [oilgas_indexer] WARNING: ⏩ Stalled on ncwwomenhelpline.ncw.gov.in for 2359.2s with only 15 pages — skipping domain.
+2025-11-07 19:45:35 [oilgas_indexer] WARNING: ⏩ Stalled on  for 2424.0s with only 5 pages — skipping domain.
+2025-11-07 19:45:35 [oilgas_indexer] INFO: [SKIP] Depth limit reached for https://iocl.com/indianoil-overseas
+2025-11-07 19:45:35 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 3094.2s with only 12 pages — skipping domain.
+2025-11-07 19:46:51 [scrapy.extensions.logstats] INFO: Crawled 424 pages (at 13 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:47:50 [scrapy.extensions.logstats] INFO: Crawled 432 pages (at 8 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:47:50 [oilgas_indexer] WARNING: ⏩ Stalled on ncwwomenhelpline.ncw.gov.in for 2494.3s with only 16 pages — skipping domain.
+2025-11-07 19:49:01 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://iochospitalempanelment.in/: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe3b147]
+	(No symbol) [0x0xe2e422]
+	(No symbol) [0x0xe2fe1e]
+	(No symbol) [0x0xe2e930]
+	(No symbol) [0x0xe2e1e4]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2be60]
+	(No symbol) [0x0xe2c7fb]
+	(No symbol) [0x0xe417ce]
+	(No symbol) [0x0xecd7f7]
+	(No symbol) [0x0xeab1cc]
+	(No symbol) [0x0xeccba7]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:49:05 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:49:07 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:49:08 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:49:09 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:49:10 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:49:10 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:49:36 [scrapy.extensions.logstats] INFO: Crawled 442 pages (at 10 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:49:36 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 3056.6s with only 10 pages — skipping domain.
+2025-11-07 19:49:36 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 3335.1s with only 13 pages — skipping domain.
+2025-11-07 19:49:36 [oilgas_indexer] WARNING: ⏩ Stalled on associates.indianoil.co.in for 2601.9s with only 12 pages — skipping domain.
+2025-11-07 19:49:37 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:49:39 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:49:39 [oilgas_indexer] WARNING: ⏩ Stalled on ncwwomenhelpline.ncw.gov.in for 2603.7s with only 17 pages — skipping domain.
+2025-11-07 19:49:39 [oilgas_indexer] WARNING: ⏩ Stalled on india.gov.in for 3338.7s with only 14 pages — skipping domain.
+2025-11-07 19:49:39 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 3060.2s with only 11 pages — skipping domain.
+2025-11-07 19:51:27 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://propel.indianoil.in/: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe3b147]
+	(No symbol) [0x0xe2e422]
+	(No symbol) [0x0xe2fe1e]
+	(No symbol) [0x0xe2e930]
+	(No symbol) [0x0xe2e1e4]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2be60]
+	(No symbol) [0x0xe2c7fb]
+	(No symbol) [0x0xe417ce]
+	(No symbol) [0x0xecd7f7]
+	(No symbol) [0x0xeab1cc]
+	(No symbol) [0x0xeccba7]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 19:51:32 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:51:33 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:51:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:51:35 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:51:36 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:51:36 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:52:00 [scrapy.extensions.logstats] INFO: Crawled 460 pages (at 18 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:53:03 [scrapy.extensions.logstats] INFO: Crawled 471 pages (at 11 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:53:04 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:53:06 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:53:07 [oilgas_indexer] WARNING: ⏩ Stalled on sdms.ex.indianoil.in for 1364.7s with only 2 pages — skipping domain.
+2025-11-07 19:53:09 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:53:09 [oilgas_indexer] WARNING: ⏩ Stalled on swagat.iocxtrapower.com for 3773.7s with only 10 pages — skipping domain.
+2025-11-07 19:53:10 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:53:11 [oilgas_indexer] INFO: ✅ Sitemap found for iocl.com: https://iocl.com/sitemap.xml
+2025-11-07 19:53:11 [oilgas_indexer] WARNING: ⏩ Stalled on px.indianoil.in for 1630.9s with only 2 pages — skipping domain.
+2025-11-07 19:53:11 [oilgas_indexer] WARNING: ⏩ Stalled on planetecomsolutions.com for 3272.0s with only 12 pages — skipping domain.
+2025-11-07 19:53:11 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:53:11 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://iocl.com/pages/ModeltripartiteagreementbetweentheissuerexistingSTAandnewSTA
+2025-11-07 19:54:01 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-07 19:54:05 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 19:54:07 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:54:08 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 19:54:09 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 19:54:10 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 19:54:30 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:54:31 [scrapy.extensions.logstats] INFO: Crawled 481 pages (at 10 pages/min), scraped 45 items (at 0 items/min)
+2025-11-07 19:54:31 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=123.22
+2025-11-07 19:54:31 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/pages/NetZeroone (18.94 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:54:56 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://iocl.com/pages/petrochemicals-overview
+2025-11-07 19:54:56 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 19:56:00 [scrapy.extensions.logstats] INFO: Crawled 490 pages (at 9 pages/min), scraped 46 items (at 1 items/min)
+2025-11-07 19:56:00 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:56:00 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://iocl.com/InvestorCenter/PDF/Board-Committees12092025.pdf — retrying once
+2025-11-07 19:56:00 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:56:01 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://iocl.com/pages/KYC-updation-for-physical-shareholders
+2025-11-07 19:56:01 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:56:01 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://iocl.com/pages/Annual%20General%20Meeting
+2025-11-07 19:56:01 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:56:01 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://iocl.com/uploads/RefineryNetwork.pdf — retrying once
+2025-11-07 19:56:01 [oilgas_indexer] INFO: 🗺️ Extracted 25 sitemap URLs from iocl.com
+2025-11-07 19:56:01 [oilgas_indexer] WARNING: ⏩ Stalled on  for 3050.3s with only 6 pages — skipping domain.
+2025-11-07 19:56:01 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=128.13
+2025-11-07 19:56:01 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://iocl.com/indianoil-overseas (11.09 KB) → data/corpus/iocl.com.txt
+2025-11-07 19:57:54 [scrapy.extensions.logstats] INFO: Crawled 510 pages (at 20 pages/min), scraped 47 items (at 1 items/min)
+2025-11-07 19:59:06 [scrapy.extensions.logstats] INFO: Crawled 522 pages (at 12 pages/min), scraped 47 items (at 0 items/min)
+2025-11-07 20:00:11 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:00:11 [scrapy.extensions.logstats] INFO: Crawled 533 pages (at 11 pages/min), scraped 47 items (at 0 items/min)
+2025-11-07 20:01:05 [scrapy.extensions.logstats] INFO: Crawled 542 pages (at 9 pages/min), scraped 47 items (at 0 items/min)
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:01:06 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [scrapy.extensions.logstats] INFO: Crawled 555 pages (at 13 pages/min), scraped 47 items (at 0 items/min)
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:21 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:02:51 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-07 20:02:55 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 20:02:57 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 20:02:58 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 20:02:59 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 20:03:01 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 20:03:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:47 [scrapy.extensions.logstats] INFO: Crawled 568 pages (at 13 pages/min), scraped 47 items (at 0 items/min)
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:03:52 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:05:26 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://iocl.com/barauni-refinery: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe2ce80]
+	(No symbol) [0x0xe4b81b]
+	(No symbol) [0x0xeb1c25]
+	(No symbol) [0x0xecc4d9]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 20:05:30 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 20:05:32 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 20:05:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 20:05:35 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 20:05:36 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 20:05:36 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 20:06:14 [oilgas_indexer] WARNING: ⏩ Stalled on  for 3662.7s with only 7 pages — skipping domain.
+2025-11-07 20:06:14 [scrapy.extensions.logstats] INFO: Crawled 582 pages (at 14 pages/min), scraped 47 items (at 0 items/min)
+2025-11-07 20:07:22 [scrapy.extensions.logstats] INFO: Crawled 594 pages (at 12 pages/min), scraped 47 items (at 0 items/min)
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:22 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:07:28 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 20:08:45 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://iocl.com/pages/petrochemicals-overview: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x104fe43+66515]
+	GetHandleVerifier [0x0x104fe84+66580]
+	(No symbol) [0x0xe3dc48]
+	(No symbol) [0x0xe2e1bc]
+	(No symbol) [0x0xe2deef]
+	(No symbol) [0x0xe2d03a]
+	(No symbol) [0x0xe4aa0c]
+	(No symbol) [0x0xeccedf]
+	(No symbol) [0x0xeaafc6]
+	(No symbol) [0x0xe7c2ca]
+	(No symbol) [0x0xe7d154]
+	GetHandleVerifier [0x0x12a7353+2521315]
+	GetHandleVerifier [0x0x12a22d3+2500707]
+	GetHandleVerifier [0x0x1077c94+229924]
+	GetHandleVerifier [0x0x10681f8+165768]
+	GetHandleVerifier [0x0x106ecad+193085]
+	GetHandleVerifier [0x0x1058158+100072]
+	GetHandleVerifier [0x0x10582f0+100480]
+	GetHandleVerifier [0x0x10425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 21:57:23 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=49961): Read timed out. (read timeout=120)")': /session/ea96a500a0b9fe6bf54b125ba4ac5e28
+2025-11-07 21:57:28 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 21:57:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 21:57:36 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 21:57:37 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 21:57:39 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 21:57:39 [scrapy.core.engine] INFO: Error while handling downloader output
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 330, in _handle_downloader_output
+    self.crawl(result)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 358, in crawl
+    self._schedule_request(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\engine.py", line 371, in _schedule_request
+    if not self._slot.scheduler.enqueue_request(request):  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 348, in enqueue_request
+    dqok = self._dqpush(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\scheduler.py", line 389, in _dqpush
+    self.dqs.push(request)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 155, in push
+    self.queues[priority] = self.qfactory(priority)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\pqueues.py", line 129, in qfactory
+    return build_from_crawler(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\misc.py", line 187, in build_from_crawler
+    instance = objcls.from_crawler(crawler, *args, **kwargs)  # type: ignore[attr-defined]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 86, in from_crawler
+    return cls(crawler, key)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 80, in __init__
+    super().__init__(key)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\squeues.py", line 33, in __init__
+    super().__init__(path, *args, **kwargs)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\queuelib\queue.py", line 211, in __init__
+    (self.size,) = struct.unpack(self.SIZE_FORMAT, qsize)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 4 bytes
+2025-11-07 21:57:53 [scrapy.extensions.logstats] INFO: Crawled 609 pages (at 15 pages/min), scraped 47 items (at 0 items/min)
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:57:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for iocl.com
+2025-11-07 21:58:34 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://iocl.com/petrol-gasoline: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))

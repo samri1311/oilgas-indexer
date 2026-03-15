@@ -1,0 +1,1282 @@
+2025-11-11 19:15:48 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-11 19:15:48 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-11 19:15:48 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-11 19:15:48 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-11 19:15:48 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-11 19:15:48 [scrapy.extensions.telnet] INFO: Telnet Password: 5dc6a2a9764514c6
+2025-11-11 19:15:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-11 19:15:48 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251111_191547.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-11 19:15:49 [WDM] INFO: ====== WebDriver manager ======
+2025-11-11 19:15:50 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-11 19:15:50 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-11 19:15:51 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\142.0.7444.61\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-11 19:15:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-11 19:15:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-11 19:15:52 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-11 19:15:52 [scrapy.core.engine] INFO: Spider opened
+2025-11-11 19:15:52 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-11 19:15:52 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-11 19:15:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-11 19:15:52 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-11 19:15:52 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-11 19:15:52 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-11 19:15:52 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-11 19:15:52 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-11 19:15:52 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-11 19:15:52 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-11 19:17:11 [oilgas_indexer] INFO: 🧾 Saved snapshot for dghindia.gov.in (4.0 KB)
+2025-11-11 19:17:11 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.dghindia.gov.in
+2025-11-11 19:17:11 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2025-11-11 19:17:17 [oilgas_indexer] INFO: 🧾 Saved snapshot for globalenergymonitor.org (0.3 KB)
+2025-11-11 19:17:17 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker
+2025-11-11 19:17:28 [oilgas_indexer] INFO: ✅ Sitemap found for offshore-technology.com: https://www.offshore-technology.com/sitemap.xml
+2025-11-11 19:19:35 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bp.com: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11158d3
+	0x1115914
+	0xf2e76d
+	0xf2bcc7
+	0xf1ef38
+	0xf20904
+	0xf1f406
+	0xf1ecf2
+	0xf1e9fd
+	0xf1c86e
+	0xf1d2fb
+	0xf3251e
+	0xfbfb67
+	0xf9c96c
+	0xfbeea6
+	0xf9c766
+	0xf6dac0
+	0xf6ede4
+	0x1397974
+	0x1392bea
+	0x113e5c4
+	0x112dd38
+	0x1134d9d
+	0x111dee8
+	0x111e0ac
+	0x1107d2a
+	0x75205d49
+	0x7771d6db
+	0x7771d661
+
+2025-11-11 19:19:41 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 19:20:06 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bp.com: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11158d3
+	0x1115914
+	0xf2e76d
+	0xf2bcc7
+	0xf1ef38
+	0xf20904
+	0xf1f406
+	0xf1ecf2
+	0xf1e9fd
+	0xf1c86e
+	0xf1d2fb
+	0xf3251e
+	0xfbfb67
+	0xf9c96c
+	0xfbeea6
+	0xf9c766
+	0xf6dac0
+	0xf6ede4
+	0x1397974
+	0x1392bea
+	0x113e5c4
+	0x112dd38
+	0x1134d9d
+	0x111dee8
+	0x111e0ac
+	0x1107d2a
+	0x75205d49
+	0x7771d6db
+	0x7771d661
+
+2025-11-11 19:20:12 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 19:20:36 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bp.com: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11158d3
+	0x1115914
+	0xf2e76d
+	0xf2bcc7
+	0xf1ef38
+	0xf20904
+	0xf1f406
+	0xf1ecf2
+	0xf1e9fd
+	0xf1c86e
+	0xf1d2fb
+	0xf3251e
+	0xfbfb67
+	0xf9c96c
+	0xfbeea6
+	0xf9c766
+	0xf6dac0
+	0xf6ede4
+	0x1397974
+	0x1392bea
+	0x113e5c4
+	0x112dd38
+	0x1134d9d
+	0x111dee8
+	0x111e0ac
+	0x1107d2a
+	0x75205d49
+	0x7771d6db
+	0x7771d661
+
+2025-11-11 19:20:41 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 19:20:41 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.bp.com> (failed 3 times): 500 Internal Server Error
+2025-11-11 19:20:41 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2025-11-11 19:21:06 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.offshore-technology.com/pressreleases-sitemap3.xml: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=142.0.7444.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11158d3
+	0x1115914
+	0xf2e76d
+	0xf2bcc7
+	0xf1ef38
+	0xf20904
+	0xf1f406
+	0xf1ecf2
+	0xf1e9fd
+	0xf1c86e
+	0xf1d2fb
+	0xf3251e
+	0xfbfb67
+	0xf9c96c
+	0xfbeea6
+	0xf9c766
+	0xf6dac0
+	0xf6ede4
+	0x1397974
+	0x1392bea
+	0x113e5c4
+	0x112dd38
+	0x1134d9d
+	0x111dee8
+	0x111e0ac
+	0x1107d2a
+	0x75205d49
+	0x7771d6db
+	0x7771d661
+
+2025-11-11 19:21:11 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 19:22:27 [oilgas_indexer] INFO: 🧾 Saved snapshot for gailonline.com (3.8 KB)
+2025-11-11 19:22:27 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 1 new discoveries to disk.
+2025-11-11 19:22:27 [scrapy.extensions.logstats] INFO: Crawled 22 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2025-11-11 19:23:12 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.relianceindustries.com: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11158d3
+	0x1115914
+	0xf2e5bb
+	0xf6ceea
+	0xf9c826
+	0xf98090
+	0xf975c3
+	0xefe4ed
+	0xefea7e
+	0xefef3d
+	0x1397974
+	0x1392bea
+	0x113e5c4
+	0x112dd38
+	0x1134d9d
+	0xefe1a3
+	0xefd858
+	0x14effdf
+	0x75205d49
+	0x7771d6db
+	0x7771d661
+
+2025-11-11 19:23:20 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 19:23:37 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.relianceindustries.com: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11158d3
+	0x1115914
+	0xf2e5bb
+	0xf6ceea
+	0xf9c826
+	0xf98090
+	0xf975c3
+	0xefe4ed
+	0xefea7e
+	0xefef3d
+	0x1397974
+	0x1392bea
+	0x113e5c4
+	0x112dd38
+	0x1134d9d
+	0xefe1a3
+	0xefd858
+	0x14effdf
+	0x75205d49
+	0x7771d6db
+	0x7771d661
+
+2025-11-11 19:23:42 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 19:24:03 [scrapy.extensions.logstats] INFO: Crawled 27 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-11 19:24:03 [oilgas_indexer] WARNING: ⚠️ Request failed or timed out: https://www.bp.com
+2025-11-11 19:24:03 [oilgas_indexer] INFO: Removed https://www.bp.com from pending queue after failure.
+2025-11-11 19:24:03 [oilgas_indexer] INFO: ✅ All SeleniumRequests yielded to Scrapy — waiting for scheduler...
+2025-11-11 19:24:07 [oilgas_indexer] INFO: 🧾 Saved snapshot for energyvoice.com (0.3 KB)
+2025-11-11 19:24:07 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.energyvoice.com
+2025-11-11 19:24:16 [oilgas_indexer] INFO: 🧾 Saved snapshot for rigzone.com (4.2 KB)
+2025-11-11 19:24:16 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/rigzone.com.txt
+2025-11-11 19:24:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.rigzone.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 19:24:16 [oilgas_indexer] INFO: 🗺️ Sitemap detected at https://www.offshore-technology.com/sitemap-misc.xml — delegating to handle_sitemap()
+2025-11-11 19:24:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/sitemap-misc.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 640, in parse
+    yield from self.handle_sitemap(response)
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OilGasSpider' object has no attribute 'handle_sitemap'
+2025-11-11 19:24:16 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.rigzone.com (4.20 KB) → data/corpus/rigzone.com.txt
+2025-11-11 19:24:16 [oilgas_indexer] INFO: 🗺️ Sitemap detected at https://www.offshore-technology.com/category-sitemap.xml — delegating to handle_sitemap()
+2025-11-11 19:24:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/category-sitemap.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 640, in parse
+    yield from self.handle_sitemap(response)
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OilGasSpider' object has no attribute 'handle_sitemap'
+2025-11-11 19:24:16 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (7.1 KB)
+2025-11-11 19:24:16 [oilgas_indexer] INFO: 🗺️ Sitemap detected at https://www.offshore-technology.com/events-sitemap2.xml — delegating to handle_sitemap()
+2025-11-11 19:24:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/events-sitemap2.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 640, in parse
+    yield from self.handle_sitemap(response)
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OilGasSpider' object has no attribute 'handle_sitemap'
+2025-11-11 19:24:19 [oilgas_indexer] INFO: ✅ Sitemap found for infocusinternational.com: https://www.infocusinternational.com/sitemap.xml
+2025-11-11 19:24:19 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from infocusinternational.com
+2025-11-11 19:24:19 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.infocusinternational.com/pparenewable/index.html — retrying once
+2025-11-11 19:24:19 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (9.3 KB)
+2025-11-11 19:24:19 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (8.6 KB)
+2025-11-11 19:24:20 [oilgas_indexer] INFO: ✅ Sitemap found for google.com: https://www.google.com/sitemap.xml
+2025-11-11 19:24:20 [oilgas_indexer] INFO: 🗺️ Extracted 70 sitemap URLs from offshore-technology.com
+2025-11-11 19:24:20 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (15.1 KB)
+2025-11-11 19:24:20 [oilgas_indexer] INFO: 🗺️ Sitemap detected at https://www.offshore-technology.com/storefronts-sitemap2.xml — delegating to handle_sitemap()
+2025-11-11 19:24:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/storefronts-sitemap2.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 640, in parse
+    yield from self.handle_sitemap(response)
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OilGasSpider' object has no attribute 'handle_sitemap'
+2025-11-11 19:24:20 [oilgas_indexer] INFO: 🗺️ Extracted 6 sitemap URLs from google.com
+2025-11-11 19:24:20 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.google.com/+BrooksforgingsCoUkforging — retrying once
+2025-11-11 19:24:20 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (8.8 KB)
+2025-11-11 19:24:20 [oilgas_indexer] INFO: 🗺️ Sitemap detected at https://www.offshore-technology.com/whitepapers-sitemap2.xml — delegating to handle_sitemap()
+2025-11-11 19:24:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/whitepapers-sitemap2.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 640, in parse
+    yield from self.handle_sitemap(response)
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OilGasSpider' object has no attribute 'handle_sitemap'
+2025-11-11 19:24:21 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (9.2 KB)
+2025-11-11 19:24:21 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (7.7 KB)
+2025-11-11 19:24:21 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (7.1 KB)
+2025-11-11 19:24:21 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (12.1 KB)
+2025-11-11 19:24:21 [oilgas_indexer] INFO: 🗺️ Sitemap detected at https://www.offshore-technology.com/videos-sitemap.xml — delegating to handle_sitemap()
+2025-11-11 19:24:21 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/videos-sitemap.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 640, in parse
+    yield from self.handle_sitemap(response)
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OilGasSpider' object has no attribute 'handle_sitemap'
+2025-11-11 19:24:22 [oilgas_indexer] INFO: ✅ Sitemap found for bseindia.com: https://www.bseindia.com/sitemap.xml
+2025-11-11 19:24:22 [oilgas_indexer] INFO: 🧾 Saved snapshot for offshore-technology.com (8.5 KB)
+2025-11-11 19:24:22 [oilgas_indexer] INFO: 🗺️ Sitemap detected at https://www.offshore-technology.com/pressreleases-sitemap5.xml — delegating to handle_sitemap()
+2025-11-11 19:24:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/pressreleases-sitemap5.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 640, in parse
+    yield from self.handle_sitemap(response)
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OilGasSpider' object has no attribute 'handle_sitemap'
+2025-11-11 19:24:26 [oilgas_indexer] INFO: 🧾 Saved snapshot for facebook.com (0.9 KB)
+2025-11-11 19:24:26 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.facebook.com/privacy/policies/cookies?subpage=subpage-4.5
+2025-11-11 19:24:37 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 19:24:38 [oilgas_indexer] INFO: [ADAPT] depth=5 delay=1.5s good_ratio=1.00 latency=22.79
+2025-11-11 19:24:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/pressreleases-sitemap4.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:17:20 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bseindia.com/markets/equity/EQReports/mktwatchR.html?filter=gainer*all$all$: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11158d3
+	0x1115914
+	0xf2e5bb
+	0xf6ceea
+	0xf9c826
+	0xf98090
+	0xf975c3
+	0xefe4ed
+	0xefea7e
+	0xefef3d
+	0x1397974
+	0x1392bea
+	0x113e5c4
+	0x112dd38
+	0x1134d9d
+	0xefe1a3
+	0xefd858
+	0x14effdf
+	0x75205d49
+	0x7771d6db
+	0x7771d661
+
+2025-11-11 20:17:28 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 20:17:39 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/contractors/data/equinor-north-sea-well-34-6-9-s-dry/pressreleases/pressagreement-green-marine/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook (8.49 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:17:39 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 16 new discoveries to disk.
+2025-11-11 20:17:39 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:17:39 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:17:39 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 2 pages/min), scraped 2 items (at 2 items/min)
+2025-11-11 20:18:33 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:18:33 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=2.0s good_ratio=1.00 latency=22.79
+2025-11-11 20:18:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/pressreleases-sitemap2.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:18:33 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:18:33 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=2.5s good_ratio=1.00 latency=22.79
+2025-11-11 20:18:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/pressreleases-sitemap3.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:18:33 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=3.0s good_ratio=1.00 latency=22.79
+2025-11-11 20:18:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/products-sitemap.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:18:33 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:18:33 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=3.5s good_ratio=1.00 latency=22.79
+2025-11-11 20:18:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/whitepapers-sitemap.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:18:33 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=4.0s good_ratio=1.00 latency=22.79
+2025-11-11 20:18:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/pressreleases-sitemap.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:18:33 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 6 pages/min), scraped 2 items (at 0 items/min)
+2025-11-11 20:18:33 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/products/cuplok-scaffold-system/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook (7.71 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:18:33 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/contractors/data/equinor-north-sea-well-34-6-9-s-dry/pressreleases/pressela-container-looks-back-2016/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook (12.17 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:18:33 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/contractors/data/equinor-north-sea-well-34-6-9-s-dry/pressreleases/press-agreement-basf-chemicals/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook (8.79 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:18:33 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/contractors/data/equinor-north-sea-well-34-6-9-s-dry/pressreleases/pressheat-treatment-book/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook (9.25 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:18:33 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/downloads/whitepapers/data/compressor-surge-prevention-control-yokogawa-stardom (7.14 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:18:35 [oilgas_indexer] INFO: ✅ Sitemap found for business.google.com: https://business.google.com/sitemap.xml
+2025-11-11 20:18:35 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from business.google.com
+2025-11-11 20:18:35 [oilgas_indexer] INFO: 🧾 Saved snapshot for business.google.com (5.3 KB)
+2025-11-11 20:18:35 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://business.google.com/in/business-profile
+2025-11-11 20:18:45 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: bseindia.com (page_count=1, time=54.4m) → Skipping further URLs.
+2025-11-11 20:18:45 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain bseindia.com
+2025-11-11 20:18:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:20:16 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 13 pages/min), scraped 7 items (at 5 items/min)
+2025-11-11 20:20:16 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:20:18 [oilgas_indexer] INFO: ✅ Sitemap found for hs.verdict.co.uk: https://hs.verdict.co.uk/sitemap.xml
+2025-11-11 20:20:18 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from hs.verdict.co.uk
+2025-11-11 20:20:18 [oilgas_indexer] INFO: 🧾 Saved snapshot for hs.verdict.co.uk (6.9 KB)
+2025-11-11 20:20:18 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/hs.verdict.co.uk.txt
+2025-11-11 20:20:18 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:20:18 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:20:18 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:20:18 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:20:18 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=4.5s good_ratio=1.00 latency=20.69
+2025-11-11 20:20:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://hs.verdict.co.uk/scotland-offshore-wind-the-future-of-offshore-wind-energy-how-it-is-taking-shape-in-scotland-092023> (referer: https://www.offshore-technology.com/contractors/data/equinor-north-sea-well-34-6-9-s-dry/pressreleases/pressela-container-looks-back-2016/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:20:18 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://hs.verdict.co.uk/scotland-offshore-wind-the-future-of-offshore-wind-energy-how-it-is-taking-shape-in-scotland-092023 (6.96 KB) → data/corpus/hs.verdict.co.uk.txt
+2025-11-11 20:20:18 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:20:18 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=20.69
+2025-11-11 20:20:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/projects-sitemap.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:20:28 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/projects/cosmopolitan-oil-and-gas-field-cook-inlet-basin/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click (9.34 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:20:28 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:20:28 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=20.69
+2025-11-11 20:20:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/post_tag-sitemap.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:20:28 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:20:28 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:20:28 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:20:28 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=20.69
+2025-11-11 20:20:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com/projects-sitemap2.xml> (referer: https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:20:28 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/news/sapura-upstream-signs-farm-agreements-three-exploration-permits/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click (7.15 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:21:03 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/projects/cook/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click (8.62 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:21:03 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 5 pages/min), scraped 11 items (at 4 items/min)
+2025-11-11 20:21:03 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:21:03 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:21:03 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:21:03 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:21:03 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:21:03 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:21:03 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:21:37 [oilgas_indexer] INFO: 🧾 Saved snapshot for globaldata.com (1.0 KB)
+2025-11-11 20:21:37 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.globaldata.com/custom-solutions
+2025-11-11 20:21:40 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.eon.com/en/business-customers/sectors/data-centres-and-telecoms.html — retrying once
+2025-11-11 20:21:43 [oilgas_indexer] INFO: ✅ Sitemap found for swpc.sa: https://www.swpc.sa/sitemap.xml
+2025-11-11 20:21:43 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from swpc.sa
+2025-11-11 20:21:43 [oilgas_indexer] INFO: 🧾 Saved snapshot for swpc.sa (7.1 KB)
+2025-11-11 20:21:43 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.swpc.sa/en
+2025-11-11 20:21:43 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:22:05 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 7 new discoveries to disk.
+2025-11-11 20:23:17 [scrapy.extensions.logstats] INFO: Crawled 63 pages (at 10 pages/min), scraped 11 items (at 0 items/min)
+2025-11-11 20:23:17 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:23:17 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:24:28 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/gailonline.com.txt
+2025-11-11 20:24:28 [scrapy.extensions.logstats] INFO: Crawled 75 pages (at 12 pages/min), scraped 11 items (at 0 items/min)
+2025-11-11 20:24:28 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=20.69
+2025-11-11 20:24:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.gailonline.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:24:28 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.gailonline.com (3.85 KB) → data/corpus/gailonline.com.txt
+2025-11-11 20:24:28 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:24:28 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:24:28 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:24:28 [oilgas_indexer] INFO: 🧾 Saved page → data/corpus/offshore-technology.com.txt
+2025-11-11 20:24:28 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=20.69
+2025-11-11 20:24:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-technology.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 851, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-11 20:24:28 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:24:28 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:24:51 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-11 20:24:57 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 20:25:37 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com/features/saudi-arabia-ready-to-mine-the-future-as-it-looks-beyond-oil/?Top-Article-Share-Button-clicked:%20Share%20on%20Facebook&Bottom-Article-Share-Button-clicked:%20Share%20on%20Facebook&cf-click (15.23 KB) → data/corpus/offshore-technology.com.txt
+2025-11-11 20:25:37 [scrapy.extensions.logstats] INFO: Crawled 90 pages (at 15 pages/min), scraped 13 items (at 2 items/min)
+2025-11-11 20:25:37 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:25:37 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:25:37 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:25:37 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:25:37 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:25:41 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://gailanjani.gail.co.in/frmLogin.aspx — retrying once
+2025-11-11 20:25:41 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:25:45 [oilgas_indexer] INFO: 🧾 Saved snapshot for sparsh.gail.co.in (1.0 KB)
+2025-11-11 20:25:45 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://sparsh.gail.co.in/flipper
+2025-11-11 20:28:27 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.globaldata.com/?utm_source=verdict&utm_medium=website&utm_campaign=gd_curve&utm_content=powered_by_globaldata
+2025-11-11 20:30:20 [scrapy.extensions.logstats] INFO: Crawled 135 pages (at 45 pages/min), scraped 13 items (at 0 items/min)
+2025-11-11 20:30:21 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:30:21 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:30:21 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:30:21 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:30:21 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:30:21 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:30:21 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 20:30:24 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://gailcorintra.gail.co.in — retrying once
+2025-11-11 20:38:03 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bseindia.com/markets/equity/EQReports/CFSummary.aspx: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11158d3
+	0x1115914
+	0xf2e5bb
+	0xf6ceea
+	0xf9c826
+	0xf98090
+	0xf975c3
+	0xefe4ed
+	0xefea7e
+	0xefef3d
+	0x1397974
+	0x1392bea
+	0x113e5c4
+	0x112dd38
+	0x1134d9d
+	0xefe1a3
+	0xefd858
+	0x14effdf
+	0x75205d49
+	0x7771d6db
+	0x7771d661
+
+2025-11-11 22:23:39 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 22:24:04 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.bseindia.com/markets/Equity/EQReports/HighLow.html?flag=L
+2025-11-11 22:24:17 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-11 22:24:24 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-11 22:24:45 [scrapy.extensions.logstats] INFO: Crawled 162 pages (at 27 pages/min), scraped 13 items (at 0 items/min)
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⚠️ Empty page text for data:, — retrying once
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:45 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:50 [oilgas_indexer] INFO: ✅ Sitemap found for onetrust.com: https://www.onetrust.com/sitemap.xml
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: gailanjani.gail.co.in (page_count=1, time=119.2m) → Skipping further URLs.
+2025-11-11 22:24:51 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain gailanjani.gail.co.in
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: gailanjani.gail.co.in
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:51 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3A%2F%2Foutlook.office.com%2F.default%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Foutlook.office365.com%2Fmail%2F&client-request-id=5a70bc34-98fb-c725-2c34-900ab14ef126&response_mode=fragment&client_info=1&prompt=select_account&nonce=019a736d-5e3e-72d9-ada3-83e8a4f89003&state=eyJpZCI6IjAxOWE3MzZkLTVlM2QtN2YxOC1iZTZkLTc0MmJlYzI3MGZhNiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D%7CaHR0cHM6Ly9vdXRsb29rLm9mZmljZTM2NS5jb20vbWFpbC8&claims=%7B%22access_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&x-client-SKU=msal.js.browser&x-client-VER=4.14.0&response_type=code&code_challenge=1QpR2lRsR_Tl47R5peApQJsE-sJTi7Kfv8tLA8VyrbQ&code_challenge_method=S256 — retrying once
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:24:56 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://gailebank.gail.co.in/prms-new/home.asp — retrying once
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: globaldata.com (page_count=1, time=124.0m) → Skipping further URLs.
+2025-11-11 22:25:01 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain globaldata.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: globaldata.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:01 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://gailebank.gail.co.in/GailPrayas/Login.aspx?AspxAutoDetectCookieSupport=1 — retrying once
+2025-11-11 22:25:05 [oilgas_indexer] INFO: ✅ Sitemap found for globaldatamarketingsolutions.com: https://www.globaldatamarketingsolutions.com/sitemap.xml
+2025-11-11 22:25:05 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from globaldatamarketingsolutions.com
+2025-11-11 22:25:05 [oilgas_indexer] INFO: 🧾 Saved snapshot for globaldatamarketingsolutions.com (6.3 KB)
+2025-11-11 22:25:05 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.globaldatamarketingsolutions.com
+2025-11-11 22:25:05 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:05 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:05 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:05 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:05 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:05 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:05 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:29 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://cookiepedia.co.uk/cookies-and-privacy-policy — retrying once
+2025-11-11 22:25:29 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:29 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:29 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:29 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:25:29 [scrapy.extensions.logstats] INFO: Crawled 162 pages (at 0 pages/min), scraped 13 items (at 0 items/min)
+2025-11-11 22:27:49 [scrapy.extensions.logstats] INFO: Crawled 174 pages (at 12 pages/min), scraped 13 items (at 0 items/min)
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: gailcorintra.gail.co.in (page_count=1, time=117.5m) → Skipping further URLs.
+2025-11-11 22:27:50 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain gailcorintra.gail.co.in
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: gailcorintra.gail.co.in
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:50 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:55 [oilgas_indexer] INFO: 🧾 Saved snapshot for pledge.mygov.in (0.6 KB)
+2025-11-11 22:27:55 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://pledge.mygov.in/cvc
+2025-11-11 22:27:58 [oilgas_indexer] INFO: ✅ Sitemap found for verdict.co.uk: https://verdict.co.uk/sitemap.xml
+2025-11-11 22:27:58 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from verdict.co.uk
+2025-11-11 22:27:58 [oilgas_indexer] INFO: 🧾 Saved snapshot for verdict.co.uk (10.7 KB)
+2025-11-11 22:27:58 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://verdict.co.uk/globaldata-intelligence-center/?CampaignValue=701Ti00000blv0kIAA&utm_source=Media-sites&utm_medium=Website&utm_campaign=Verdict-Curve-Media-Media-Landing-Page-Banner-IC-Demo&utm_content=RHS
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: globaldata.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://gailebank.gail.co.in/gems/frmentry.aspx — retrying once
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: gailanjani.gail.co.in
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [scrapy.extensions.logstats] INFO: Crawled 174 pages (at 0 pages/min), scraped 13 items (at 0 items/min)
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: facebook.com (page_count=1, time=183.6m) → Skipping further URLs.
+2025-11-11 22:27:58 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain facebook.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: facebook.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com
+2025-11-11 22:27:58 [oilgas_indexer] WARNING: ⏩ Skipping stalled domain early: bseindia.com

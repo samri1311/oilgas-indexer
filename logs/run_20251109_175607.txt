@@ -1,0 +1,1221 @@
+2025-11-09 17:56:09 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-09 17:56:09 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-09 17:56:09 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-09 17:56:09 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-09 17:56:09 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-09 17:56:09 [scrapy.extensions.telnet] INFO: Telnet Password: cf6e8cb192abf87e
+2025-11-09 17:56:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-09 17:56:09 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251109_175607.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-09 17:56:10 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 17:56:12 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 17:56:13 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 17:56:14 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 17:56:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-09 17:56:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-09 17:56:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-09 17:56:15 [scrapy.core.engine] INFO: Spider opened
+2025-11-09 17:56:15 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-09 17:56:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 17:56:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-09 17:56:15 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-09 17:56:15 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-09 17:56:15 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-09 17:56:15 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-09 17:56:15 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-09 17:56:15 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-09 17:56:57 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: ogj.com (pages=0, time=29378187.0m) → Skipping further URLs.
+2025-11-09 17:56:57 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain ogj.com
+2025-11-09 17:56:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.ogj.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:57:04 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: gem.wiki (pages=0, time=29378187.1m) → Skipping further URLs.
+2025-11-09 17:57:04 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain gem.wiki
+2025-11-09 17:57:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://gem.wiki/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:57:29 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 17:57:54 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 17:58:20 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.subsea7.com
+2025-11-09 17:58:20 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.subsea7.com> (failed 3 times): 408 Request Time-out
+2025-11-09 17:58:20 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: offshore-europe.co.uk (pages=0, time=29378188.3m) → Skipping further URLs.
+2025-11-09 17:58:20 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain offshore-europe.co.uk
+2025-11-09 17:58:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.offshore-europe.co.uk> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:58:20 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 17:58:27 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: iea.org (pages=0, time=29378188.5m) → Skipping further URLs.
+2025-11-09 17:58:27 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain iea.org
+2025-11-09 17:58:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.iea.org> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:58:27 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <408 https://www.subsea7.com>: HTTP status code is not handled or not allowed
+2025-11-09 17:58:40 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: energyvoice.com (pages=0, time=29378188.7m) → Skipping further URLs.
+2025-11-09 17:58:40 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain energyvoice.com
+2025-11-09 17:58:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.energyvoice.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:59:13 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: chevron.com (pages=0, time=29378189.2m) → Skipping further URLs.
+2025-11-09 17:59:13 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain chevron.com
+2025-11-09 17:59:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.chevron.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:59:46 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: rigzone.com (pages=0, time=29378189.8m) → Skipping further URLs.
+2025-11-09 17:59:46 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain rigzone.com
+2025-11-09 17:59:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.rigzone.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:59:46 [scrapy.extensions.logstats] INFO: Crawled 11 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 17:59:46 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: eia.gov (pages=0, time=29378189.8m) → Skipping further URLs.
+2025-11-09 17:59:46 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain eia.gov
+2025-11-09 17:59:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.eia.gov/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 17:59:47 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x65fe43+66515]
+	GetHandleVerifier [0x0x65fe84+66580]
+	(No symbol) [0x0x44dc48]
+	(No symbol) [0x0x44b147]
+	(No symbol) [0x0x43e422]
+	(No symbol) [0x0x43fe1e]
+	(No symbol) [0x0x43e930]
+	(No symbol) [0x0x43e1e4]
+	(No symbol) [0x0x43deef]
+	(No symbol) [0x0x43be60]
+	(No symbol) [0x0x43c7fb]
+	(No symbol) [0x0x4517ce]
+	(No symbol) [0x0x4dd7f7]
+	(No symbol) [0x0x4bb1cc]
+	(No symbol) [0x0x4dcba7]
+	(No symbol) [0x0x4bafc6]
+	(No symbol) [0x0x48c2ca]
+	(No symbol) [0x0x48d154]
+	GetHandleVerifier [0x0x8b7353+2521315]
+	GetHandleVerifier [0x0x8b22d3+2500707]
+	GetHandleVerifier [0x0x687c94+229924]
+	GetHandleVerifier [0x0x6781f8+165768]
+	GetHandleVerifier [0x0x67ecad+193085]
+	GetHandleVerifier [0x0x668158+100072]
+	GetHandleVerifier [0x0x6682f0+100480]
+	GetHandleVerifier [0x0x6525aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 17:59:52 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 17:59:55 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 17:59:57 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 17:59:58 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 18:00:01 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 18:00:01 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x65fe43+66515]
+	GetHandleVerifier [0x0x65fe84+66580]
+	(No symbol) [0x0x44dc48]
+	(No symbol) [0x0x44b147]
+	(No symbol) [0x0x43e422]
+	(No symbol) [0x0x43fe1e]
+	(No symbol) [0x0x43e930]
+	(No symbol) [0x0x43e1e4]
+	(No symbol) [0x0x43deef]
+	(No symbol) [0x0x43be60]
+	(No symbol) [0x0x43c7fb]
+	(No symbol) [0x0x4517ce]
+	(No symbol) [0x0x4dd7f7]
+	(No symbol) [0x0x4bb1cc]
+	(No symbol) [0x0x4dcba7]
+	(No symbol) [0x0x4bafc6]
+	(No symbol) [0x0x48c2ca]
+	(No symbol) [0x0x48d154]
+	GetHandleVerifier [0x0x8b7353+2521315]
+	GetHandleVerifier [0x0x8b22d3+2500707]
+	GetHandleVerifier [0x0x687c94+229924]
+	GetHandleVerifier [0x0x6781f8+165768]
+	GetHandleVerifier [0x0x67ecad+193085]
+	GetHandleVerifier [0x0x668158+100072]
+	GetHandleVerifier [0x0x6682f0+100480]
+	GetHandleVerifier [0x0x6525aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 18:00:05 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 18:00:08 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:00:09 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:00:11 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 18:00:13 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 18:00:13 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x65fe43+66515]
+	GetHandleVerifier [0x0x65fe84+66580]
+	(No symbol) [0x0x44dc48]
+	(No symbol) [0x0x44b147]
+	(No symbol) [0x0x43e422]
+	(No symbol) [0x0x43fe1e]
+	(No symbol) [0x0x43e930]
+	(No symbol) [0x0x43e1e4]
+	(No symbol) [0x0x43deef]
+	(No symbol) [0x0x43be60]
+	(No symbol) [0x0x43c7fb]
+	(No symbol) [0x0x4517ce]
+	(No symbol) [0x0x4dd7f7]
+	(No symbol) [0x0x4bb1cc]
+	(No symbol) [0x0x4dcba7]
+	(No symbol) [0x0x4bafc6]
+	(No symbol) [0x0x48c2ca]
+	(No symbol) [0x0x48d154]
+	GetHandleVerifier [0x0x8b7353+2521315]
+	GetHandleVerifier [0x0x8b22d3+2500707]
+	GetHandleVerifier [0x0x687c94+229924]
+	GetHandleVerifier [0x0x6781f8+165768]
+	GetHandleVerifier [0x0x67ecad+193085]
+	GetHandleVerifier [0x0x668158+100072]
+	GetHandleVerifier [0x0x6682f0+100480]
+	GetHandleVerifier [0x0x6525aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 18:00:17 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 18:00:19 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:00:20 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:00:21 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-09 18:00:23 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-09 18:00:23 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.hpcl.in> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:00:23 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:00:42 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: equinor.com (pages=0, time=29378190.7m) → Skipping further URLs.
+2025-11-09 18:00:42 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain equinor.com
+2025-11-09 18:00:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.equinor.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:00:43 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.hpcl.in>: HTTP status code is not handled or not allowed
+2025-11-09 18:00:43 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: worldoil.com (pages=0, time=29378190.7m) → Skipping further URLs.
+2025-11-09 18:00:43 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain worldoil.com
+2025-11-09 18:00:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://worldoil.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:01:08 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.iocl.com
+2025-11-09 18:01:33 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.iocl.com
+2025-11-09 18:01:47 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:02:12 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-09 18:02:37 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-09 18:03:02 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.saipem.com
+2025-11-09 18:03:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.saipem.com> (failed 3 times): 408 Request Time-out
+2025-11-09 18:03:02 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:03:27 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.hartenergy.com
+2025-11-09 18:03:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.worldoil.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:03:57 [scrapy.extensions.logstats] INFO: Crawled 16 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:03:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <408 https://www.saipem.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:04:01 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: iocl.com (pages=0, time=29378194.0m) → Skipping further URLs.
+2025-11-09 18:04:01 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain iocl.com
+2025-11-09 18:04:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.iocl.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:04:20 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:04:25 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: hartenergy.com (pages=0, time=29378194.4m) → Skipping further URLs.
+2025-11-09 18:04:25 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain hartenergy.com
+2025-11-09 18:04:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.hartenergy.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:04:29 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: bp.com (pages=0, time=29378194.5m) → Skipping further URLs.
+2025-11-09 18:04:29 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain bp.com
+2025-11-09 18:04:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.bp.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:04:45 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.technipenergies.com: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x65fe43+66515]
+	GetHandleVerifier [0x0x65fe84+66580]
+	(No symbol) [0x0x44da6b]
+	(No symbol) [0x0x48b5ab]
+	(No symbol) [0x0x4bb086]
+	(No symbol) [0x0x4b667c]
+	(No symbol) [0x0x4b5bf3]
+	(No symbol) [0x0x41e72d]
+	(No symbol) [0x0x41ecae]
+	(No symbol) [0x0x41f14d]
+	GetHandleVerifier [0x0x8b7353+2521315]
+	GetHandleVerifier [0x0x8b22d3+2500707]
+	GetHandleVerifier [0x0x687c94+229924]
+	GetHandleVerifier [0x0x6781f8+165768]
+	GetHandleVerifier [0x0x67ecad+193085]
+	(No symbol) [0x0x41e3e3]
+	(No symbol) [0x0x41db60]
+	GetHandleVerifier [0x0x9fc20f+3852191]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-09 18:05:03 [WDM] INFO: ====== WebDriver manager ======
+2025-11-09 18:05:05 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-09 18:07:50 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050929F9D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:07:54 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B7BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:07:58 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B45D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:02 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.technipenergies.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B46D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:08:06 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205091F7890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:11 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AF290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:15 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B57D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:19 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.technipenergies.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B1650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:08:19 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.technipenergies.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:08:19 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: facebook.com (pages=0, time=29378198.3m) → Skipping further URLs.
+2025-11-09 18:08:19 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain facebook.com
+2025-11-09 18:08:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.upstreamonline.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:08:19 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:08:23 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DFB90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:27 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:31 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509372610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:35 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.opec.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509371950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:08:39 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:43 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B3210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:47 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:08:51 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.opec.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B1810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:08:56 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050932C810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:00 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0E50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:04 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B2E50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:08 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.opec.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B2690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:09:08 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.opec.org> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:09:08 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: saudiaramco.com (pages=0, time=29378199.1m) → Skipping further URLs.
+2025-11-09 18:09:08 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain saudiaramco.com
+2025-11-09 18:09:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.saudiaramco.com/> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:09:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.technipenergies.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:09:12 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093729D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:16 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093701D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:20 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D91D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:24 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.totalenergies.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DFDD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:09:28 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509302DD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:32 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D5890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:36 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B5A50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:40 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.totalenergies.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B4390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:09:44 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B5490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:49 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B5CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:53 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B4F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:09:57 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.totalenergies.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D77D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:09:57 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.totalenergies.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:09:57 [oilgas_indexer] WARNING: ⚠️ Domain stall detected: bakerhughes.com (pages=0, time=29378200.0m) → Skipping further URLs.
+2025-11-09 18:09:57 [oilgas_indexer] INFO: 🧹 Pruned pending queue for stalled domain bakerhughes.com
+2025-11-09 18:09:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.bakerhughes.com> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 609, in parse
+    if pages > 400 or elapsed > 3600:
+       ^^^^^
+NameError: name 'pages' is not defined
+2025-11-09 18:09:57 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:09:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.opec.org>: HTTP status code is not handled or not allowed
+2025-11-09 18:10:01 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:05 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:09 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD1D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:13 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.energyconnects.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936BC90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:10:17 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092A2310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:21 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093002D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:25 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E84D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:29 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.energyconnects.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E8890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:10:33 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321F50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:37 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509323AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:42 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:46 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.energyconnects.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509356610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:10:46 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.energyconnects.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:10:46 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:10:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.totalenergies.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:10:50 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DFDD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:54 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DDC50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:10:58 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936B0D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:02 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D7510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:11:06 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509300BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:10 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E9650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:14 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EBF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:18 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509323D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:11:22 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:26 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509354AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:30 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509356AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:35 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509355810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:11:35 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:11:35 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:11:35 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.energyconnects.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:11:39 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DCD50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:43 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DEC50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:47 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936BBD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:51 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.oil-india.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D5650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:11:55 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509300C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:11:59 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E9A50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:03 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EA250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:07 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.oil-india.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:12:11 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093572D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:15 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093578D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:19 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093564D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:23 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.oil-india.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E7950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:12:23 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.oil-india.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:12:23 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:12:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/>: HTTP status code is not handled or not allowed
+2025-11-09 18:12:27 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD3D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:32 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936AE90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:36 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D5290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:40 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.gailonline.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509301110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:12:44 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EB050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:48 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509322A10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:52 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:12:56 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.gailonline.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509356CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:13:00 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509354610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:04 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E7910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:08 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E4450>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:12 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.gailonline.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E7150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:13:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.gailonline.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:13:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.oil-india.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:13:16 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092A1610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:20 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EA410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:25 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EBED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:29 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.dghindia.gov.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509323890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:13:33 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509356DD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:37 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093546D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:41 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050928A150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:45 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.dghindia.gov.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AD010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:13:49 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093ACB90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:53 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AE9D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:13:57 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AE190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:01 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.dghindia.gov.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509302A10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:14:01 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.dghindia.gov.in> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:14:01 [scrapy.extensions.logstats] INFO: Crawled 28 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:14:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.gailonline.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:14:05 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930FC50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:09 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509283690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:13 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AE310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:18 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.aramco.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AD490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:14:22 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AC1D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:26 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509354310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:30 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509354FD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:34 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.aramco.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093547D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:14:38 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E7F50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:42 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E6F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:46 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E6510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:50 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.aramco.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:14:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.aramco.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:14:50 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:14:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.dghindia.gov.in>: HTTP status code is not handled or not allowed
+2025-11-09 18:14:54 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E9550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:14:58 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509300ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:02 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:06 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://data.gov.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050928A150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:15:10 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509354E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:15 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD9D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:19 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DF510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:23 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://data.gov.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E5490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:15:27 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E5E90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:31 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E4150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:35 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D6990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:39 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://data.gov.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509323690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:15:39 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://data.gov.in> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:15:39 [scrapy.extensions.logstats] INFO: Crawled 30 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:15:39 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.aramco.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:15:43 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093019D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:47 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:51 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050928A190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:15:55 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.api.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509354050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:15:59 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D5650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:03 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DE010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:07 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E64D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:12 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.api.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E5E90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:16:16 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AE1D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:20 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093ACC10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:24 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AC4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:28 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.api.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AC0D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:16:28 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.api.org> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:16:28 [scrapy.extensions.logstats] INFO: Crawled 31 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:16:28 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://data.gov.in>: HTTP status code is not handled or not allowed
+2025-11-09 18:16:32 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509369DD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:36 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093009D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:40 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:44 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://rss.feedspot.com/oil_and_gas_rss_feeds/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050928A190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:16:48 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093569D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:52 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DF3D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:16:56 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DF890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:00 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://rss.feedspot.com/oil_and_gas_rss_feeds/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E6110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:17:04 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509322B10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:09 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321B50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:13 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509322350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:17 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://rss.feedspot.com/oil_and_gas_rss_feeds/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AD110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:17:17 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://rss.feedspot.com/oil_and_gas_rss_feeds/> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:17:17 [scrapy.extensions.logstats] INFO: Crawled 32 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:17:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.api.org>: HTTP status code is not handled or not allowed
+2025-11-09 18:17:21 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509303B10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:25 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930EF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:29 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E9050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:33 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://en.wikipedia.org/wiki/Petroleum_industry: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EB510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:17:37 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509357AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:41 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DE890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:45 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DF110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:49 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://en.wikipedia.org/wiki/Petroleum_industry: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E6950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:17:53 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:17:57 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:01 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321F50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:06 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://en.wikipedia.org/wiki/Petroleum_industry: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AF150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:18:06 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://en.wikipedia.org/wiki/Petroleum_industry> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:18:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://rss.feedspot.com/oil_and_gas_rss_feeds/>: HTTP status code is not handled or not allowed
+2025-11-09 18:18:10 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:14 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E9B10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:18 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092A1710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:22 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.bpcl.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509354ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:18:26 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:30 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:34 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321A50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:38 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.bpcl.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509322790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:18:42 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:46 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B20D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:50 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B1D10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:18:54 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.bpcl.in: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E5ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:18:54 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.bpcl.in> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:18:54 [scrapy.extensions.logstats] INFO: Crawled 34 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:18:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://en.wikipedia.org/wiki/Petroleum_industry>: HTTP status code is not handled or not allowed
+2025-11-09 18:18:59 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B1C90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:03 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:07 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B1550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:11 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.opec.org/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:19:15 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321F50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:19 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509289310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:23 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930E4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:27 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.opec.org/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509357610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:19:31 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509354810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:35 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AEFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:39 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093ACD10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:43 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.opec.org/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AE690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:19:43 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.opec.org/> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:19:43 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:19:43 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.bpcl.in>: HTTP status code is not handled or not allowed
+2025-11-09 18:19:47 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E6790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:51 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E6D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:55 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:19:59 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.shell.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DFB90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:20:04 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509323510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:08 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093200D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:12 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092885D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:16 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.shell.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509303C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:20:20 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:24 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093560D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:28 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093569D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:32 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.shell.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AF210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:20:32 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.shell.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:20:32 [scrapy.extensions.logstats] INFO: Crawled 36 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:20:32 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.opec.org/>: HTTP status code is not handled or not allowed
+2025-11-09 18:20:36 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EB110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:40 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DEA90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:44 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D4490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:48 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.slb.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:20:52 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:20:57 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936B850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:01 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936AE90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:05 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.slb.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930FC90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:21:09 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509303A10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:13 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509357C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:17 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509356AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:21 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.slb.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AD250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:21:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.slb.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:21:21 [scrapy.extensions.logstats] INFO: Crawled 37 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:21:21 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.shell.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:21:25 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E7350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:29 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DFE10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:33 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:37 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.exxonmobil.com/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092A0C90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:21:41 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321F50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:45 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093699D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:49 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509369810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:21:53 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.exxonmobil.com/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F9D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:21:58 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509355ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:02 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093569D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:06 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093023D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:10 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.exxonmobil.com/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093ACCD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:22:10 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.exxonmobil.com/> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:22:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.slb.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:22:14 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D53D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:18 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092A0350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:22 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936BD90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:26 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ongcindia.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930EFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:22:30 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509355ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:34 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093542D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:38 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509301510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:42 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ongcindia.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:22:46 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B3A90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:51 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B1A90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:55 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:22:59 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ongcindia.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509322DD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:22:59 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.ongcindia.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:22:59 [scrapy.extensions.logstats] INFO: Crawled 39 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:22:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.exxonmobil.com/>: HTTP status code is not handled or not allowed
+2025-11-09 18:23:03 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936B5D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:07 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936B210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:11 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509355510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:15 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.dnv.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0D10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:23:19 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B3410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:23 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B39D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:27 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:31 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.dnv.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:23:35 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E6C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:39 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E5610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:43 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F2D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:48 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.dnv.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AEA10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:23:48 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.dnv.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:23:48 [scrapy.extensions.logstats] INFO: Crawled 40 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:23:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.ongcindia.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:23:52 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509357F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:23:56 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936B810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:00 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509368E90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:04 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.offshore-technology.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509368F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:24:08 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B1150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:12 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B1010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:16 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EA090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:20 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.offshore-technology.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930F2D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:24:24 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093033D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:28 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509323910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:32 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:37 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.offshore-technology.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509322010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:24:37 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.offshore-technology.com> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:24:37 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:24:37 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.dnv.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:24:41 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936A6D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:45 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:49 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B3810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:24:53 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.bp.com/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0DD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:24:57 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930EC10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:01 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DD2D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:05 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DE010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:09 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.bp.com/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509301110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:25:13 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D7590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:17 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509322B90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:21 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509323D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:25 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.bp.com/: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AF590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:25:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.bp.com/> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:25:25 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:25:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.offshore-technology.com>: HTTP status code is not handled or not allowed
+2025-11-09 18:25:29 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B3CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:34 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B0990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:38 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092EA010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:42 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.spe.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050930E710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:25:46 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205091F6190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:50 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509289C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:54 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093554D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:25:58 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.spe.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093545D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:26:02 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509321010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:06 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509323250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:10 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AE310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:14 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.spe.org: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093AD810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:26:14 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.spe.org> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:26:14 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.bp.com/>: HTTP status code is not handled or not allowed
+2025-11-09 18:26:18 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E5150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:22 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E5FD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:27 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092E8E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:31 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ft.com/oil-gas: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020504098350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:26:35 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509300C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:39 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092D5290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:43 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:47 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ft.com/oil-gas: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509320A90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:26:51 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509369990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:55 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050936B710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:26:59 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509355ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:27:03 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ft.com/oil-gas: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509355A10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:27:03 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.ft.com/oil-gas> (failed 3 times): 500 Internal Server Error
+2025-11-09 18:27:03 [scrapy.extensions.logstats] INFO: Crawled 44 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2025-11-09 18:27:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.spe.org>: HTTP status code is not handled or not allowed
+2025-11-09 18:27:07 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205092DC410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:27:11 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509302B10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:27:15 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509288390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:27:20 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.relianceindustries.com: HTTPConnectionPool(host='localhost', port=60670): Max retries exceeded with url: /session/c11e2a702d6c41c2545303ff144fbcd3/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020509322F50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-09 18:27:24 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B6710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:27:28 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B5190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url
+2025-11-09 18:27:32 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000205093B6910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c11e2a702d6c41c2545303ff144fbcd3/url

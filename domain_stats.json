@@ -1,0 +1,242 @@
+{
+  "rigzone.com": {
+    "pages": 55,
+    "relevant": 55,
+    "relevance_ratio": 1.0
+  },
+  "eia.gov": {
+    "pages": 22,
+    "relevant": 22,
+    "relevance_ratio": 1.0
+  },
+  "energy.gov": {
+    "pages": 2,
+    "relevant": 2,
+    "relevance_ratio": 1.0
+  },
+  "corporate.exxonmobil.com": {
+    "pages": 38,
+    "relevant": 38,
+    "relevance_ratio": 1.0
+  },
+  "ir.eia.gov": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "worldoil.com": {
+    "pages": 3,
+    "relevant": 3,
+    "relevance_ratio": 1.0
+  },
+  "bp.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "upstreamonline.com": {
+    "pages": 4,
+    "relevant": 4,
+    "relevance_ratio": 1.0
+  },
+  "globalenergyinfrastructure.com": {
+    "pages": 25,
+    "relevant": 25,
+    "relevance_ratio": 1.0
+  },
+  "gasprocessingnews.com": {
+    "pages": 15,
+    "relevant": 15,
+    "relevance_ratio": 1.0
+  },
+  "gulfenergyinfo.com": {
+    "pages": 16,
+    "relevant": 16,
+    "relevance_ratio": 1.0
+  },
+  "info.upstreamonline.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "hydrocarbonprocessing.com": {
+    "pages": 2,
+    "relevant": 2,
+    "relevance_ratio": 1.0
+  },
+  "h2-tech.com": {
+    "pages": 2,
+    "relevant": 2,
+    "relevance_ratio": 1.0
+  },
+  "gateway.on24.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "cart.gulfenergyinfo.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "admin.gasprocessingnews.com": {
+    "pages": 19,
+    "relevant": 19,
+    "relevance_ratio": 1.0
+  },
+  "totalenergies.com": {
+    "pages": 29,
+    "relevant": 29,
+    "relevance_ratio": 1.0
+  },
+  "careers.totalenergies.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "oil-india.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "jobs.totalenergies.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "ipieca.org": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "rss.feedspot.com": {
+    "pages": 4,
+    "relevant": 4,
+    "relevance_ratio": 1.0
+  },
+  "investor.exxonmobil.com": {
+    "pages": 4,
+    "relevant": 4,
+    "relevance_ratio": 1.0
+  },
+  "iea.org": {
+    "pages": 2,
+    "relevant": 2,
+    "relevance_ratio": 1.0
+  },
+  "jobs.exxonmobil.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "exxon.com": {
+    "pages": 3,
+    "relevant": 3,
+    "relevance_ratio": 1.0
+  },
+  "lowcarbon.exxonmobil.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "akerbp.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "mobil.com": {
+    "pages": 3,
+    "relevant": 3,
+    "relevance_ratio": 1.0
+  },
+  "ashrae.org": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "gov.ie": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "us.lubricants.mobil.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "feedspot.com": {
+    "pages": 3,
+    "relevant": 3,
+    "relevance_ratio": 1.0
+  },
+  "oilfutures.co.uk": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "novilabs.com": {
+    "pages": 14,
+    "relevant": 14,
+    "relevance_ratio": 1.0
+  },
+  "opec.org": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "ft.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "offshore-europe.co.uk": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "energypolitics.live.ft.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "iocl.com": {
+    "pages": 28,
+    "relevant": 28,
+    "relevance_ratio": 1.0
+  },
+  "swagat.iocxtrapower.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "spandan.indianoil.co.in": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "iocletenders.nic.in": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "sdms.indianoil.in": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "oilgasbidding.eproc.in": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "planetecomsolutions.com": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  },
+  "": {
+    "pages": 1,
+    "relevant": 1,
+    "relevance_ratio": 1.0
+  }
+}

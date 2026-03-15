@@ -1,0 +1,533 @@
+2025-11-05 12:37:40 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-05 12:37:40 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-05 12:37:40 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-05 12:37:40 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-05 12:37:40 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-05 12:37:40 [scrapy.extensions.telnet] INFO: Telnet Password: 3eb3f84497b3433d
+2025-11-05 12:37:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-05 12:37:40 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251105_123739.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-05 12:37:40 [WDM] INFO: ====== WebDriver manager ======
+2025-11-05 12:37:41 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-05 12:37:41 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-05 12:37:42 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-05 12:37:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-05 12:37:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-05 12:37:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-05 12:37:43 [scrapy.core.engine] INFO: Spider opened
+2025-11-05 12:37:43 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-05 12:37:43 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-05 12:37:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-05 12:37:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-05 12:37:43 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-05 12:37:43 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-05 12:37:43 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-05 12:37:43 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-05 12:37:43 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-05 12:37:43 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-05 12:38:32 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.ipieca.org>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:32 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.totalenergies.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:32 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.bakerhughes.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:32 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.technipenergies.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:33 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.opec.org/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:33 [scrapy.core.scraper] ERROR: Error downloading <GET https://corporate.exxonmobil.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:33 [scrapy.core.scraper] ERROR: Error downloading <GET https://en.wikipedia.org/wiki/Petroleum_industry>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:33 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.bp.com/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:33 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.oil-india.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:33 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.subsea7.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:33 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.iea.org>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:34 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.equinor.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:34 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.ogj.com/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:35 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.rigzone.com/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:35 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.iocl.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:36 [scrapy.core.scraper] ERROR: Error downloading <GET https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:37 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.chevron.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:37 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.exxonmobil.com/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:37 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.energyvoice.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:38 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.offshore-technology.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:39 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.ongcindia.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:41 [scrapy.core.scraper] ERROR: Error downloading <GET https://gem.wiki/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:42 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.hartenergy.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-05 12:38:44 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.spe.org>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:45 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.upstreamonline.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:46 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.dghindia.gov.in>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:46 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.energyconnects.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:46 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.bp.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:47 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.saipem.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:47 [scrapy.core.scraper] ERROR: Error downloading <GET https://data.gov.in>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\web\_newclient.py", line 542, in connectionLost
+    self.bodyDecoder.noMoreData()
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\web\http.py", line 1887, in noMoreData
+    raise PotentialDataLoss()
+twisted.web.http.PotentialDataLoss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:49 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.relianceindustries.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:50 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.ft.com/oil-gas>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:51 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.dnv.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:51 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.opec.org>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:51 [scrapy.core.scraper] ERROR: Error downloading <GET https://rss.feedspot.com/oil_and_gas_rss_feeds/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:52 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.shell.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:53 [scrapy.core.scraper] ERROR: Error downloading <GET https://worldoil.com/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:54 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.eia.gov/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:54 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.slb.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:55 [oilgas_indexer] WARNING: ⚠️ Request failed or timed out: https://shell.pl
+2025-11-05 12:38:56 [oilgas_indexer] WARNING: ⚠️ Request failed or timed out: https://shell.us
+2025-11-05 12:38:56 [oilgas_indexer] WARNING: ⚠️ Request failed or timed out: https://planetecomsolutions.com
+2025-11-05 12:38:56 [scrapy.core.scraper] ERROR: Error downloading <GET https://data.gov.in>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\web\_newclient.py", line 542, in connectionLost
+    self.bodyDecoder.noMoreData()
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\web\http.py", line 1887, in noMoreData
+    raise PotentialDataLoss()
+twisted.web.http.PotentialDataLoss
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:56 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.offshore-europe.co.uk>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:38:56 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.oilandgastechnology.net>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 82, in process_response
+    method(request=request, response=response, spider=spider)
+TypeError: SmartSeleniumMiddleware.process_response() got an unexpected keyword argument 'response'
+2025-11-05 12:39:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-05 12:39:57 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.saudiaramco.com/> (failed 3 times): User timeout caused connection failure: Getting https://www.saudiaramco.com/ took longer than 25.0 seconds..
+2025-11-05 12:39:57 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.saudiaramco.com/>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 454, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://www.saudiaramco.com/ took longer than 25.0 seconds..
+2025-11-05 12:40:02 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.aramco.com> (failed 3 times): User timeout caused connection failure: Getting https://www.aramco.com took longer than 25.0 seconds..
+2025-11-05 12:40:02 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.aramco.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 454, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://www.aramco.com took longer than 25.0 seconds..
+2025-11-05 12:40:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-05 12:41:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-05 12:42:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.aramco.com> (failed 3 times): User timeout caused connection failure: Getting https://www.aramco.com took longer than 180.0 seconds..
+2025-11-05 12:42:15 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.aramco.com>
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 454, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://www.aramco.com took longer than 180.0 seconds..
+2025-11-05 12:42:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-11-05 12:42:15 [oilgas_indexer] INFO: No new domains discovered.
+2025-11-05 12:42:15 [oilgas_indexer] INFO: 💾 Saved 0 pending URLs before shutdown.
+2025-11-05 12:42:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 15,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 2,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 11,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'downloader/request_bytes': 13109,
+ 'downloader/request_count': 60,
+ 'downloader/request_method_count/GET': 60,
+ 'downloader/response_bytes': 2074346,
+ 'downloader/response_count': 45,
+ 'downloader/response_status_count/200': 22,
+ 'downloader/response_status_count/301': 6,
+ 'downloader/response_status_count/302': 5,
+ 'downloader/response_status_count/307': 1,
+ 'downloader/response_status_count/403': 10,
+ 'downloader/response_status_count/500': 1,
+ 'elapsed_time_seconds': 271.987973,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 11, 5, 7, 12, 15, 760870, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/ERROR': 48,
+ 'log_count/INFO': 27,
+ 'log_count/WARNING': 4,
+ 'responses_per_minute': 0.0,
+ 'retry/count': 12,
+ 'retry/max_reached': 3,
+ 'retry/reason_count/twisted.internet.error.DNSLookupError': 2,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 1,
+ 'retry/reason_count/twisted.internet.error.TimeoutError': 8,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'scheduler/dequeued': 60,
+ 'scheduler/dequeued/disk': 60,
+ 'scheduler/enqueued': 60,
+ 'scheduler/enqueued/disk': 60,
+ 'start_time': datetime.datetime(2025, 11, 5, 7, 7, 43, 772897, tzinfo=datetime.timezone.utc)}
+2025-11-05 12:42:15 [scrapy.core.engine] INFO: Spider closed (finished)

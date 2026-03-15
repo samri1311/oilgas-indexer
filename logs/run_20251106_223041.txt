@@ -1,0 +1,816 @@
+2025-11-06 22:30:44 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-06 22:30:44 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-06 22:30:44 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-06 22:30:44 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-06 22:30:44 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-06 22:30:44 [scrapy.extensions.telnet] INFO: Telnet Password: 7f93f9a7419ae6ad
+2025-11-06 22:30:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-06 22:30:44 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251106_223041.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-06 22:30:44 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 22:30:45 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:30:49 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:30:49 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 22:30:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-06 22:30:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-06 22:30:51 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-06 22:30:51 [scrapy.core.engine] INFO: Spider opened
+2025-11-06 22:30:51 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-06 22:30:51 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-06 22:30:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 22:30:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-06 22:30:51 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-06 22:30:51 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-06 22:30:51 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-06 22:30:51 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-06 22:30:51 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-06 22:30:51 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-06 22:31:26 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0xf6fe43+66515]
+	GetHandleVerifier [0x0xf6fe84+66580]
+	(No symbol) [0x0xd5dc48]
+	(No symbol) [0x0xd5b147]
+	(No symbol) [0x0xd4e422]
+	(No symbol) [0x0xd4fe1e]
+	(No symbol) [0x0xd4e930]
+	(No symbol) [0x0xd4e1e4]
+	(No symbol) [0x0xd4deef]
+	(No symbol) [0x0xd4be60]
+	(No symbol) [0x0xd4c7fb]
+	(No symbol) [0x0xd617ce]
+	(No symbol) [0x0xded7f7]
+	(No symbol) [0x0xdcb1cc]
+	(No symbol) [0x0xdecba7]
+	(No symbol) [0x0xdcafc6]
+	(No symbol) [0x0xd9c2ca]
+	(No symbol) [0x0xd9d154]
+	GetHandleVerifier [0x0x11c7353+2521315]
+	GetHandleVerifier [0x0x11c22d3+2500707]
+	GetHandleVerifier [0x0xf97c94+229924]
+	GetHandleVerifier [0x0xf881f8+165768]
+	GetHandleVerifier [0x0xf8ecad+193085]
+	GetHandleVerifier [0x0xf78158+100072]
+	GetHandleVerifier [0x0xf782f0+100480]
+	GetHandleVerifier [0x0xf625aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 22:31:31 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 22:31:32 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:31:32 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:31:33 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 22:31:34 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 22:31:35 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0xf6fe43+66515]
+	GetHandleVerifier [0x0xf6fe84+66580]
+	(No symbol) [0x0xd5dc48]
+	(No symbol) [0x0xd5b147]
+	(No symbol) [0x0xd4e422]
+	(No symbol) [0x0xd4fe1e]
+	(No symbol) [0x0xd4e930]
+	(No symbol) [0x0xd4e1e4]
+	(No symbol) [0x0xd4deef]
+	(No symbol) [0x0xd4be60]
+	(No symbol) [0x0xd4c7fb]
+	(No symbol) [0x0xd617ce]
+	(No symbol) [0x0xded7f7]
+	(No symbol) [0x0xdcb1cc]
+	(No symbol) [0x0xdecba7]
+	(No symbol) [0x0xdcafc6]
+	(No symbol) [0x0xd9c2ca]
+	(No symbol) [0x0xd9d154]
+	GetHandleVerifier [0x0x11c7353+2521315]
+	GetHandleVerifier [0x0x11c22d3+2500707]
+	GetHandleVerifier [0x0xf97c94+229924]
+	GetHandleVerifier [0x0xf881f8+165768]
+	GetHandleVerifier [0x0xf8ecad+193085]
+	GetHandleVerifier [0x0xf78158+100072]
+	GetHandleVerifier [0x0xf782f0+100480]
+	GetHandleVerifier [0x0xf625aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 22:31:39 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 22:31:40 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:31:40 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:31:41 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 22:31:42 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 22:31:43 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.hpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0xf6fe43+66515]
+	GetHandleVerifier [0x0xf6fe84+66580]
+	(No symbol) [0x0xd5dc48]
+	(No symbol) [0x0xd5b147]
+	(No symbol) [0x0xd4e422]
+	(No symbol) [0x0xd4fe1e]
+	(No symbol) [0x0xd4e930]
+	(No symbol) [0x0xd4e1e4]
+	(No symbol) [0x0xd4deef]
+	(No symbol) [0x0xd4be60]
+	(No symbol) [0x0xd4c7fb]
+	(No symbol) [0x0xd617ce]
+	(No symbol) [0x0xded7f7]
+	(No symbol) [0x0xdcb1cc]
+	(No symbol) [0x0xdecba7]
+	(No symbol) [0x0xdcafc6]
+	(No symbol) [0x0xd9c2ca]
+	(No symbol) [0x0xd9d154]
+	GetHandleVerifier [0x0x11c7353+2521315]
+	GetHandleVerifier [0x0x11c22d3+2500707]
+	GetHandleVerifier [0x0xf97c94+229924]
+	GetHandleVerifier [0x0xf881f8+165768]
+	GetHandleVerifier [0x0xf8ecad+193085]
+	GetHandleVerifier [0x0xf78158+100072]
+	GetHandleVerifier [0x0xf782f0+100480]
+	GetHandleVerifier [0x0xf625aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 22:31:47 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 22:31:48 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:31:48 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:31:49 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 22:31:50 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 22:31:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.hpcl.in> (failed 3 times): 500 Internal Server Error
+2025-11-06 22:31:57 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2025-11-06 22:32:19 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.rigzone.com (4.39 KB) → data/corpus/rigzone.com.txt
+2025-11-06 22:32:19 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://www.hpcl.in>: HTTP status code is not handled or not allowed
+2025-11-06 22:32:21 [oilgas_indexer] INFO: ✅ Sitemap found for offshore-technology.com: https://www.offshore-technology.com/sitemap.xml
+2025-11-06 22:32:21 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from offshore-technology.com
+2025-11-06 22:33:15 [scrapy.extensions.logstats] INFO: Crawled 8 pages (at 5 pages/min), scraped 1 items (at 1 items/min)
+2025-11-06 22:33:41 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://globaldata.com/
+2025-11-06 22:34:06 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://globaldata.com/
+2025-11-06 22:34:31 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://globaldata.com/
+2025-11-06 22:34:31 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://globaldata.com/> (failed 3 times): 408 Request Time-out
+2025-11-06 22:34:57 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.globaldata.com/store/report/oil-and-gas-contractors-in-energy-transition-theme-analysis?utm_source=verdict&utm_medium=website&utm_campaign=gd_curve&utm_content=globaldata_reports_carousel
+2025-11-06 22:35:22 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://www.globaldata.com/store/report/offshore-oil-and-gas-upstream-development-market-analysis?utm_source=verdict&utm_medium=website&utm_campaign=gd_curve&utm_content=globaldata_reports_carousel
+2025-11-06 22:35:57 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 5 pages/min), scraped 1 items (at 0 items/min)
+2025-11-06 22:35:57 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 4 new discoveries to disk.
+2025-11-06 22:36:17 [oilgas_indexer] INFO: ✅ Sitemap found for saipem.com: https://www.saipem.com/sitemap.xml
+2025-11-06 22:36:17 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from saipem.com
+2025-11-06 22:36:20 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://offshore.nridigital.com/: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0xf6fe43+66515]
+	GetHandleVerifier [0x0xf6fe84+66580]
+	(No symbol) [0x0xd5dc48]
+	(No symbol) [0x0xd4ce80]
+	(No symbol) [0x0xd6b81b]
+	(No symbol) [0x0xdd1c25]
+	(No symbol) [0x0xdec4d9]
+	(No symbol) [0x0xdcafc6]
+	(No symbol) [0x0xd9c2ca]
+	(No symbol) [0x0xd9d154]
+	GetHandleVerifier [0x0x11c7353+2521315]
+	GetHandleVerifier [0x0x11c22d3+2500707]
+	GetHandleVerifier [0x0xf97c94+229924]
+	GetHandleVerifier [0x0xf881f8+165768]
+	GetHandleVerifier [0x0xf8ecad+193085]
+	GetHandleVerifier [0x0xf78158+100072]
+	GetHandleVerifier [0x0xf782f0+100480]
+	GetHandleVerifier [0x0xf625aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 22:36:31 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 22:36:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:36:34 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:36:35 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 22:36:37 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 22:37:09 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.saipem.com/en (4.45 KB) → data/corpus/saipem.com.txt
+2025-11-06 22:37:09 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 5 pages/min), scraped 2 items (at 1 items/min)
+2025-11-06 22:37:09 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:37:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <408 https://globaldata.com/>: HTTP status code is not handled or not allowed
+2025-11-06 22:37:52 [oilgas_indexer] INFO: ✅ Sitemap found for globaldatamarketingsolutions.com: https://www.globaldatamarketingsolutions.com/sitemap.xml
+2025-11-06 22:37:52 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from globaldatamarketingsolutions.com
+2025-11-06 22:37:52 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.globaldatamarketingsolutions.com
+2025-11-06 22:38:00 [oilgas_indexer] INFO: ✅ Sitemap found for globaldata.com: https://www.globaldata.com/sitemap.xml
+2025-11-06 22:38:00 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from globaldata.com
+2025-11-06 22:38:01 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 0 pages/min), scraped 2 items (at 0 items/min)
+2025-11-06 22:38:03 [oilgas_indexer] INFO: ✅ Sitemap found for globaldata.com: https://www.globaldata.com/sitemap.xml
+2025-11-06 22:38:03 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from globaldata.com
+2025-11-06 22:38:04 [oilgas_indexer] INFO: ✅ Sitemap found for decarboncongress.com: https://decarboncongress.com/sitemap.xml
+2025-11-06 22:38:04 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from decarboncongress.com
+2025-11-06 22:38:07 [oilgas_indexer] INFO: ✅ Sitemap found for chevron.com: https://www.chevron.com/sitemap.xml
+2025-11-06 22:38:09 [oilgas_indexer] INFO: ✅ Sitemap found for globaldata.com: https://www.globaldata.com/sitemap.xml
+2025-11-06 22:38:09 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from globaldata.com
+2025-11-06 22:38:09 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.globaldata.com/store (13.86 KB) → data/corpus/globaldata.com.txt
+2025-11-06 22:38:09 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:39:14 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://decarboncongress.com/programme/?utm_source=media;utm_medium=offshore_technology;utm_campaign=july25;utm_content=calendar_Vladislava (5.21 KB) → data/corpus/decarboncongress.com.txt
+2025-11-06 22:39:14 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 19 new discoveries to disk.
+2025-11-06 22:39:14 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 23 pages/min), scraped 4 items (at 2 items/min)
+2025-11-06 22:39:19 [oilgas_indexer] INFO: ✅ Sitemap found for globaldata.com: https://www.globaldata.com/sitemap.xml
+2025-11-06 22:39:19 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from globaldata.com
+2025-11-06 22:39:21 [oilgas_indexer] INFO: ✅ Sitemap found for globaldata.com: https://www.globaldata.com/sitemap.xml
+2025-11-06 22:39:22 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from globaldata.com
+2025-11-06 22:39:24 [oilgas_indexer] INFO: ✅ Sitemap found for offshore.nridigital.com: https://offshore.nridigital.com/sitemap.xml
+2025-11-06 22:39:25 [oilgas_indexer] INFO: ✅ Sitemap found for globaldata.com: https://www.globaldata.com/sitemap.xml
+2025-11-06 22:39:25 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from globaldata.com
+2025-11-06 22:39:25 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.globaldata.com/store/report/polypropylene-market-analysis/?utm_source=verdict&utm_medium=website&utm_campaign=gd_curve&utm_content=globaldata_reports_carousel
+2025-11-06 22:39:30 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:39:30 [oilgas_indexer] INFO: [ADAPT] depth=5 delay=1.0s good_ratio=1.00 latency=6.59
+2025-11-06 22:39:30 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.globaldata.com/store/report/offshore-oil-and-gas-upstream-development-market-analysis/?utm_source=verdict&utm_medium=website&utm_campaign=gd_curve&utm_content=globaldata_reports_carousel (15.00 KB) → data/corpus/globaldata.com.txt
+2025-11-06 22:39:30 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=1.0s good_ratio=1.00 latency=6.59
+2025-11-06 22:39:30 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=1.0s good_ratio=1.00 latency=6.59
+2025-11-06 22:39:30 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.globaldata.com/store/report/oil-and-gas-contractors-in-energy-transition-theme-analysis/?utm_source=verdict&utm_medium=website&utm_campaign=gd_curve&utm_content=globaldata_reports_carousel (12.78 KB) → data/corpus/globaldata.com.txt
+2025-11-06 22:39:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.globaldata.com/store/report/southeast-asia-oil-and-gas-upstream-market-analysis/?utm_source=verdict&utm_medium=website&utm_campaign=gd_curve&utm_content=globaldata_reports_carousel (15.14 KB) → data/corpus/globaldata.com.txt
+2025-11-06 22:39:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.globaldata.com/store/report/usa-lower-48-unconventional-oil-and-gas-production-market-analysis/?utm_source=verdict&utm_medium=website&utm_campaign=gd_curve&utm_content=globaldata_reports_carousel (16.24 KB) → data/corpus/globaldata.com.txt
+2025-11-06 22:39:42 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=1.0s good_ratio=1.00 latency=6.59
+2025-11-06 22:39:48 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.offshore-technology.com (7.95 KB) → data/corpus/offshore-technology.com.txt
+2025-11-06 22:40:01 [scrapy.extensions.logstats] INFO: Crawled 45 pages (at 4 pages/min), scraped 10 items (at 6 items/min)
+2025-11-06 22:40:02 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:02 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:06 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://login.globaldata.com/Login/Index/store?ReturnUrl=report/offshore-oil-and-gas-upstream-development-market-analysis
+2025-11-06 22:40:06 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:07 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:07 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:08 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:09 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:11 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://etender.srm.oilindia.in/irj/portal — retrying once
+2025-11-06 22:40:11 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:12 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:12 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:13 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:14 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:22 [oilgas_indexer] INFO: ✅ Sitemap found for cookiepedia.co.uk: https://cookiepedia.co.uk/sitemap.xml
+2025-11-06 22:40:23 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:23 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:24 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:24 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:25 [oilgas_indexer] INFO: ✅ Sitemap found for bp.com: https://www.bp.com/sitemap.xml
+2025-11-06 22:40:31 [oilgas_indexer] INFO: ✅ Sitemap found for chevron.com: https://www.chevron.com/sitemap.xml
+2025-11-06 22:40:34 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://login.globaldata.com/Login/Index/store?ReturnUrl=report/oil-and-gas-contractors-in-energy-transition-theme-analysis
+2025-11-06 22:40:34 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=1.0s good_ratio=1.00 latency=6.30
+2025-11-06 22:40:34 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=1.0s good_ratio=1.00 latency=6.30
+2025-11-06 22:40:34 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://oileservice.oilindia.in/OnlineVigilancePortal (1.77 KB) → data/corpus/oileservice.oilindia.in.txt
+2025-11-06 22:40:35 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.oil-india.com (9.12 KB) → data/corpus/oil-india.com.txt
+2025-11-06 22:40:35 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:40:35 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:40:35 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:40:35 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:40:35 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:40:40 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://commoditiesasia.live.ft.com/?segmentId=670a71df-8084-ecde-e790-63bb7341b637
+2025-11-06 22:41:11 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=1.5s good_ratio=1.00 latency=18.06
+2025-11-06 22:41:11 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:11 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=2.0s good_ratio=1.00 latency=27.43
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=2.5s good_ratio=1.00 latency=27.43
+2025-11-06 22:41:11 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=3.0s good_ratio=1.00 latency=31.02
+2025-11-06 22:41:11 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=3.5s good_ratio=1.00 latency=33.97
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=4.0s good_ratio=1.00 latency=33.97
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=4.5s good_ratio=1.00 latency=33.97
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=33.97
+2025-11-06 22:41:11 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:11 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=36.42
+2025-11-06 22:41:12 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:12 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=37.66
+2025-11-06 22:41:12 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=37.66
+2025-11-06 22:41:12 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:12 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=38.64
+2025-11-06 22:41:38 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 26 pages/min), scraped 12 items (at 2 items/min)
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/en_gb/carbon-connect/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/sr_rs/serbia/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/en_mr/mauritania/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/en_sn/senegal/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/bg_bg/bulgaria/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:38 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=38.64
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:38 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=48.75
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:38 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=51.45
+2025-11-06 22:41:38 [oilgas_indexer] INFO: 🗺️ Extracted 53 sitemap URLs from bp.com
+2025-11-06 22:41:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/lv_lv/latvia/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/cs_cz/czech-republic/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/lt_lt/lithuania/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/fr_fr/france/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/et_ee/estonia/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/en/global/corporate/careers/jobs-at-bp/sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/pt_pt/portugal/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:42 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/fr_sn/senegal/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:41:42 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=48.73
+2025-11-06 22:41:42 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=48.73
+2025-11-06 22:42:09 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 22:42:13 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 22:42:15 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:42:15 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:42:16 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 22:42:17 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 22:42:22 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.chevron.com/who-we-are/leadership/eimear-bonner: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x113fe43+66515]
+	GetHandleVerifier [0x0x113fe84+66580]
+	(No symbol) [0x0xf2dc48]
+	(No symbol) [0x0xf1ce80]
+	(No symbol) [0x0xf3b81b]
+	(No symbol) [0x0xfa1c25]
+	(No symbol) [0x0xfbc4d9]
+	(No symbol) [0x0xf9afc6]
+	(No symbol) [0x0xf6c2ca]
+	(No symbol) [0x0xf6d154]
+	GetHandleVerifier [0x0x1397353+2521315]
+	GetHandleVerifier [0x0x13922d3+2500707]
+	GetHandleVerifier [0x0x1167c94+229924]
+	GetHandleVerifier [0x0x11581f8+165768]
+	GetHandleVerifier [0x0x115ecad+193085]
+	GetHandleVerifier [0x0x1148158+100072]
+	GetHandleVerifier [0x0x11482f0+100480]
+	GetHandleVerifier [0x0x11325aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 22:52:36 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 22:52:39 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:52:40 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:52:41 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 22:52:43 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 22:53:06 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/ro_ro/romania/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:53:06 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/sk_sk/slovakia/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:53:06 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/en_ae/arabia_lubricants/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:53:06 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.bp.com/fr_mr/mauritania/home.sitemap.xml (0.54 KB) → data/corpus/bp.com.txt
+2025-11-06 22:53:11 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 21 pages/min), scraped 29 items (at 17 items/min)
+2025-11-06 22:53:11 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 829.3s with only 2 pages — skipping domain.
+2025-11-06 22:53:17 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://aboutus.ft.com/careers
+2025-11-06 22:53:17 [oilgas_indexer] INFO: [AUTO-MERGE] Wrote 33 new discoveries to disk.
+2025-11-06 22:54:27 [scrapy.extensions.logstats] INFO: Crawled 103 pages (at 11 pages/min), scraped 29 items (at 0 items/min)
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 3 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 4 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 5 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 6 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on bp.com for 1038.0s with only 19 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 7 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 8 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 9 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 10 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 11 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 12 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 13 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.2s with only 14 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.9s with only 15 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.9s with only 16 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 982.9s with only 17 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 983.0s with only 18 pages — skipping domain.
+2025-11-06 22:54:27 [oilgas_indexer] WARNING: ⏩ Stalled on chevron.com for 983.0s with only 19 pages — skipping domain.
+2025-11-06 22:54:29 [oilgas_indexer] WARNING: ⚠️ Empty page text for data:, — retrying once
+2025-11-06 22:54:29 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 855.1s with only 2 pages — skipping domain.
+2025-11-06 22:54:29 [oilgas_indexer] WARNING: ⏩ Stalled on ft.com for 903.4s with only 2 pages — skipping domain.
+2025-11-06 22:54:29 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 855.1s with only 3 pages — skipping domain.
+2025-11-06 22:54:30 [oilgas_indexer] WARNING: ⏩ Stalled on ft.com for 904.6s with only 3 pages — skipping domain.
+2025-11-06 22:54:30 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=48.73
+2025-11-06 22:54:30 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://events.ft.com/events-list (5.37 KB) → data/corpus/events.ft.com.txt
+2025-11-06 22:54:40 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://wealthmanagement.pwmnet.com
+2025-11-06 22:54:46 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 924.2s with only 3 pages — skipping domain.
+2025-11-06 22:54:46 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 872.3s with only 4 pages — skipping domain.
+2025-11-06 22:54:46 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=44.38
+2025-11-06 22:55:39 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=44.38
+2025-11-06 22:55:39 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.ft.com/oil-gas (5.72 KB) → data/corpus/ft.com.txt
+2025-11-06 22:55:39 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://markets.ft.com/data/currencies (10.38 KB) → data/corpus/markets.ft.com.txt
+2025-11-06 22:55:39 [scrapy.extensions.logstats] INFO: Crawled 116 pages (at 13 pages/min), scraped 32 items (at 3 items/min)
+2025-11-06 22:55:40 [oilgas_indexer] INFO: 🗺️ Extracted 336 sitemap URLs from chevron.com
+2025-11-06 22:55:40 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.chevron.com — retrying once
+2025-11-06 22:55:40 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 926.3s with only 5 pages — skipping domain.
+2025-11-06 22:55:43 [oilgas_indexer] INFO: ✅ Sitemap found for help.ft.com: https://help.ft.com/sitemap.xml
+2025-11-06 22:55:43 [oilgas_indexer] INFO: 🗺️ Extracted 0 sitemap URLs from help.ft.com
+2025-11-06 22:55:43 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://help.ft.com
+2025-11-06 22:55:43 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 981.8s with only 4 pages — skipping domain.
+2025-11-06 22:55:43 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 929.9s with only 6 pages — skipping domain.
+2025-11-06 22:55:43 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 929.9s with only 7 pages — skipping domain.
+2025-11-06 22:55:43 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 929.9s with only 8 pages — skipping domain.
+2025-11-06 22:55:43 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 929.9s with only 9 pages — skipping domain.
+2025-11-06 22:56:04 [scrapy.extensions.logstats] INFO: Crawled 122 pages (at 6 pages/min), scraped 32 items (at 0 items/min)
+2025-11-06 22:56:04 [oilgas_indexer] INFO: 🗺️ Extracted 252 sitemap URLs from chevron.com
+2025-11-06 22:56:04 [oilgas_indexer] WARNING: ⚠️ Empty page text for https://www.chevron.com — retrying once
+2025-11-06 22:56:04 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 950.6s with only 10 pages — skipping domain.
+2025-11-06 22:56:04 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1002.5s with only 5 pages — skipping domain.
+2025-11-06 22:56:04 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 950.6s with only 11 pages — skipping domain.
+2025-11-06 22:56:04 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1002.5s with only 6 pages — skipping domain.
+2025-11-06 22:56:18 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 964.2s with only 12 pages — skipping domain.
+2025-11-06 22:56:18 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 964.2s with only 13 pages — skipping domain.
+2025-11-06 22:56:18 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1016.1s with only 7 pages — skipping domain.
+2025-11-06 22:56:34 [oilgas_indexer] INFO: 🗺️ Extracted 1095 sitemap URLs from offshore.nridigital.com
+2025-11-06 22:56:34 [oilgas_indexer] INFO: [ADAPT] depth=6 delay=5.0s good_ratio=1.00 latency=143.20
+2025-11-06 22:56:34 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://offshore.nridigital.com/offshore_technology_focus_may25/issue_100 (1.08 KB) → data/corpus/offshore.nridigital.com.txt
+2025-11-06 22:56:34 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1032.6s with only 8 pages — skipping domain.
+2025-11-06 22:56:34 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 980.8s with only 14 pages — skipping domain.
+2025-11-06 22:56:34 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 980.8s with only 15 pages — skipping domain.
+2025-11-06 22:56:34 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 980.8s with only 16 pages — skipping domain.
+2025-11-06 22:57:48 [scrapy.extensions.logstats] INFO: Crawled 153 pages (at 31 pages/min), scraped 33 items (at 1 items/min)
+2025-11-06 22:57:48 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 1054.5s with only 17 pages — skipping domain.
+2025-11-06 22:57:48 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 1054.5s with only 18 pages — skipping domain.
+2025-11-06 22:57:48 [oilgas_indexer] WARNING: ⏩ Stalled on cookiepedia.co.uk for 1054.5s with only 19 pages — skipping domain.
+2025-11-06 22:58:12 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 22:58:17 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 22:58:18 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:58:19 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 22:58:19 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 22:58:21 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 22:59:12 [scrapy.extensions.logstats] INFO: Crawled 179 pages (at 26 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:01:16 [scrapy.extensions.logstats] INFO: Crawled 230 pages (at 51 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:01:41 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 23:01:46 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:01:47 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:01:47 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:01:48 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:01:49 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:03:34 [scrapy.extensions.logstats] INFO: Crawled 282 pages (at 52 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:05:23 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 23:05:27 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:05:30 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:05:31 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:05:32 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:05:33 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:05:52 [scrapy.extensions.logstats] INFO: Crawled 329 pages (at 47 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:05:53 [oilgas_indexer] WARNING: ⏩ Stalled on  for 684.2s with only 4 pages — skipping domain.
+2025-11-06 23:07:50 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://offshore.nridigital.com/offshore_technology_focus_sep23/buyers-guides
+2025-11-06 23:07:58 [scrapy.extensions.logstats] INFO: Crawled 363 pages (at 34 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:07:58 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1716.4s with only 9 pages — skipping domain.
+2025-11-06 23:07:58 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1716.4s with only 10 pages — skipping domain.
+2025-11-06 23:09:10 [scrapy.extensions.logstats] INFO: Crawled 395 pages (at 32 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:09:10 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1788.7s with only 11 pages — skipping domain.
+2025-11-06 23:09:26 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 23:09:30 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:09:32 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:09:33 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:09:34 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:09:35 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:10:53 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://offshore.nridigital.com/offshore_technology_focus_sep23/sponsored_supplements
+2025-11-06 23:10:58 [scrapy.extensions.logstats] INFO: Crawled 423 pages (at 28 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:10:59 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1897.1s with only 12 pages — skipping domain.
+2025-11-06 23:10:59 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1897.2s with only 13 pages — skipping domain.
+2025-11-06 23:10:59 [oilgas_indexer] WARNING: ⏩ Stalled on  for 990.2s with only 5 pages — skipping domain.
+2025-11-06 23:12:03 [scrapy.extensions.logstats] INFO: Crawled 449 pages (at 26 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:12:03 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1961.6s with only 14 pages — skipping domain.
+2025-11-06 23:12:03 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 1961.6s with only 15 pages — skipping domain.
+2025-11-06 23:12:58 [scrapy.extensions.logstats] INFO: Crawled 472 pages (at 23 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:12:59 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 2017.1s with only 16 pages — skipping domain.
+2025-11-06 23:13:25 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 23:13:30 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:13:31 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:13:32 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:13:34 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:13:35 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:14:47 [scrapy.extensions.logstats] INFO: Crawled 505 pages (at 33 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🗺️ Extracted 547 sitemap URLs from cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://cookiepedia.co.uk/giving-consent-to-cookies
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] WARNING: ⏩ Stalled on  for 1218.7s with only 6 pages — skipping domain.
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 2125.7s with only 17 pages — skipping domain.
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 2125.7s with only 18 pages — skipping domain.
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:14:47 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:15:07 [scrapy.extensions.logstats] INFO: Crawled 509 pages (at 4 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:15:07 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:15:07 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:15:07 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:15:07 [oilgas_indexer] WARNING: ⏩ Stalled on offshore.nridigital.com for 2145.8s with only 19 pages — skipping domain.
+2025-11-06 23:16:01 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://offshore.nridigital.com/offshore_technology_focus_sep23/foreword_unlocking_robotics_full_potential
+2025-11-06 23:16:32 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://offshore.nridigital.com/offshore_technology_focus_sep23/thematic_take
+2025-11-06 23:16:42 [scrapy.extensions.logstats] INFO: Crawled 517 pages (at 8 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:16:53 [scrapy.extensions.logstats] INFO: Crawled 518 pages (at 1 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:17:15 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:17:15 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:17:15 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:17:15 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:17:15 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:18:03 [scrapy.extensions.logstats] INFO: Crawled 530 pages (at 12 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:18:59 [scrapy.extensions.logstats] INFO: Crawled 542 pages (at 12 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:19:39 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:19:59 [scrapy.extensions.logstats] INFO: Crawled 555 pages (at 13 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:20:36 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 23:20:41 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:20:43 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:20:44 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:20:45 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:20:47 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:21:36 [scrapy.extensions.logstats] INFO: Crawled 566 pages (at 11 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:21:36 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:21:36 [oilgas_indexer] WARNING: ⏩ Stalled on  for 1627.1s with only 7 pages — skipping domain.
+2025-11-06 23:21:36 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:21:36 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:21:56 [scrapy.extensions.logstats] INFO: Crawled 570 pages (at 4 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:22:52 [scrapy.extensions.logstats] INFO: Crawled 580 pages (at 10 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:23:54 [scrapy.extensions.logstats] INFO: Crawled 592 pages (at 12 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:24:54 [scrapy.extensions.logstats] INFO: Crawled 604 pages (at 12 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:31 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:25:56 [scrapy.extensions.logstats] INFO: Crawled 617 pages (at 13 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:26:54 [scrapy.extensions.logstats] INFO: Crawled 626 pages (at 9 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:27:39 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:27:39 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:27:53 [scrapy.extensions.logstats] INFO: Crawled 638 pages (at 12 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:28:20 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 23:28:30 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:28:32 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:28:33 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:28:34 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:28:37 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:28:37 [oilgas_indexer] WARNING: ⏩ Stalled on  for 2048.6s with only 8 pages — skipping domain.
+2025-11-06 23:29:23 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://offshore.nridigital.com/offshore_technology_focus_feb25/seal_saver_advert
+2025-11-06 23:29:40 [scrapy.extensions.logstats] INFO: Crawled 645 pages (at 7 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:30:36 [scrapy.extensions.logstats] INFO: Crawled 648 pages (at 3 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:31:03 [scrapy.extensions.logstats] INFO: Crawled 650 pages (at 2 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:31:27 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:31:27 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:31:27 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:31:27 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:31:57 [scrapy.extensions.logstats] INFO: Crawled 662 pages (at 12 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:33:02 [scrapy.extensions.logstats] INFO: Crawled 676 pages (at 14 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:33:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:33:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:33:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:33:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:33:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:33:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:33:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:33:46 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://offshore.nridigital.com/offshore_technology_focus_sep24/cybersecurity-ai-geopolitics-bigger-threat-than-ever: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x5ffe43+66515]
+	GetHandleVerifier [0x0x5ffe84+66580]
+	(No symbol) [0x0x3edc48]
+	(No symbol) [0x0x3dce80]
+	(No symbol) [0x0x3fb81b]
+	(No symbol) [0x0x461c25]
+	(No symbol) [0x0x47c4d9]
+	(No symbol) [0x0x45afc6]
+	(No symbol) [0x0x42c2ca]
+	(No symbol) [0x0x42d154]
+	GetHandleVerifier [0x0x857353+2521315]
+	GetHandleVerifier [0x0x8522d3+2500707]
+	GetHandleVerifier [0x0x627c94+229924]
+	GetHandleVerifier [0x0x6181f8+165768]
+	GetHandleVerifier [0x0x61ecad+193085]
+	GetHandleVerifier [0x0x608158+100072]
+	GetHandleVerifier [0x0x6082f0+100480]
+	GetHandleVerifier [0x0x5f25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 23:43:21 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=64062): Read timed out. (read timeout=120)")': /session/f574d9cbc64b0ada6eeeb98cdd975011
+2025-11-06 23:43:26 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:43:29 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:43:30 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:43:30 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:43:32 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:43:57 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://offshore.nridigital.com/offshore_technology_focus_sep24/globaldata-analyst-interview-cybersecurity-ai
+2025-11-06 23:44:09 [scrapy.extensions.logstats] INFO: Crawled 686 pages (at 10 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:45:14 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://offshore.nridigital.com/offshore_technology_focus_sep24/thematic_take_contents: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x5ffe43+66515]
+	GetHandleVerifier [0x0x5ffe84+66580]
+	(No symbol) [0x0x3edc48]
+	(No symbol) [0x0x3de1bc]
+	(No symbol) [0x0x3ddeef]
+	(No symbol) [0x0x3dd03a]
+	(No symbol) [0x0x3faa0c]
+	(No symbol) [0x0x47cedf]
+	(No symbol) [0x0x45afc6]
+	(No symbol) [0x0x42c2ca]
+	(No symbol) [0x0x42d154]
+	GetHandleVerifier [0x0x857353+2521315]
+	GetHandleVerifier [0x0x8522d3+2500707]
+	GetHandleVerifier [0x0x627c94+229924]
+	GetHandleVerifier [0x0x6181f8+165768]
+	GetHandleVerifier [0x0x61ecad+193085]
+	GetHandleVerifier [0x0x608158+100072]
+	GetHandleVerifier [0x0x6082f0+100480]
+	GetHandleVerifier [0x0x5f25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-06 23:47:32 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=52999): Read timed out. (read timeout=120)")': /session/6abb70e150846f85f169fd8c0670570f
+2025-11-06 23:47:36 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:47:38 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:47:38 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:47:39 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:47:40 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:47:53 [scrapy.extensions.logstats] INFO: Crawled 696 pages (at 10 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:47:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:47:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:47:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:47:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:47:53 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:48:55 [scrapy.extensions.logstats] INFO: Crawled 707 pages (at 11 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:49:12 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:49:12 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:49:59 [scrapy.extensions.logstats] INFO: Crawled 721 pages (at 14 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:50:02 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-06 23:50:07 [WDM] INFO: ====== WebDriver manager ======
+2025-11-06 23:50:08 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:50:09 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-06 23:50:10 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-06 23:50:11 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-06 23:50:21 [oilgas_indexer] WARNING: ⏩ Stalled on  for 3352.1s with only 9 pages — skipping domain.
+2025-11-06 23:50:57 [scrapy.extensions.logstats] INFO: Crawled 728 pages (at 7 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:50:57 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:52:05 [scrapy.extensions.logstats] INFO: Crawled 742 pages (at 14 pages/min), scraped 33 items (at 0 items/min)
+2025-11-06 23:52:05 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:52:05 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:52:05 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:52:05 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-06 23:53:00 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://offshore.nridigital.com/offshore_technology_focus_mar24/contents: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x5ffe43+66515]
+	GetHandleVerifier [0x0x5ffe84+66580]
+	(No symbol) [0x0x3edc48]
+	(No symbol) [0x0x3de1bc]
+	(No symbol) [0x0x3ddeef]
+	(No symbol) [0x0x3dbe60]
+	(No symbol) [0x0x3dc7fb]
+	(No symbol) [0x0x3f17ce]
+	(No symbol) [0x0x47d7f7]
+	(No symbol) [0x0x45b1cc]
+	(No symbol) [0x0x47cba7]
+	(No symbol) [0x0x45afc6]
+	(No symbol) [0x0x42c2ca]
+	(No symbol) [0x0x42d154]
+	GetHandleVerifier [0x0x857353+2521315]
+	GetHandleVerifier [0x0x8522d3+2500707]
+	GetHandleVerifier [0x0x627c94+229924]
+	GetHandleVerifier [0x0x6181f8+165768]
+	GetHandleVerifier [0x0x61ecad+193085]
+	GetHandleVerifier [0x0x608158+100072]
+	GetHandleVerifier [0x0x6082f0+100480]
+	GetHandleVerifier [0x0x5f25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 00:06:31 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 00:06:33 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 00:06:35 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 00:06:36 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 00:06:38 [WDM] INFO: WebDriver version 141.0.7390.122 selected
+2025-11-07 00:06:38 [WDM] INFO: Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/win32/chromedriver-win32.zip
+2025-11-07 00:06:38 [WDM] INFO: About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/win32/chromedriver-win32.zip
+2025-11-07 00:06:39 [WDM] INFO: Driver downloading response is 200
+2025-11-07 00:06:47 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 00:06:47 [WDM] INFO: Driver has been saved in cache [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122]
+2025-11-07 00:06:50 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 00:07:25 [scrapy.extensions.logstats] INFO: Crawled 749 pages (at 7 pages/min), scraped 33 items (at 0 items/min)
+2025-11-07 00:07:52 [scrapy.extensions.logstats] INFO: Crawled 754 pages (at 5 pages/min), scraped 33 items (at 0 items/min)
+2025-11-07 00:08:01 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:09:02 [scrapy.extensions.logstats] INFO: Crawled 771 pages (at 17 pages/min), scraped 33 items (at 0 items/min)
+2025-11-07 00:09:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:09:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:09:02 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:09:53 [scrapy.extensions.logstats] INFO: Crawled 784 pages (at 13 pages/min), scraped 33 items (at 0 items/min)
+2025-11-07 00:10:13 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:10:13 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:10:13 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:10:13 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:11:01 [oilgas_indexer] INFO: ♻️ Restarting Selenium driver after 80 pages
+2025-11-07 00:11:05 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 00:11:07 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 00:11:08 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 00:11:08 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 00:11:10 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-07 00:11:10 [scrapy.extensions.logstats] INFO: Crawled 802 pages (at 18 pages/min), scraped 33 items (at 0 items/min)
+2025-11-07 00:11:10 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:11:10 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:11:10 [oilgas_indexer] WARNING: ⏩ Stalled on  for 4601.3s with only 10 pages — skipping domain.
+2025-11-07 00:11:10 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:11:10 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:11:10 [oilgas_indexer] INFO: 🛑 Capped at 350 pages for cookiepedia.co.uk
+2025-11-07 00:11:58 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://offshore.nridigital.com/offshore_technology_focus_jun23/leading-oil-and-gas-companies-in-the-cybersecurity-theme: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=141.0.7390.124); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x124fe43+66515]
+	GetHandleVerifier [0x0x124fe84+66580]
+	(No symbol) [0x0x103dc48]
+	(No symbol) [0x0x102e1bc]
+	(No symbol) [0x0x102deef]
+	(No symbol) [0x0x102be60]
+	(No symbol) [0x0x102c937]
+	(No symbol) [0x0x103963e]
+	(No symbol) [0x0x104b195]
+	(No symbol) [0x0x1050d26]
+	(No symbol) [0x0x102cfb6]
+	(No symbol) [0x0x104aa0c]
+	(No symbol) [0x0x10ccedf]
+	(No symbol) [0x0x10aafc6]
+	(No symbol) [0x0x107c2ca]
+	(No symbol) [0x0x107d154]
+	GetHandleVerifier [0x0x14a7353+2521315]
+	GetHandleVerifier [0x0x14a22d3+2500707]
+	GetHandleVerifier [0x0x1277c94+229924]
+	GetHandleVerifier [0x0x12681f8+165768]
+	GetHandleVerifier [0x0x126ecad+193085]
+	GetHandleVerifier [0x0x1258158+100072]
+	GetHandleVerifier [0x0x12582f0+100480]
+	GetHandleVerifier [0x0x12425aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-07 00:34:50 [WDM] INFO: ====== WebDriver manager ======
+2025-11-07 00:34:52 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 00:34:53 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-07 00:34:54 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-07 00:34:56 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.

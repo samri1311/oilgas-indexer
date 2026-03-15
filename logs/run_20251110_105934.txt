@@ -1,0 +1,340 @@
+2025-11-10 10:59:44 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: oilgas_indexer)
+2025-11-10 10:59:45 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.2',
+ 'Platform': 'Windows-10-10.0.26100-SP0'}
+2025-11-10 10:59:45 [oilgas_indexer] INFO: 🧠 CrawlerBrain initialized with dynamic tuning.
+2025-11-10 10:59:45 [oilgas_indexer] INFO: Loaded 0 known domains from file.
+2025-11-10 10:59:45 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-10 10:59:45 [scrapy.extensions.telnet] INFO: Telnet Password: 087c116b6773b943
+2025-11-10 10:59:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-11-10 10:59:45 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 2.0,
+ 'BOT_NAME': 'oilgas_indexer',
+ 'CONCURRENT_REQUESTS': 4,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 25,
+ 'JOBDIR': 'crawl_state\\oilgas',
+ 'LOG_FILE': 'logs/run_20251110_105934.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'oilgas_indexer.spiders',
+ 'SPIDER_MODULES': ['oilgas_indexer.spiders']}
+2025-11-10 10:59:46 [WDM] INFO: ====== WebDriver manager ======
+2025-11-10 10:59:59 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:00:02 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:00:04 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:00:09 [WDM] INFO: WebDriver version 141.0.7390.122 selected
+2025-11-10 11:00:09 [WDM] INFO: Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/win32/chromedriver-win32.zip
+2025-11-10 11:00:09 [WDM] INFO: About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/win32/chromedriver-win32.zip
+2025-11-10 11:00:11 [WDM] INFO: Driver downloading response is 200
+2025-11-10 11:00:19 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:00:21 [WDM] INFO: Driver has been saved in cache [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122]
+2025-11-10 11:00:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'oilgas_indexer.middlewares.SmartSeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-10 11:00:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-10 11:00:27 [scrapy.middleware] INFO: Enabled item pipelines:
+['oilgas_indexer.pipelines.PersistentQueuePipeline']
+2025-11-10 11:00:27 [scrapy.core.engine] INFO: Spider opened
+2025-11-10 11:00:27 [py.warnings] WARNING: C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: oilgas_indexer.spiders.ind_spider.OilGasSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-11-10 11:00:27 [oilgas_indexer] INFO: 🗂 Output folder ready: data\corpus
+2025-11-10 11:00:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-10 11:00:27 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-10 11:00:27 [oilgas_indexer] INFO: ✅ Merge complete: 0 domains and 0 seed URLs.
+2025-11-10 11:00:27 [oilgas_indexer] INFO: Loaded 0 domains from known_domains.txt
+2025-11-10 11:00:27 [oilgas_indexer] INFO: Loaded 0 URLs from external_seeds.txt
+2025-11-10 11:00:27 [oilgas_indexer] INFO: Starting crawl with 48 total start URLs.
+2025-11-10 11:00:27 [oilgas_indexer] INFO: 🌍 Starting crawl with 48 total start URLs.
+2025-11-10 11:00:27 [oilgas_indexer] INFO: No valid pending queue found — starting fresh crawl.
+2025-11-10 11:00:47 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x7afe43+66515]
+	GetHandleVerifier [0x0x7afe84+66580]
+	(No symbol) [0x0x59dc48]
+	(No symbol) [0x0x59b147]
+	(No symbol) [0x0x58e422]
+	(No symbol) [0x0x58fe1e]
+	(No symbol) [0x0x58e930]
+	(No symbol) [0x0x58e1e4]
+	(No symbol) [0x0x58deef]
+	(No symbol) [0x0x58be60]
+	(No symbol) [0x0x58c7fb]
+	(No symbol) [0x0x5a17ce]
+	(No symbol) [0x0x62d7f7]
+	(No symbol) [0x0x60b1cc]
+	(No symbol) [0x0x62cba7]
+	(No symbol) [0x0x60afc6]
+	(No symbol) [0x0x5dc2ca]
+	(No symbol) [0x0x5dd154]
+	GetHandleVerifier [0x0xa07353+2521315]
+	GetHandleVerifier [0x0xa022d3+2500707]
+	GetHandleVerifier [0x0x7d7c94+229924]
+	GetHandleVerifier [0x0x7c81f8+165768]
+	GetHandleVerifier [0x0x7cecad+193085]
+	GetHandleVerifier [0x0x7b8158+100072]
+	GetHandleVerifier [0x0x7b82f0+100480]
+	GetHandleVerifier [0x0x7a25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-10 11:00:52 [WDM] INFO: ====== WebDriver manager ======
+2025-11-10 11:00:56 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:00:58 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:01:00 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-10 11:01:01 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-10 11:01:02 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x7afe43+66515]
+	GetHandleVerifier [0x0x7afe84+66580]
+	(No symbol) [0x0x59dc48]
+	(No symbol) [0x0x59b147]
+	(No symbol) [0x0x58e422]
+	(No symbol) [0x0x58fe1e]
+	(No symbol) [0x0x58e930]
+	(No symbol) [0x0x58e1e4]
+	(No symbol) [0x0x58deef]
+	(No symbol) [0x0x58be60]
+	(No symbol) [0x0x58c7fb]
+	(No symbol) [0x0x5a17ce]
+	(No symbol) [0x0x62d7f7]
+	(No symbol) [0x0x60b1cc]
+	(No symbol) [0x0x62cba7]
+	(No symbol) [0x0x60afc6]
+	(No symbol) [0x0x5dc2ca]
+	(No symbol) [0x0x5dd154]
+	GetHandleVerifier [0x0xa07353+2521315]
+	GetHandleVerifier [0x0xa022d3+2500707]
+	GetHandleVerifier [0x0x7d7c94+229924]
+	GetHandleVerifier [0x0x7c81f8+165768]
+	GetHandleVerifier [0x0x7cecad+193085]
+	GetHandleVerifier [0x0x7b8158+100072]
+	GetHandleVerifier [0x0x7b82f0+100480]
+	GetHandleVerifier [0x0x7a25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-10 11:01:06 [WDM] INFO: ====== WebDriver manager ======
+2025-11-10 11:01:09 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:01:11 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:01:13 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-10 11:01:14 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-10 11:01:15 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://www.bpcl.in: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=141.0.7390.124)
+Stacktrace:
+	GetHandleVerifier [0x0x7afe43+66515]
+	GetHandleVerifier [0x0x7afe84+66580]
+	(No symbol) [0x0x59dc48]
+	(No symbol) [0x0x59b147]
+	(No symbol) [0x0x58e422]
+	(No symbol) [0x0x58fe1e]
+	(No symbol) [0x0x58e930]
+	(No symbol) [0x0x58e1e4]
+	(No symbol) [0x0x58deef]
+	(No symbol) [0x0x58be60]
+	(No symbol) [0x0x58c7fb]
+	(No symbol) [0x0x5a17ce]
+	(No symbol) [0x0x62d7f7]
+	(No symbol) [0x0x60b1cc]
+	(No symbol) [0x0x62cba7]
+	(No symbol) [0x0x60afc6]
+	(No symbol) [0x0x5dc2ca]
+	(No symbol) [0x0x5dd154]
+	GetHandleVerifier [0x0xa07353+2521315]
+	GetHandleVerifier [0x0xa022d3+2500707]
+	GetHandleVerifier [0x0x7d7c94+229924]
+	GetHandleVerifier [0x0x7c81f8+165768]
+	GetHandleVerifier [0x0x7cecad+193085]
+	GetHandleVerifier [0x0x7b8158+100072]
+	GetHandleVerifier [0x0x7b82f0+100480]
+	GetHandleVerifier [0x0x7a25aa+11066]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-10 11:01:19 [WDM] INFO: ====== WebDriver manager ======
+2025-11-10 11:01:22 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:01:24 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:01:26 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-10 11:01:27 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-10 11:01:27 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.bpcl.in> (failed 3 times): 500 Internal Server Error
+2025-11-10 11:01:27 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2025-11-10 11:01:58 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://foundation.wikimedia.org/wiki/Policy:Cookie_statement
+2025-11-10 11:01:58 [oilgas_indexer] WARNING: ⚠️ Request failed or timed out: https://www.bpcl.in
+2025-11-10 11:01:58 [oilgas_indexer] INFO: Removed https://www.bpcl.in from pending queue after failure.
+2025-11-10 11:02:27 [oilgas_indexer] INFO: ✅ Sitemap found for equinor.com: https://www.equinor.com/sitemap.xml
+2025-11-10 11:02:48 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2025-11-10 11:02:48 [oilgas_indexer] INFO: 🗺️ Extracted 1 sitemap URLs from equinor.com
+2025-11-10 11:02:48 [oilgas_indexer] INFO: [SKIP] Not oil & gas: https://www.equinor.com/cookie-policy
+2025-11-10 11:02:49 [oilgas_indexer] INFO: ✅ All SeleniumRequests yielded to Scrapy — waiting for scheduler...
+2025-11-10 11:02:58 [oilgas_indexer] INFO: ✅ Sitemap found for worldoil.com: https://www.worldoil.com/sitemap.xml
+2025-11-10 11:03:16 [oilgas_indexer] INFO: ✅ Sitemap found for ten.com: https://www.ten.com/sitemap.xml
+2025-11-10 11:03:30 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-10 11:03:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.equinor.com/sitemap.xml?lang=en> (referer: https://www.equinor.com/cookie-policy)
+Traceback (most recent call last):
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+  File "C:\Users\samri\Documents\oilgas_mcrawl\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\samri\Documents\oilgas_indexer\oilgas_indexer\spiders\ind_spider.py", line 817, in parse
+    if self.brain.run_metrics["page_count"] %10==0:
+       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'page_count'
+2025-11-10 11:03:31 [oilgas_indexer] INFO: 🧹 Cleaned & saved https://www.equinor.com/sitemap.xml?lang=en (445.05 KB) → data/corpus/equinor.com.txt
+2025-11-10 11:10:24 [oilgas_indexer] INFO: 💥 WebDriver crashed on https://worldoil.com/topics/digital-transformation/automation-control: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7afe43+66515]
+	GetHandleVerifier [0x0x7afe84+66580]
+	(No symbol) [0x0x59da6b]
+	(No symbol) [0x0x5db5ab]
+	(No symbol) [0x0x60b086]
+	(No symbol) [0x0x60667c]
+	(No symbol) [0x0x605bf3]
+	(No symbol) [0x0x56e72d]
+	(No symbol) [0x0x56ecae]
+	(No symbol) [0x0x56f14d]
+	GetHandleVerifier [0x0xa07353+2521315]
+	GetHandleVerifier [0x0xa022d3+2500707]
+	GetHandleVerifier [0x0x7d7c94+229924]
+	GetHandleVerifier [0x0x7c81f8+165768]
+	GetHandleVerifier [0x0x7cecad+193085]
+	(No symbol) [0x0x56e3e3]
+	(No symbol) [0x0x56db60]
+	GetHandleVerifier [0x0xb4c20f+3852191]
+	BaseThreadInitThunk [0x0x75cc5d49+25]
+	RtlInitializeExceptionChain [0x0x778ed6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778ed661+561]
+
+2025-11-10 11:10:28 [WDM] INFO: ====== WebDriver manager ======
+2025-11-10 11:10:35 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:10:37 [WDM] INFO: Get LATEST chromedriver version for google-chrome
+2025-11-10 11:10:38 [WDM] INFO: Driver [C:\Users\samri\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-10 11:10:40 [oilgas_indexer] INFO: 🔄 Restarted Selenium driver due to invalid session.
+2025-11-10 11:18:18 [scrapy.extensions.logstats] INFO: Crawled 37 pages (at 31 pages/min), scraped 1 items (at 1 items/min)
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.1s with only 2 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.1s with only 3 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1011.8s with only 2 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.2s with only 4 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1011.9s with only 3 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.3s with only 5 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.3s with only 6 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.0s with only 4 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.4s with only 7 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.1s with only 5 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.5s with only 8 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.5s with only 9 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.6s with only 10 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.2s with only 6 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.3s with only 7 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.3s with only 8 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.4s with only 9 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.4s with only 10 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.4s with only 11 pages — skipping domain.
+2025-11-10 11:18:19 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.5s with only 12 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.9s with only 11 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.9s with only 12 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 907.9s with only 13 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 908.0s with only 14 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.6s with only 13 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on worldoil.com for 1012.7s with only 14 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 908.1s with only 15 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 908.1s with only 16 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 908.1s with only 17 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 908.2s with only 18 pages — skipping domain.
+2025-11-10 11:18:20 [oilgas_indexer] WARNING: ⏩ Stalled on ten.com for 908.2s with only 19 pages — skipping domain.
+2025-11-10 11:23:24 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://worldoil.com/magazine/2022/august-2022/features/floating-to-floating-offshore-wind-installation-process-increases-construction-efficiency/
+2025-11-10 11:24:26 [oilgas_indexer] WARNING: ⏱️ Timeout loading https://worldoil.com/topics/onshore/hydraulic-fracturing
+2025-11-10 11:27:36 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2025-11-10 11:27:36 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2025-11-10 11:27:37 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://worldoil.com/news/2022/10/4/petrofac-takes-over-northern-endeavour-fpso-from-australian-government/: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-11-10 11:27:41 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764352AFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:27:45 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764352A890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:27:49 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017643529490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:27:53 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ten.com/en/media/news/archive-technipfmc-extends-its-alliance-bp-petrochemicals-bp-infinia-technology: HTTPConnectionPool(host='localhost', port=64967): Max retries exceeded with url: /session/b9799b480e2b0833b20f979a636b503c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764352AF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-10 11:27:57 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764350C590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:01 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764350DC50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:05 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001763606E650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:10 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ten.com/fr/medias/actualites/archive-technipfmc-reconduit-son-partenariat-technologique-pour-linnovation-et-la: HTTPConnectionPool(host='localhost', port=64967): Max retries exceeded with url: /session/b9799b480e2b0833b20f979a636b503c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000176435281D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-10 11:28:14 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017643529AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:18 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764352A350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:22 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017635E5B0D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:26 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://worldoil.com/news/2022/7/28/oceaneering-wins-remotely-operated-vehicle-contract-offshore-brazil/: HTTPConnectionPool(host='localhost', port=64967): Max retries exceeded with url: /session/b9799b480e2b0833b20f979a636b503c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764354D890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-10 11:28:30 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E985ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:34 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E986510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:38 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E987F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:42 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://worldoil.com/news/2022/9/16/tellurian-investor-demands-sale-of-lng-company-claiming-nepotism/: HTTPConnectionPool(host='localhost', port=64967): Max retries exceeded with url: /session/b9799b480e2b0833b20f979a636b503c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E9862D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-10 11:28:46 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E98B6D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:51 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E98A210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:55 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E988190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:28:59 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ten.com/en/media/news/archive-technipfmc-renews-its-technological-partnership-innovation-and-technology-cea: HTTPConnectionPool(host='localhost', port=64967): Max retries exceeded with url: /session/b9799b480e2b0833b20f979a636b503c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E98BF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-10 11:29:03 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E987410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:29:07 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E984350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:29:11 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764E986AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:29:15 [oilgas_indexer] ERROR: ❌ Unexpected Selenium error on https://www.ten.com/fr/medias/actualites/archive-saudi-aramco-technipfmc-and-axens-advance-catalytic-crude-chemicals: HTTPConnectionPool(host='localhost', port=64967): Max retries exceeded with url: /session/b9799b480e2b0833b20f979a636b503c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017635E5B0D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-10 11:29:19 [urllib3.connectionpool] WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764354F090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:29:23 [urllib3.connectionpool] WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764352B610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
+2025-11-10 11:29:27 [urllib3.connectionpool] WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001764352B650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b9799b480e2b0833b20f979a636b503c/url
